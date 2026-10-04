@@ -1,0 +1,98 @@
+name: "DocVal + BIV — vor Archiv / vor Freigabe"
+
+objective: >
+  Awareness → Traffic → Demo/Beratung für Swisscom Document Validator (+ Business
+  Identity Validator). Enger ICP: Teams, die eingehende signierte PDFs vor Archiv
+  oder Freigabe prüfen müssen und sensible Dateien nicht in Fremd-Clouds hochladen
+  dürfen. Kernbotschaft: belastbar prüfen, PDF bleibt lokal (Hash lokal), juristisch
+  verwertbarere Auswertung; mit BIV auch Zeichner/Unternehmen. Link im Post mit UTM,
+  Approval vor Publish.
+
+language: "de"
+
+audience: >
+  Records-/Posteingang-Sachbearbeitung, Vertragsadmin, Compliance Ops in Banking,
+  Versicherung, öffentlicher Verwaltung und Grossunternehmen mit Audit-Druck —
+  Teams mit ca. 10+ Prüfungen signierter PDFs pro Monat.
+
+personas:
+  - "User: Sachbearbeitung Records/Posteingang, Vertragsadmin, Compliance Ops"
+  - "Buyer/Champion: Teamlead Records/ECM, Compliance/Legal Ops, Digitization Lead"
+  - "Blocker: IT/Security (Datenfluss), Procurement, Legal ('ist das juristisch genug?')"
+
+products:
+  - "Swisscom Document Validator — prüft ZertES-/eIDAS-signierte PDFs, Hash lokal (PDF bleibt in eigener Umgebung), belastbarere Zertifikatsauswertung statt nur grünem Haken"
+  - "Swisscom Business Identity Validator (BIV) — klärt Zeichner, Unternehmen und Berechtigung hinter der Signatur"
+
+voice: >
+  Authentisch und persönlich — es spricht Roman als Mensch, nicht die
+  Marketingabteilung. Humorvoll und nahbar (ich bin gern witzig), mit bildhaften
+  Vergleichen und Augenzwinkern, aber fachlich glaubwürdig fürs Compliance-/
+  Records-Publikum. Grundhaltung: wir machen happy Kunden happy. Ich-Perspektive,
+  echte Beispiele, konkret statt Buzzword-Bingo, keine Heilsversprechen.
+  Auch in Kommentaren dieselbe Stimme: freundlich, schlau, mit Witz statt Werbesprech.
+
+topics:
+  - "Prüfung eingehender signierter PDFs (vor Archiv / vor Freigabe)"
+  - "ZertES-/eIDAS-Signaturprüfung und Zertifikatsauswertung"
+  - "Datenschutz: prüfen ohne Voll-PDF in Fremd-Cloud (Hash lokal)"
+  - "Audit-Trail / revisionstaugliche Dokumentation"
+  - "Identität hinter der Signatur (Zeichner/Unternehmen/Berechtigung, BIV)"
+  - "Records Management / ECM-Workflows und API-Integration"
+  - "Bildhafte Vergleiche fürs 'Große prüfen': statt nur PDF z. B. 'einen ganzen LKW validieren'"
+  - "Sensible Prozesse anschaulich: 'stille Post validieren' — wo unterwegs Vertrauen verloren geht"
+  - "AI-Agenten übernehmen den Browser: Automatisierung von Prüf-/Backoffice-Aufgaben"
+  - "Gesellschaftlich: Woran erkennt man, ob ein Agent oder ein Mensch den Browser bedient? (digitale Identität & Vertrauen)"
+
+banned_topics:
+  - "Pauschales 'alle Backoffice' als Zielgruppe"
+  - "Konkurrenten (inkl. Adobe) namentlich schlechtreden"
+  - "Unbelegte juristische Garantien / Heilsversprechen"
+  - "Politik, Religion"
+
+keywords_to_engage:
+  - "elektronische signatur"
+  - "eidas"
+  - "zertes"
+  - "signierte pdf"
+  - "records management"
+  - "compliance"
+  - "archivierung"
+  - "digitale signatur prüfen"
+  - "ki agent"
+  - "ai agent"
+  - "automatisierung"
+  - "digitale identität"
+
+required_hashtags:
+  - "#Compliance"
+  - "#eIDAS"
+  - "#RecordsManagement"
+
+# CTA inkl. UTM-Link (Approval vor Publish!)
+cta: >
+  Vor dem Archivieren prüfen statt hoffen:
+  https://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice
+  — für eine kurze Demo/Beratung: DM oder Kommentar.
+
+max_post_chars: 1300
+max_comment_chars: 500
+
+# Konservativ für 2 Monate, LinkedIn-konform (pro Lauf/Zyklus)
+limits:
+  posts_per_run: 1
+  comments_per_run: 3
+  replies_per_run: 2
+  reshares_per_run: 1
+
+images:
+  enabled: true
+  style: "clean, seriös, B2B, Swisscom-nah; keine echten Personen, kein Text/Logo im Bild"
+  ratio: 0.5
+
+schedule:
+  start: 2026-09-09
+  end: 2026-11-09          # ~2 Monate Laufzeit
+  cycle_interval_minutes: 1440   # ein Zyklus pro Tag
+  active_hours: [8, 18]
+  max_cycles: null

@@ -1,0 +1,54 @@
+name: DevTools Growth Q3
+version: 1
+objective: Positionierung als Thought Leader für Developer-Produktivität und Aufbau
+  von Reichweite in der DACH-Tech-Community.
+language: de
+audience: Softwareentwickler:innen, Engineering Leads und CTOs in der DACH-Region
+personas:
+- Engineering Lead (30-45), will Team-Velocity steigern, wenig Zeit für Tooling
+- CTO im Scale-up, sucht messbare DevEx-Verbesserungen ohne Risiko
+products:
+- 'FlowCI — CI/CD-Plattform: halbiert Build-Zeiten, weniger flaky Tests'
+- 'DevPulse — DevEx-Analytics: macht Produktivitäts-Engpässe sichtbar'
+voice: Fachlich fundiert, nahbar, meinungsstark aber respektvoll. Kein Buzzword-Bingo,
+  keine Emojis-Flut.
+topics:
+- Developer Experience
+- CI/CD und Automatisierung
+- AI-gestützte Softwareentwicklung
+- Open Source
+- Team-Produktivität
+banned_topics:
+- Politik
+- Religion
+- Konkurrenten namentlich schlechtreden
+- unbelegte Heilsversprechen
+keywords_to_engage:
+- developer experience
+- ci/cd
+- copilot
+- automatisierung
+- open source
+required_hashtags:
+- '#DeveloperExperience'
+- '#DevProductivity'
+cta: Neugierig? Schreib mir eine DM oder kommentiere deine Erfahrung.
+max_post_chars: 1300
+max_comment_chars: 500
+limits:
+  posts_per_run: 1
+  comments_per_run: 3
+  replies_per_run: 2
+  reshares_per_run: 1
+images:
+  enabled: true
+  style: clean, modern, professional tech illustration, LinkedIn-tauglich
+  ratio: 0.5
+schedule:
+  start: null
+  end: null
+  cycle_interval_minutes: 120
+  active_hours:
+  - 8
+  - 20
+  max_cycles: null

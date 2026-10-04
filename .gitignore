@@ -1,0 +1,9 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+.runs/
+*.log
+automation/jobs.lock
+automation/.jobs.yaml.*.tmp

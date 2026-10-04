@@ -1,0 +1,39 @@
+- id: idea-0001
+  text: 'Deutsche wallet --> D-you
+
+    Swiss Wallet --> Swi-yu
+
+    France Wallet --> ... (not what you think) its france identite and today was a
+    great meeting, proud to be part of this journey. Any questions comment or DM'
+  campaign: null
+  status: processing
+  created_at: 2026-09-15T20:10
+  output_id: null
+  output_campaign: null
+  last_error: null
+- id: idea-0002
+  text: Compliance mencshen als kunden sind sehr merkwürdig. Während man normalerweise
+    versucht glücklich die kunden zu machen, sind compliance menschen nie glücklich,
+    sie werden weniger traurig. Deshalb haben wir produkte entworfen die Compliance
+    teams richtig untraurig machen. Discreter validator, sensible inos, riesen PDFs
+    möglich, direkt im browser oder sharepoint oder ERP als label zu sehen. Dann noch
+    Business identity validator um Risiken mit geschäftskunden zu minimieren.
+  campaign: Kampagnen/document validator/kampagne.yaml
+  status: done
+  created_at: 2026-09-15T22:50
+  output_id: post-2026-09-15-0001
+  output_campaign: Kampagnen/document validator/kampagne.yaml
+  last_error: null
+- id: idea-0003
+  text: 'Deutsche wallet --> D-you
+
+    Swiss Wallet --> Swi-yu
+
+    France Wallet --> ... (not what you think) its france identite and today was a
+    great meeting, proud to be part of this journey. Any questions comment or DM'
+  campaign: Kampagnen/document validator/kampagne.yaml
+  status: done
+  created_at: 2026-09-16T01:01
+  output_id: post-2026-09-17-0001
+  output_campaign: Kampagnen/document validator/kampagne.yaml
+  last_error: null

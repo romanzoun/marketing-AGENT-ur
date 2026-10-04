@@ -1,0 +1,129 @@
+- id: job-0003
+  active: true
+  task: find-and-write
+  campaign: Kampagnen/docval-biv-vor-archiv-vor-freigabe/kampagne.yaml
+  count: 2
+  approval_mode: manual
+  freq:
+    kind: daily
+    minutes: null
+    time: '15:00'
+    weekdays: []
+  last_run: '2026-10-03T15:39:08'
+  last_attempt: '2026-10-03T15:15:08'
+  last_status: ok
+  last_error: null
+  created: 2026-09-10T23:10
+- id: job-0004
+  active: true
+  task: run-due
+  campaign: Kampagnen/docval-biv-vor-archiv-vor-freigabe/kampagne.yaml
+  count: 2
+  approval_mode: manual
+  freq:
+    kind: interval
+    minutes: 120
+    time: null
+    weekdays: []
+  last_run: '2026-09-29T08:05:08'
+  last_attempt: '2026-10-04T08:20:08'
+  last_status: failed
+  last_error: 1 von 1 ausgeführten LinkedIn-Aktionen fehlgeschlagen
+  created: 2026-09-10T23:46
+- id: job-0005
+  active: true
+  task: analytics
+  campaign: Kampagnen/docval-biv-vor-archiv-vor-freigabe/kampagne.yaml
+  count: 1
+  approval_mode: manual
+  freq:
+    kind: daily
+    minutes: null
+    time: '18:00'
+    weekdays: []
+  last_run: '2026-09-28T18:00:15'
+  last_attempt: '2026-09-28T18:00:06'
+  last_status: ok
+  last_error: null
+  created: 2026-09-14T14:37
+- id: job-0006
+  active: true
+  task: ideas-to-posts
+  campaign: Kampagnen/docval-biv-vor-archiv-vor-freigabe/kampagne.yaml
+  count: 2
+  approval_mode: manual
+  freq:
+    kind: daily
+    minutes: null
+    time: '10:00'
+    weekdays: []
+  last_run: '2026-10-03T10:00:23'
+  last_attempt: '2026-10-03T10:00:22'
+  last_status: ok
+  last_error: null
+  created: 2026-09-15T22:54
+- id: job-0007
+  active: true
+  task: draft-posts
+  campaign: Kampagnen/docval-biv-vor-archiv-vor-freigabe/kampagne.yaml
+  count: 2
+  approval_mode: manual
+  freq:
+    kind: daily
+    minutes: null
+    time: '11:00'
+    weekdays: []
+  last_run: '2026-10-03T11:24:48'
+  last_attempt: '2026-10-03T11:00:16'
+  last_status: ok
+  last_error: null
+  created: 2026-09-16T13:14
+- id: job-0008
+  active: true
+  task: find-and-write
+  campaign: Kampagnen/docval-biv-vor-archiv-vor-freigabe/kampagne.yaml
+  count: 3
+  approval_mode: manual
+  freq:
+    kind: daily
+    minutes: null
+    time: 09:00
+    weekdays: []
+  last_run: '2026-10-03T09:45:25'
+  last_attempt: '2026-10-03T09:10:15'
+  last_status: ok
+  last_error: null
+  created: 2026-09-21T09:44
+- id: job-0010
+  active: true
+  task: run-due
+  campaign: Kampagnen/document validator/kampagne.yaml
+  count: 2
+  approval_mode: manual
+  freq:
+    kind: interval
+    minutes: 120
+    time: null
+    weekdays: []
+  last_run: '2026-09-24T11:29:35'
+  last_attempt: '2026-10-04T08:20:18'
+  last_status: failed
+  last_error: 1 von 1 ausgeführten LinkedIn-Aktionen fehlgeschlagen
+  created: 2026-09-23T12:09
+- id: job-0011
+  active: true
+  task: find-and-write-reshares
+  campaign: Kampagnen/docval-biv-vor-archiv-vor-freigabe/kampagne.yaml
+  count: 2
+  approval_mode: manual
+  freq:
+    kind: daily
+    minutes: null
+    time: 09:30
+    weekdays: []
+  last_run: '2026-09-30T10:05:34'
+  last_attempt: '2026-10-03T09:30:29'
+  last_status: failed
+  last_error: 'Keine ausreichenden fertigen Reshare-Entwürfe erzeugt: erwartet 2,
+    erstellt 1.'
+  created: 2026-09-28T13:24

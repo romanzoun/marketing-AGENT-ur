@@ -1,0 +1,409 @@
+name: DocVal + BIV — vor Archiv / vor Freigabe
+version: 2
+objective: 'Awareness → Expertise & Vertrauen → Profil-/Website-Besuch → Gespräch
+  / Demo
+
+  für Swisscom Document Validator (+ Business Identity Validator).
+
+
+  Der Content soll nicht primär verkaufen, sondern bei der relevanten Zielgruppe
+
+  Problembewusstsein schaffen, Fachkompetenz aufbauen und Swisscom bzw. Roman
+
+  als glaubwürdigen Ansprechpartner für die Prüfung digital signierter Dokumente
+
+  positionieren.
+
+
+  Enger ICP:
+
+  Teams, die eingehende signierte PDFs vor Archivierung oder Freigabe prüfen müssen
+
+  und sensible Dateien nicht in Fremd-Clouds hochladen dürfen.
+
+
+  Kernbotschaft:
+
+  Signierte PDFs nicht einfach aufgrund eines grünen Hakens akzeptieren, sondern
+
+  nachvollziehbar und belastbar prüfen.
+
+
+  Document Validator:
+
+  PDF bleibt in der eigenen Umgebung, nur der Hash wird für die Validierung verwendet.
+
+  Belastbarere Zertifikatsauswertung statt ausschliesslich eines visuellen Status.
+
+
+  Business Identity Validator:
+
+  Ergänzend prüfen, welche Person bzw. welches Unternehmen hinter einer Signatur steht
+
+  und welche Informationen zur Berechtigung verfügbar sind.
+
+
+  Primäres Content-Ziel:
+
+  Aufmerksamkeit, Relevanz, Vertrauen und fachliche Positionierung.
+
+
+  Sekundäres Content-Ziel:
+
+  Website-Besuche, Direktnachrichten, Gespräche und Demo-Anfragen.
+
+
+  Nicht jeder Post braucht einen Produktlink oder einen Verkaufs-CTA.
+
+
+  Link im Post nur dann einsetzen, wenn er inhaltlich sinnvoll ist.
+
+  Immer UTM verwenden.
+
+  Approval vor Publish.
+
+  '
+language: de
+audience: 'Records-/Posteingang-Sachbearbeitung, Vertragsadministration, Compliance
+  Operations,
+
+  Records Management, ECM/DMS-Verantwortliche, Legal Operations und Digitalisierungs-
+
+  verantwortliche in Banking, Versicherungen, öffentlicher Verwaltung und Grossunternehmen
+
+  mit Audit-, Compliance- oder Datenschutzanforderungen.
+
+
+  Besonders relevant für Teams mit regelmässigem Eingang digital signierter PDFs,
+
+  ungefähr ab 10 Prüfungen pro Monat oder bei besonders sensitiven Dokumenten.
+
+
+  Fokus nicht auf "alle Backoffice-Mitarbeitenden", sondern auf konkrete Prozesse,
+
+  Rollen und Situationen rund um signierte Dokumente.
+
+  '
+personas:
+- 'User:
+
+  Sachbearbeitung Records/Posteingang, Vertragsadministration, Compliance Operations.
+
+
+  Typische Fragen:
+
+  - Ist diese Signatur wirklich gültig?
+
+  - Kann ich dieses Dokument archivieren oder freigeben?
+
+  - Muss ich noch etwas zusätzlich prüfen?
+
+  - Wie dokumentiere ich die Prüfung?
+
+  - Darf ich dieses sensible Dokument für die Prüfung extern hochladen?
+
+  '
+- 'Buyer / Champion:
+
+  Teamlead Records/ECM, Compliance Lead, Legal Operations, Digitalization Lead,
+
+  Enterprise Content Management, Prozessverantwortliche.
+
+
+  Typische Fragen:
+
+  - Wie standardisieren wir den Prüfprozess?
+
+  - Wie reduzieren wir manuelle Unsicherheit?
+
+  - Wie integrieren wir die Prüfung in bestehende Prozesse?
+
+  - Wie dokumentieren wir die Prüfung nachvollziehbar?
+
+  - Wie können wir Volumen effizient bearbeiten?
+
+  '
+- 'Blocker / Mitentscheider:
+
+  IT, Security, Datenschutz, Procurement und Legal.
+
+
+  Typische Fragen:
+
+  - Wohin gelangen die Dokumente?
+
+  - Welche Daten verlassen unsere Umgebung?
+
+  - Wie funktioniert der Datenfluss?
+
+  - Ist die Lösung integrierbar?
+
+  - Welche Aussagen dürfen wir rechtlich aus der Prüfung ableiten?
+
+  - Wie sieht die technische und organisatorische Absicherung aus?
+
+  '
+products:
+- 'Swisscom Document Validator
+
+
+  Prüft ZertES-/eIDAS-signierte PDFs.
+
+  Das PDF bleibt in der eigenen Umgebung; für die Validierung wird der Hash verwendet.
+
+
+  Positionierung:
+
+  Nicht nur "grüner Haken", sondern nachvollziehbare Zertifikats- und Signaturprüfung.
+
+
+  Typische Anwendung:
+
+  Prüfung eingehender digital signierter PDFs vor Archivierung, Freigabe
+
+  oder Weiterverarbeitung.
+
+  '
+- 'Swisscom Business Identity Validator (BIV)
+
+
+  Ergänzt die technische Signaturprüfung um Informationen zur Identität hinter
+
+  der Signatur.
+
+
+  Storyline:
+
+  1. Ist die Signatur valide?
+
+  2. Wer hat unterschrieben?
+
+  3. Für welches Unternehmen?
+
+  4. Welche Informationen zur Berechtigung sind verfügbar?
+
+
+  Nicht behaupten, dass BIV pauschal jede rechtliche Zeichnungsberechtigung
+
+  abschliessend oder juristisch garantiert.
+
+  '
+voice: 'Authentisch und persönlich.
+
+
+  Es spricht Roman als Mensch und Fachexperte, nicht die Marketingabteilung.
+
+
+  Ton:
+
+  - nahbar
+
+  - intelligent
+
+  - konkret
+
+  - fachlich glaubwürdig
+
+  - gelegentlich humorvoll
+
+  - bildhaft
+
+  - verständlich
+
+  - nicht steif
+
+  - nicht künstlich werblich
+
+
+  Roman darf eine klare fachliche Perspektive einnehmen und Beobachtungen teilen.
+
+
+  Gute Formulierungen fühlen sich an wie:
+
+  "Das sehe ich in der Praxis immer wieder."
+
+  "Genau an dieser Stelle wird es interessant."
+
+  "Ein grüner Haken beantwortet eben nicht jede Frage."
+
+  "Klingt banal. Ist es in der Praxis aber häufig nicht."
+
+
+  Humor:
+
+  Gezielt einsetzen, wenn er das Thema verständlicher oder menschlicher macht.
+
+  Kein erzwungener Humor.
+
+
+  Fachbegriffe:
+
+  Verwenden, wenn sie zur Zielgruppe gehören.
+
+  Komplexe Begriffe möglichst anhand konkreter Situationen erklären.
+
+
+  Grundhaltung:
+
+  Wir helfen Kunden dabei, sichere und praktikable Prozesse aufzubauen.
+
+  Kein Angstmarketing.
+
+  Keine Heilsversprechen.
+
+  Kein Buzzword-Bingo.
+
+
+  Nicht jeder Post muss verkaufen.
+
+  Ein guter Post darf auch einfach eine interessante Beobachtung, Erfahrung,
+
+  Frage oder fachliche Einordnung liefern.
+
+
+  Auch in Kommentaren und Replies dieselbe Stimme verwenden:
+
+  freundlich, fachlich, intelligent und persönlich.
+
+  '
+topics:
+- Prüfung eingehender signierter PDFs vor Archivierung
+- Prüfung eingehender signierter PDFs vor Freigabe
+- ZertES-Signaturprüfung
+- eIDAS-Signaturprüfung
+- Zertifikatsauswertung
+- Unterschied zwischen Signaturstatus, Identität und Berechtigung
+- Datenschutz bei der Dokumentprüfung
+- Prüfung ohne Upload des vollständigen PDFs in eine Fremd-Cloud
+- Hash-basierte Prüfung
+- Audit-Trail
+- revisionstaugliche Dokumentation
+- Records Management
+- Enterprise Content Management
+- DMS-/ECM-Workflows
+- API-Integration
+- Identität hinter einer digitalen Signatur
+- Zeichner / unterzeichnende Person
+- Unternehmen hinter einer Signatur
+- Informationen zur Berechtigung
+- Standardisierung von Prüfprozessen
+- Automatisierung von Dokumentprüfungen
+- AI Agents in Backoffice- und Browser-Prozessen
+- digitale Identität von Menschen, Unternehmen und zukünftig Agenten
+- digitales Vertrauen
+- Was bedeutet ein grüner Haken wirklich?
+- Was muss vor der Archivierung geprüft werden?
+- Wann reicht eine technische Signaturprüfung nicht aus?
+- Was passiert zwischen Posteingang und Archiv?
+- Wie verhindert man unterschiedliche Prüfpraktiken im gleichen Team?
+banned_topics:
+- Pauschales "alle Backoffice-Mitarbeitenden" als Zielgruppe
+- beliebige KI-News ohne Verbindung zum Kernthema
+- generische Digitalisierungsposts ohne konkreten Bezug
+- Konkurrenten namentlich schlechtreden
+- Adobe oder andere Wettbewerber negativ darstellen
+- unbelegte juristische Garantien
+- Aussagen wie "100 % rechtssicher"
+- Aussagen wie "juristisch garantiert"
+- Aussagen wie "vollständig revisionssicher", wenn dies nicht konkret belegt werden
+  kann
+- unbelegte Sicherheitsversprechen
+- künstliches Angstmarketing
+- Politik
+- Religion
+- aggressives Competitor-Bashing
+- erfundene Kundenbeispiele
+- erfundene Statistiken
+- erfundene regulatorische Anforderungen
+keywords_to_engage:
+- elektronische signatur
+- digitale signatur
+- qualifizierte elektronische signatur
+- eidas
+- zertes
+- signierte pdf
+- digitale signatur prüfen
+- elektronische signatur prüfen
+- records management
+- enterprise content management
+- ecm
+- dokumentenmanagement
+- dms
+- compliance
+- legal operations
+- archivierung
+- digitale archivierung
+- digital trust
+- trust services
+- digitale identität
+- signaturvalidierung
+- zertifikat
+- ki agent
+- ai agent
+- automatisierung
+required_hashtags: []
+cta: 'Standard-Conversion-CTA, nur verwenden, wenn der Beitrag klar produkt- oder
+
+  lösungsnah ist:
+
+
+  Vor dem Archivieren prüfen statt hoffen:
+
+  https://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice
+
+
+  Für eine kurze Demo oder einen Austausch:
+
+  DM oder Kommentar.
+
+  '
+max_post_chars: 1300
+max_comment_chars: 500
+limits:
+  posts_per_run: 1
+  comments_per_run: 3
+  replies_per_run: 2
+  reshares_per_run: 1
+images:
+  enabled: true
+  style: 'clean, seriös, B2B, Swisscom-nah.
+
+
+    Keine echten Personen generieren.
+
+    Kein Text im generierten Bild.
+
+    Kein Logo im generierten Bild.
+
+    Keine überladenen Stockfoto-Szenen.
+
+
+    Bevorzugt:
+
+    - abstrakte Dokument-/Signatur-Situationen
+
+    - Prozessdarstellungen
+
+    - digitale Identität
+
+    - Dokumentfluss
+
+    - Validierung
+
+    - Vertrauen
+
+    - reduzierte Business-Visuals
+
+
+    Bilder sollen den Post unterstützen und nicht lediglich dekorieren.
+
+    '
+  ratio: 0.5
+schedule:
+  start: '2026-09-09'
+  end: '2026-11-09'
+  cycle_interval_minutes: 1440
+  active_hours:
+  - 8
+  - 18
+  max_cycles: null

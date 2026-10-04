@@ -1,0 +1,1825 @@
+- item_id: post-2026-09-10-0002
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: post
+  text: 'Eine Signatur ohne geschäftlichen Kontext ist für mich wie ein Namensschild
+    vor dem Sitzungszimmer: Ich kenne den Namen. Ob die Person fürs Unternehmen zeichnen
+    darf, steht nicht drauf.
+
+
+    Für mich ist die Rollenverteilung einfach: Der Swisscom Document Validator prüft
+    die signierte PDF und die Zertifikatsinformationen. Der Business Identity Validator
+    ergänzt den geschäftlichen Kontext zu Zeichner, Unternehmen und Berechtigung.
+
+
+    Das ist keine Rechtsgarantie. Teams in Vertragsadministration und Compliance Ops
+    erhalten aber eine nachvollziehbarere Grundlage: Wer hat für welches Unternehmen
+    signiert – und welche Berechtigung steht dahinter?
+
+
+    Die PDF bleibt dabei in der eigenen Umgebung; ihr Hash wird lokal gebildet.
+
+
+    Meine juristische Kristallkugel bleibt also im Schrank. Dort staubt sie ohnehin
+    nur ein.
+
+
+    Vor dem Archivieren prüfen statt hoffen:
+
+    https://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice
+
+    — für eine kurze Demo/Beratung: DM oder Kommentar.
+
+
+    #Compliance #eIDAS #RecordsManagement'
+  source_url: null
+  published_url: https://www.linkedin.com/feed/update/urn:li:activity:7504083974907133952/
+  published_at: 2026-09-11T09:00
+  last_checked_at: '2026-09-20T18:00:21'
+  last_error: ''
+  snapshots:
+  - captured_at: '2026-09-14T14:26:36'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: 487
+  - captured_at: '2026-09-14T18:00:19'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: 494
+  - captured_at: '2026-09-15T18:00:25'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: 497
+  - captured_at: '2026-09-16T18:05:22'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: 517
+  - captured_at: '2026-09-19T18:00:19'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: 529
+  - captured_at: '2026-09-20T18:00:21'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: 535
+- item_id: comment-2026-09-10-0001
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: comment
+  text: 'Weekly cyber roundups are useful, but the real value is knowing what changes
+    Monday morning—not just what made the headline. I like summaries that separate
+    signal from noise and leave teams with one concrete question: what do we need
+    to verify now?'
+  source_url: https://www.linkedin.com/posts/konnorandersen_cyber-headlines-from-last-week-share-7503116372013490176-AwPR/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB3aUYMBxgy-vOEgwhKS2hn3EFcT9q7XV4o
+  published_url: null
+  published_at: 2026-09-11T10:43
+  last_checked_at: '2026-09-20T18:00:26'
+  last_error: ''
+  snapshots:
+  - captured_at: '2026-09-14T14:17:38'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-14T14:24:51'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-14T14:26:44'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-14T18:00:24'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-15T18:00:32'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-16T18:05:27'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-19T18:00:24'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-20T18:00:26'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+- item_id: comment-2026-09-10-0002
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: comment
+  text: Glückwunsch zur Auswahl als Launch-Partner. Digitale Identität wird für mich
+    dann richtig gut, wenn sie im Alltag nicht wie ein Behördengang mit Extra-Schleife
+    wirkt, sondern einfach funktioniert. Wir sind auch dabei und sind gewillt digitales
+    vertrauen über alle channels zu bringen, privacy first
+  source_url: https://www.linkedin.com/posts/nicolas-jacobi-hh_dyou-eudiwallet-digitaleidentitaeut-ugcPost-7503733919851192322-Y1lR/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB3aUYMBxgy-vOEgwhKS2hn3EFcT9q7XV4o
+  published_url: null
+  published_at: 2026-09-11T12:44
+  last_checked_at: '2026-09-20T18:00:31'
+  last_error: ''
+  snapshots:
+  - captured_at: '2026-09-14T14:17:43'
+    reactions: 1
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-14T14:25:03'
+    reactions: 1
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-14T14:26:48'
+    reactions: 1
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-14T18:00:29'
+    reactions: 1
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-15T18:00:37'
+    reactions: 3
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-16T18:05:33'
+    reactions: 3
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-19T18:00:28'
+    reactions: 3
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-20T18:00:31'
+    reactions: 3
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+- item_id: post-2026-09-10-0001
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: post
+  text: 'Ich mag grüne Haken. Mein innerer Ordnungsmensch sogar sehr.
+
+
+    Bei einer signierten PDF ist so ein Haken für mich trotzdem nur die Gepäckmarke
+    am Koffer: beruhigend – aber noch kein Blick auf Herkunft und Reiseroute.
+
+
+    Vor Freigabe oder Archivierung will ich mehr wissen:
+
+    Wurde die ZertES-/eIDAS-Signatur belastbar geprüft?
+
+    Was zeigt die Zertifikatsauswertung?
+
+    Und lässt sich das Ergebnis für den Audit-Trail nachvollziehbar festhalten?
+
+
+    Genau da hilft mir der Swisscom Document Validator: Er wertet Signatur und Zertifikatsinformationen
+    belastbarer aus. Die PDF bleibt dabei in der eigenen Umgebung; ihr Hash wird lokal
+    gebildet.
+
+
+    Kein Orakel, kein «wird schon passen». Sondern eine bessere Entscheidungsgrundlage
+    vor dem nächsten Prozessschritt.
+
+
+    Vor dem Archivieren prüfen statt hoffen:
+
+    https://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice
+
+    — für eine kurze Demo/Beratung: DM oder Kommentar.
+
+
+    #Compliance #eIDAS #RecordsManagement'
+  source_url: null
+  published_url: https://www.linkedin.com/feed/update/urn:li:activity:7504174562742497280/
+  published_at: 2026-09-11T13:58
+  last_checked_at: '2026-09-20T18:00:36'
+  last_error: ''
+  snapshots:
+  - captured_at: '2026-09-14T14:26:57'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: 1
+    impressions: 553
+  - captured_at: '2026-09-14T18:00:33'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: 1
+    impressions: 574
+  - captured_at: '2026-09-15T18:00:42'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: 1
+    impressions: 576
+  - captured_at: '2026-09-16T18:05:38'
+    reactions: 3
+    comments: null
+    replies: null
+    reposts: 1
+    impressions: 624
+  - captured_at: '2026-09-19T18:00:33'
+    reactions: 5
+    comments: null
+    replies: null
+    reposts: 2
+    impressions: 686
+  - captured_at: '2026-09-20T18:00:36'
+    reactions: 5
+    comments: null
+    replies: null
+    reposts: 2
+    impressions: 702
+- item_id: comment-2026-09-11-0005
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: comment
+  text: 'Interoperability is where a wallet stops being a polished island and starts
+    becoming useful infrastructure. I like that this agenda puts standards next to
+    the messy reality of trust services across borders—that is usually where the interesting
+    questions begin.
+
+
+    #Compliance #eIDAS #RecordsManagement'
+  source_url: https://lnkd.in/p/eWXw-awQ
+  published_url: null
+  published_at: 2026-09-12T10:00
+  last_checked_at: '2026-09-20T18:00:40'
+  last_error: ''
+  snapshots:
+  - captured_at: '2026-09-14T14:18:08'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-14T14:25:28'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-14T14:27:02'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-14T18:00:37'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-15T18:00:47'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-16T18:05:43'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-19T18:00:37'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-20T18:00:40'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+- item_id: comment-2026-09-12-0005
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: comment
+  text: 'Agent autonomy without an audit trail feels like lending out the office keys
+    and skipping the sign-in sheet. For me, guardrails matter most when they leave
+    a clear record of what the agent decided, on whose authority, and where a human
+    can step in. #Compliance #eIDAS #RecordsManagement'
+  source_url: https://lnkd.in/p/ekw-ZHax
+  published_url: null
+  published_at: 2026-09-14T10:00
+  last_checked_at: '2026-09-20T18:00:45'
+  last_error: ''
+  snapshots:
+  - captured_at: '2026-09-14T14:18:12'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-14T14:25:32'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-14T14:27:07'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-14T18:00:42'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-15T18:00:53'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-16T18:05:47'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-19T18:00:43'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-20T18:00:45'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+- item_id: comment-2026-09-12-0003
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: comment
+  text: 'A sales agent can sound wonderfully human, but the interesting part begins
+    when it is allowed to act. For me, the business case is incomplete until identity,
+    permissions and a traceable handover are as clear as the conversion target—otherwise
+    the shiny new colleague is wearing a name badge written in pencil. #Compliance
+    #eIDAS #RecordsManagement'
+  source_url: https://lnkd.in/p/eFpSJr8c
+  published_url: null
+  published_at: 2026-09-14T13:00
+  last_checked_at: '2026-09-20T18:00:49'
+  last_error: ''
+  snapshots:
+  - captured_at: '2026-09-14T14:18:17'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-14T14:25:37'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-14T14:27:12'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-14T18:00:46'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-15T18:00:57'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-16T18:05:53'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-19T18:00:47'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-20T18:00:49'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+- item_id: comment-2026-09-12-0004
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: comment
+  text: 'Keeping people in a familiar interface sounds like the quiet kind of progress
+    I like: less wallet tourism, more useful workflow. The real test, for me, is whether
+    issuer, verifier and permission context remain just as clear when the plumbing
+    disappears behind the wall. #Compliance #eIDAS #RecordsManagement'
+  source_url: https://lnkd.in/p/e79rpTgQ
+  published_url: null
+  published_at: 2026-09-14T14:00
+  last_checked_at: '2026-09-20T18:00:54'
+  last_error: ''
+  snapshots:
+  - captured_at: '2026-09-14T14:18:21'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-14T14:25:41'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-14T14:27:23'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-14T18:00:51'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-15T18:01:04'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-16T18:05:58'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-19T18:00:51'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-20T18:00:54'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+- item_id: comment-2026-09-12-0007
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: comment
+  text: 'I like the idea of humans and agents sharing the work, but collaboration
+    gets real only when the handoffs are visible. If nobody can retrace who decided
+    what, the blueprint is just a very tidy floor plan with no doors. #Compliance
+    #eIDAS #RecordsManagement'
+  source_url: https://lnkd.in/p/enQGHhE3
+  published_url: null
+  published_at: 2026-09-14T14:00
+  last_checked_at: '2026-09-20T18:00:58'
+  last_error: ''
+  snapshots:
+  - captured_at: '2026-09-14T14:18:25'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-14T14:25:46'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-14T14:27:28'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-14T18:00:55'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-15T18:01:09'
+    reactions: 1
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-16T18:06:03'
+    reactions: 1
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-19T18:00:56'
+    reactions: 1
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-20T18:00:58'
+    reactions: 1
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+- item_id: comment-2026-09-12-0009
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: comment
+  text: 'I don''t think sovereignty and interoperability are opposites, but they only
+    coexist when governance is as open as the standards. With AI agents entering financial
+    journeys, technical trust alone is a well-built bridge with no traffic rules;
+    legal accountability has to travel with it. #Compliance #eIDAS #RecordsManagement'
+  source_url: https://lnkd.in/p/eqSgNxXU
+  published_url: null
+  published_at: '2026-09-15T10:10:50'
+  last_checked_at: '2026-09-20T18:01:03'
+  last_error: ''
+  snapshots:
+  - captured_at: '2026-09-15T18:01:14'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-16T18:06:07'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-19T18:01:00'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-20T18:01:03'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+- item_id: post-2026-09-12-0001
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: post
+  text: 'Einen LKW würde ich am Werkstor nicht jedes Mal komplett ausladen, wenn ich
+    nicht den nicht kenne. Manuelle Überprüfung ist mühsam.
+
+
+    Bei regelmässig eingehenden signierten PDFs sehe ich das ähnlich. Wenn Records-,
+    Posteingang- oder Vertragsadmin-Teams jede Prüfung als spontane Einzelaktion behandeln,
+    wird aus einem Kontrollpunkt schnell eine kleine Tagesreise.
+
+
+    Mir ist lieber, die Prüfung steht fest im Records-/ECM-Workflow: vor Freigabe
+    oder Archivierung, wiederholbar und nachvollziehbar. Per API kann der Swisscom
+    Document Validator als solcher Prüfschritt eingebunden werden. Er prüft ZertES-/eIDAS-Signatur
+    und Zertifikatsinformationen belastbarer. Die PDF bleibt in der eigenen Umgebung;
+    ihr Hash wird lokal gebildet.
+
+
+    Der Mensch bleibt am Steuer – der LKW muss nur nicht für jeden Kontrollblick zerlegt
+    werden.
+
+
+    Wo steht euer fester Prüfschalter im Records-/ECM-Prozess?
+
+
+    Vor dem Archivieren prüfen statt hoffen:
+
+    https://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice
+
+    — für eine kurze Demo/Beratung: DM oder Kommentar.
+
+
+    #Compliance #eIDAS #RecordsManagement'
+  source_url: null
+  published_url: https://www.linkedin.com/feed/update/urn:li:activity:7505601648229257216/
+  published_at: '2026-09-15T14:21:22'
+  last_checked_at: '2026-09-20T18:01:08'
+  last_error: ''
+  snapshots:
+  - captured_at: '2026-09-15T18:01:23'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-16T18:06:12'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: 567
+  - captured_at: '2026-09-19T18:01:05'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: 679
+  - captured_at: '2026-09-20T18:01:08'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: 688
+- item_id: comment-2026-09-12-0008
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: comment
+  text: 'I care less about whether an agent can explain itself elegantly than whether
+    I can reproduce the path from evidence to decision. A deterministic audit trail
+    turns “trust me” into something compliance teams can actually inspect; that is
+    where agent memory stops being clever plumbing and starts becoming accountable
+    infrastructure. #Compliance #eIDAS #RecordsManagement'
+  source_url: https://lnkd.in/p/e92-tHiQ
+  published_url: https://www.linkedin.com/feed/update/urn:li:activity:7505602127298301952/
+  published_at: '2026-09-15T14:23:12'
+  last_checked_at: '2026-09-20T18:01:13'
+  last_error: ''
+  snapshots:
+  - captured_at: '2026-09-15T18:01:29'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-16T18:06:18'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-19T18:01:11'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-20T18:01:13'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+- item_id: comment-2026-09-13-0006
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: comment
+  text: 'The interesting shift for me is not another login button, but accepting credentials
+    you did not issue and still being able to explain why you trusted them. That turns
+    identity architecture from plumbing into part of the audit trail—much less glamorous
+    than a wallet demo, but far more important on Monday morning. #Compliance #eIDAS
+    #RecordsManagement'
+  source_url: https://lnkd.in/p/eNKteCgy
+  published_url: null
+  published_at: '2026-09-16T12:50:33'
+  last_checked_at: '2026-09-20T18:01:18'
+  last_error: ''
+  snapshots:
+  - captured_at: '2026-09-16T18:06:23'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-19T18:01:16'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-20T18:01:18'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+- item_id: comment-2026-09-12-0010
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: comment
+  text: 'The speed is impressive, but interoperability is the part that matters to
+    me. Connecting existing bank networks beats asking everyone to move onto one shiny
+    new island—provided compliance travels across the bridges instead of being measured
+    with a different ruler at every shore. #Compliance #eIDAS #RecordsManagement'
+  source_url: https://lnkd.in/p/e8V68jpU
+  published_url: null
+  published_at: '2026-09-16T12:51:48'
+  last_checked_at: '2026-09-20T18:01:23'
+  last_error: Eigener Kommentar auf der LinkedIn-Seite nicht gefunden
+  snapshots:
+  - captured_at: '2026-09-16T18:06:35'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+- item_id: post-2026-09-11-0001
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: post
+  text: 'Eine sensible PDF zur Prüfung in eine unbekannte Cloud hochladen?
+
+
+    Für mich ist das wie ein Mantel an einer Garderobe, bei der niemand weiss, wer
+    hinter dem Vorhang steht. Nur steckt in der Innentasche nicht bloss ein Kaugummi,
+    sondern vielleicht ein Vertrag.
+
+
+    Darum schaue ich beim Prüfprozess auch auf den Datenweg.
+
+
+    Beim Swisscom Document Validator bleibt die PDF in der eigenen Umgebung, ohne
+    on-prem installationen. Ihr Hash wird lokal gebildet im Browser. So lassen sich
+    ZertES-/eIDAS-Signatur und Zertifikatsinformationen belastbarer prüfen, ohne die
+    vollständige Datei in eine Fremd-Cloud hochzuladen oder mühsame on-prem operations.
+
+
+    Meine Frage an Records- und Compliance-Teams: Wo darf eine sensible PDF in eurem
+    Prüfprozess überhaupt hin?
+
+
+    Vor dem Archivieren prüfen statt hoffen:
+
+    https://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice
+
+    — für eine kurze Demo/Beratung: DM oder Kommentar.
+
+
+    #Compliance #eIDAS #RecordsManagement'
+  source_url: null
+  published_url: https://www.linkedin.com/feed/update/urn:li:activity:7506004076267069440/
+  published_at: '2026-09-16T17:00:28'
+  last_checked_at: '2026-09-20T18:01:27'
+  last_error: ''
+  snapshots:
+  - captured_at: '2026-09-16T18:06:39'
+    reactions: 1
+    comments: null
+    replies: null
+    reposts: null
+    impressions: 96
+  - captured_at: '2026-09-19T18:01:25'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: 376
+  - captured_at: '2026-09-20T18:01:27'
+    reactions: null
+    comments: 1
+    replies: null
+    reposts: null
+    impressions: 408
+- item_id: comment-2026-09-12-0006
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: comment
+  text: 'I find the insurance layer clever, but it answers who pays after the agent
+    slips—not who was allowed to act in the first place. A single-use card is a useful
+    seat belt; clear identity, scoped authority and a traceable approval remain the
+    steering wheel. #Compliance #eIDAS #RecordsManagement'
+  source_url: https://lnkd.in/p/eTuGe_DM
+  published_url: https://www.linkedin.com/feed/update/urn:li:activity:7506319913700134913/
+  published_at: '2026-09-17T13:55:26'
+  last_checked_at: '2026-09-20T18:01:33'
+  last_error: ''
+  snapshots:
+  - captured_at: '2026-09-19T18:01:30'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-20T18:01:33'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+- item_id: comment-2026-09-13-0003
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: comment
+  text: 'I like the insistence on proving authority before an AI agent acts. Giving
+    a bot a company badge without checking its mandate is a bit like handing over
+    the office keys because it knows the Wi-Fi password. For me, identity, revocable
+    authority and a usable audit trail belong together—not only at onboarding. #Compliance
+    #eIDAS #RecordsManagement'
+  source_url: https://lnkd.in/p/e5XFb8vH
+  published_url: null
+  published_at: '2026-09-17T16:00:36'
+  last_checked_at: '2026-09-20T18:01:38'
+  last_error: ''
+  snapshots:
+  - captured_at: '2026-09-19T18:01:35'
+    reactions: 1
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-20T18:01:38'
+    reactions: 1
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+- item_id: comment-2026-09-13-0004
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: comment
+  text: 'I like the practical definition of user control here: data stays on the device,
+    disclosure is minimal and consent is explicit. An identity wallet should feel
+    less like handing over the whole filing cabinet just to show one card. Publishing
+    the technical work openly is how a common European standard becomes inspectable
+    rather than ceremonial. #Compliance #eIDAS #RecordsManagement'
+  source_url: https://lnkd.in/p/e9FeKyY2
+  published_url: null
+  published_at: '2026-09-17T16:01:26'
+  last_checked_at: '2026-09-20T18:01:43'
+  last_error: ''
+  snapshots:
+  - captured_at: '2026-09-19T18:01:40'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-20T18:01:43'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+- item_id: post-2026-09-11-0002
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: post
+  text: 'Ein Audit ist wie ein sehr höflicher Detektiv.
+
+
+    Es sagt nicht: «Das sah damals schon vernünftig aus.»
+
+    Es fragt: «Wie genau seid ihr zu dieser Entscheidung gekommen?»
+
+
+    Und plötzlich ist «Wir haben die PDF angeschaut» ungefähr so hilfreich wie ein
+    Alibi auf einer Serviette.
+
+
+    Vor Freigabe oder Archivierung zählt deshalb nicht nur die Prüfung. Auch ihr Ergebnis
+    sollte nachvollziehbar festgehalten werden: Signatur, Zertifikatsinformationen
+    und die Grundlage der Entscheidung.
+
+
+    Der Swisscom Document Validator liefert dafür eine belastbarere Auswertung. Der
+    Business Identity Validator kann zusätzlich Kontext zu Zeichner, Unternehmen und
+    Berechtigung geben.
+
+
+    Könnte euer Team eine Freigabeentscheidung Monate später noch sauber erklären?
+
+
+    Vor dem Archivieren prüfen statt hoffen:
+
+    https://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice
+
+    — für eine kurze Demo/Beratung: DM oder Kommentar.
+
+
+    #Compliance #eIDAS #RecordsManagement'
+  source_url: null
+  published_url: https://www.linkedin.com/feed/update/urn:li:activity:7506634449007153152/
+  published_at: '2026-09-18T10:45:20'
+  last_checked_at: '2026-09-20T18:01:48'
+  last_error: ''
+  snapshots:
+  - captured_at: '2026-09-19T18:01:45'
+    reactions: 2
+    comments: 1
+    replies: null
+    reposts: null
+    impressions: 436
+  - captured_at: '2026-09-20T18:01:48'
+    reactions: 2
+    comments: 1
+    replies: null
+    reposts: null
+    impressions: 466
+- item_id: comment-2026-09-15-0003
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: comment
+  text: 'I like big debates about EUDI and eIDAS, but they become useful for me at
+    the handover into daily operations. A wallet or trust service may establish trust;
+    Records teams still need a traceable check, a documented decision and an archive
+    record they can explain later. Otherwise, the reference model is polished conference
+    wallpaper. #Compliance #eIDAS #RecordsManagement'
+  source_url: https://lnkd.in/p/e3qMBHyE
+  published_url: https://www.linkedin.com/feed/update/urn:li:activity:7506634563121553409/
+  published_at: '2026-09-18T10:45:46'
+  last_checked_at: '2026-09-20T18:01:53'
+  last_error: ''
+  snapshots:
+  - captured_at: '2026-09-19T18:01:49'
+    reactions: 1
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-20T18:01:53'
+    reactions: 1
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+- item_id: comment-2026-09-15-0006
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: comment
+  text: 'The year of the wallets sounds exciting; the Records part of my brain immediately
+    asks what happens after the applause. A wallet becomes operational when every
+    trust check, approval and archived record leaves a trail people can retrace later—not
+    just a shiny credential on a phone. Furthermore, lets do not forget that PDF and
+    contracts will still exists and need validation, too #Compliance #eIDAS #RecordsManagement'
+  source_url: https://lnkd.in/p/e6JD9jSC
+  published_url: null
+  published_at: '2026-09-18T10:46:01'
+  last_checked_at: '2026-09-20T18:01:58'
+  last_error: ''
+  snapshots:
+  - captured_at: '2026-09-19T18:01:54'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-20T18:01:58'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+- item_id: post-2026-09-17-0001
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: post
+  text: 'Die deutsche Wallet heisst D-you.
+
+    Die Schweizer Wallet heisst Swi-yu.
+
+    Und Frankreich?
+
+
+    Ich war bereit für den nächsten «-you»-Wortwitz.
+
+
+    Plot Twist: France Identité. 😄
+
+
+    Diese Woche war ein grossartiges Meeting. Ich bin stolz, Teil dieser Reise zu
+    sein. Mir gefällt dass mit Wallet die Menschen anfangen signierte Credentials
+    zu verifizieren und dem vertrauen.
+
+
+    Bei aller Wallet-Zukunft bleibt für mich eine praktische Frage: Wie prüft ihr
+    signierte PDFs, bevor ihr sie freigebt oder archiviert?
+
+
+    Fragen? Sehr gern per Kommentar oder DM.
+
+
+    Vor dem Archivieren prüfen statt hoffen:
+
+    https://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice
+
+    — für eine kurze Demo/Beratung: DM oder Kommentar.
+
+
+    #Compliance #eIDAS #RecordsManagement'
+  source_url: null
+  published_url: https://www.linkedin.com/feed/update/urn:li:activity:7506634805371920384/
+  published_at: '2026-09-18T10:46:45'
+  last_checked_at: '2026-09-20T18:02:03'
+  last_error: ''
+  snapshots:
+  - captured_at: '2026-09-19T18:01:59'
+    reactions: 9
+    comments: 6
+    replies: 2
+    reposts: null
+    impressions: 3347
+  - captured_at: '2026-09-20T18:02:03'
+    reactions: 9
+    comments: 6
+    replies: 2
+    reposts: null
+    impressions: 3866
+- item_id: comment-2026-09-13-0007
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: comment
+  text: 'For me, the uncomfortable bit is not that the next privileged user may be
+    software; it is that nobody may feel personally responsible for its keys. An AI
+    agent with standing access is like a keyring that never sleeps—give it an owner,
+    the fewest keys possible, short expiry dates, and a trail humans can review. I
+    would add a qualified signature, so liability is clear, even if someone gives
+    acces to his agent. #Compliance #eIDAS #RecordsManagement'
+  source_url: https://lnkd.in/p/ezCYArrZ
+  published_url: null
+  published_at: '2026-09-18T14:55:26'
+  last_checked_at: '2026-09-20T18:02:08'
+  last_error: ''
+  snapshots:
+  - captured_at: '2026-09-19T18:02:03'
+    reactions: 1
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-20T18:02:08'
+    reactions: 1
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+- item_id: comment-2026-09-15-0008
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: comment
+  text: 'Ich finde den Hinweis wichtig: Nicht jeder Kontrollverlust ist technisch
+    unvermeidbar. Gerade deshalb sollten wir nüchtern trennen, was ein System tatsächlich
+    getan hat und welche menschliche Entscheidung davorstand. Kontrolle ist nämlich
+    bereits verloren, da ich als Nutzer die Kontrolle über die Human Interfaces (Browser)
+    direkt abgeben kann zu einem Agenten. Damit ist die Kontrolle bereits weg, und
+    Systeme online müssen nun mit Agenten und Menschen über gleiche HTML Webseite
+    klar kommen müssen #Compliance #eIDAS #RecordsManagement'
+  source_url: https://www.linkedin.com/feed/update/urn:li:share:7505489927829123072/
+  published_url: https://www.linkedin.com/feed/update/urn:li:activity:7506824671003181056/
+  published_at: '2026-09-18T23:21:07'
+  last_checked_at: '2026-09-20T18:02:13'
+  last_error: ''
+  snapshots:
+  - captured_at: '2026-09-19T18:02:08'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-20T18:02:13'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+- item_id: comment-2026-09-15-0009
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: comment
+  text: 'For me, cross-border recognition becomes real when the evidence behind a
+    qualified signature travels as clearly as the document itself. Citizens, businesses
+    and public authorities should be able to verify what was checked, under which
+    trust framework, and record that decision for later. Otherwise, mutual recognition
+    is a bridge with no inspection log. We built a discrete validator for checking
+    signature without sharing document. #Compliance #eIDAS #RecordsManagement'
+  source_url: https://www.linkedin.com/feed/update/urn:li:share:7505531496049479682/
+  published_url: null
+  published_at: '2026-09-19T13:39:31'
+  last_checked_at: '2026-09-20T18:02:18'
+  last_error: ''
+  snapshots:
+  - captured_at: '2026-09-19T18:02:13'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-20T18:02:18'
+    reactions: 1
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+- item_id: comment-2026-09-15-0010
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: comment
+  text: “AI-Native” caught me off guard too. Apparently we have reached the point
+    where even a CV can sound like it was born with a neural network instead of a
+    hometown. I laughed—and I am still not entirely sure what the label is meant to
+    tell me.
+  source_url: https://lnkd.in/p/e6y4J_ys
+  published_url: null
+  published_at: '2026-09-19T14:18:14'
+  last_checked_at: '2026-09-20T18:02:23'
+  last_error: ''
+  snapshots:
+  - captured_at: '2026-09-19T18:02:18'
+    reactions: 1
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+  - captured_at: '2026-09-20T18:02:23'
+    reactions: 1
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+- item_id: comment-2026-09-15-0012
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: comment
+  text: 'Great to see the team putting Wallet Unit Attestations and ZKPs on the table—well
+    done. In real records and compliance workflows, how do you combine minimal disclosure
+    with enough verifiable evidence to retrace a decision later? We developed ZKP
+    signature validation, a descrete, so we never see the document. #Compliance #eIDAS
+    #RecordsManagement'
+  source_url: https://lnkd.in/p/eS7D7xT6
+  published_url: null
+  published_at: '2026-09-20T17:45:36'
+  last_checked_at: '2026-09-20T18:02:28'
+  last_error: ''
+  snapshots:
+  - captured_at: '2026-09-20T18:02:28'
+    reactions: null
+    comments: null
+    replies: null
+    reposts: null
+    impressions: null
+- item_id: comment-2026-09-13-0005
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: comment
+  text: 'I like the distinction: an attribute sitting in the PID is not the same as
+    the user disclosing it. For cross-border workflows, assuming every national wallet
+    contains the same drawers is asking for trouble; build around the common minimum,
+    then request more only when it is genuinely needed. I''m curious how fraud detection
+    will change as you have selective disclosure in the PID #Compliance #eIDAS #RecordsManagement'
+  source_url: https://lnkd.in/p/ekbPXqmf
+  published_url: null
+  published_at: '2026-09-21T10:30:41'
+  last_checked_at: null
+  last_error: ''
+  snapshots: []
+- item_id: comment-2026-09-16-0001
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: comment
+  text: 'I would add lesson 10: an agent sometimes needs a compliance decision before
+    it can safely continue with the next agentic step. That is why we are building
+    MCP access around our Business Identity Validator and Document Validator—so identity,
+    authority and signed-document checks can become explicit parts of the workflow,
+    not an afterthought once the agent has already acted. #Compliance #eIDAS #RecordsManagement
+    #MCP'
+  source_url: https://lnkd.in/p/eJnzp7CR
+  published_url: null
+  published_at: '2026-09-21T10:32:04'
+  last_checked_at: null
+  last_error: ''
+  snapshots: []
+- item_id: comment-2026-09-16-0002
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: comment
+  text: 'I agree: compliance is necessary, but trust disappears the moment security
+    fails. For citizens, digital identity also has to work simply; for operations,
+    it must provide verifiable data without creating a new exposure point. We have
+    had good experience with the Swisscom Document Validator: it makes back-office
+    checks more efficient while the PDF stays in the organisation’s own environment
+    and only its hash is created locally. #Compliance #eIDAS #RecordsManagement #DigitalIdentity'
+  source_url: https://lnkd.in/p/eQwi9XV8
+  published_url: https://www.linkedin.com/feed/update/urn:li:activity:7507749541568339968/
+  published_at: '2026-09-21T12:36:16'
+  last_checked_at: null
+  last_error: ''
+  snapshots: []
+- item_id: post-2026-09-12-0004
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: post
+  text: 'Ein grüner Haken im Nebel ist wie eine Ampel, von der ich nur die Farbe sehe.
+    Beruhigend? Ja. Genug für eine belastbare Entscheidung? Eher nicht.
+
+
+    Für Records-Teams, Vertragsadministration und Compliance Ops mit regelmässig eingehenden
+    signierten PDFs steckt die Arbeit hinter dem Haken:
+
+
+    - Welche ZertES-/eIDAS-Signatur wurde geprüft?
+
+    - Welche Zertifikatsinformationen tragen das Ergebnis?
+
+    - Was muss dokumentiert sein, damit die Entscheidung Monate später nachvollziehbar
+    bleibt?
+
+
+    Der Swisscom Document Validator prüft die Signatur und wertet Zertifikatsinformationen
+    belastbarer aus. Die PDF bleibt in der eigenen Umgebung; lokal wird ihr Hash gebildet.
+    Also Kein Aufwand, nur grünes Licht direkt im Prozess anwendbar für sensitive
+    oder grosse Dokumente, weil das Dokument ihren Browser nicht verlässt.
+
+
+    Welche Details müssen bei euch sichtbar bleiben, damit aus dem grünen Licht kein
+    späteres Rätsel wird?
+
+
+    Vor dem Archivieren prüfen statt hoffen:
+
+    https://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice
+
+    — für eine kurze Demo/Beratung: DM oder Kommentar.
+
+
+    #Compliance #eIDAS #RecordsManagement'
+  source_url: null
+  published_url: https://www.linkedin.com/feed/update/urn:li:activity:7508787945420664832/
+  published_at: '2026-09-24T09:22:34'
+  last_checked_at: null
+  last_error: ''
+  snapshots: []
+- item_id: post-2026-09-13-0002
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: post
+  text: 'Vor einer Demo würde ich keine Folienschlacht starten. Ich würde einer signiertes
+    PDF mit sensitiven Daten oder mit vielen Bilddaten und dadurch grosses Dokument
+    Minuten lang mit Stoppuhr und Klemmbrett durch den Prozess folgen, wo der Validator
+    ein Upload bedeutet.
+
+
+    Meine Generalprobe für IT/Security, Records und Legal Ops:
+
+
+    1. Wo liegt die PDF?
+
+    2. Was verlässt die eigene Umgebung?
+
+    3. Welche Signatur- und Zertifikatsinformationen werden ausgewertet?
+
+    4. Wer trifft danach die Entscheidung?
+
+
+    Beim Swisscom Document Validator bleibt die PDF in der eigenen Umgebung, sogar
+    im Prozess, ihr Hash wird lokal gebildet. Er prüft ZertES-/eIDAS-signierte PDFs
+    beziehungsweise deren Signatur- und Zertifikatsinformationen belastbarer. Der
+    Business Identity Validator kann Kontext zu Zeichner, Unternehmen und Berechtigung
+    ergänzen.
+
+
+    Würde euer heutiger Prüfprozess diesen 15-Minuten-Test bestehen?
+
+
+    Vor dem Archivieren prüfen statt hoffen:
+
+    https://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice
+
+    — für eine kurze Demo/Beratung: DM oder Kommentar.
+
+
+    #Compliance #eIDAS #RecordsManagement'
+  source_url: null
+  published_url: https://www.linkedin.com/feed/update/urn:li:activity:7509181353901387776/
+  published_at: '2026-09-25T11:25:49'
+  last_checked_at: null
+  last_error: ''
+  snapshots: []
+- item_id: post-2026-09-15-0002
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: post
+  text: "Die meiste Compliance-Arbeit passiert heute im Browser.\n\nBis ein Vertrag\
+    \ geprüft werden muss.\n\nDann heisst es plötzlich: PDF herunterladen, Adobe Reader\
+    \ öffnen, Signaturen suchen, Zertifikate einzeln prüfen und das Ergebnis wieder\
+    \ in den eigentlichen Prozess übertragen.\n\nEin kleiner Kontextwechsel mit erstaunlich\
+    \ viel Handarbeit. Der Mensch spielt dabei Kurier zwischen Browser, Dokument und\
+    \ Compliance-Prozess.\n\nWir haben deshalb den Swisscom Document Validator als\
+    \ diskrete Prüfung direkt in den Browser integriert. Er prüft bei ZertES-/eIDAS-signierten\
+    \ PDFs die Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen\
+    \ Umgebung, ihr Hash wird lokal gebildet.\n\nDer Business Identity Validator zusätzlichen\
+    \ Kontext zu Zeichner, Unternehmen und Berechtigung liefern.\n\nSo wird aus der\
+    \ Vertragsprüfung ein Schritt im Prozess statt ein Ausflug durch mehrere Programme.\
+    \ \n\nWie viele Kontextwechsel braucht eure Vertragsprüfung heute?\n\nVor dem\
+    \ Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n\
+    — für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement"
+  source_url: null
+  published_url: https://www.linkedin.com/feed/update/urn:li:activity:7509181475909435407/
+  published_at: '2026-09-25T11:26:18'
+  last_checked_at: null
+  last_error: ''
+  snapshots: []
+- item_id: post-2026-09-13-0001
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: post
+  text: 'Eine signierte PDF macht im Unternehmen manchmal mehr Stationen als ein Regionalzug.
+
+
+    Posteingang. Fachbereich. ECM. Archiv.
+
+
+    Und an jeder Übergabe droht stille Post: Aus «Signatur geprüft» wird erst «müsste
+    geprüft sein» und am Ende «hat sicher jemand gemacht». Mein Lieblingssatz für
+    spätere Rückfragen.
+
+
+    Für mich gehört der Kontrollpunkt deshalb klar vor die Freigabe oder Archivierung.
+    Der Swisscom Document Validator prüft bei ZertES-/eIDAS-signierten PDFs Signatur
+    und Zertifikatsinformationen belastbarer. Die PDF bleibt in der eigenen Umgebung,
+    ihr Hash wird lokal gebildet.
+
+
+    Das Prüfergebnis unterstützt Records- und Compliance-Teams ohne Stille Post, integrativ
+    in deiner Umgebung, egal ob sensitive Daten oder grosse Dokumente
+
+
+    An welcher Übergabe wird «geprüft» bei euch zu einem nachvollziehbaren Prozessschritt?
+
+
+    Vor dem Archivieren prüfen statt hoffen:
+
+    https://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice
+
+    — für eine kurze Demo/Beratung: DM oder Kommentar.
+
+
+    #Compliance #eIDAS #RecordsManagement'
+  source_url: null
+  published_url: https://www.linkedin.com/feed/update/urn:li:activity:7510235696347934720/
+  published_at: '2026-09-28T09:15:24'
+  last_checked_at: null
+  last_error: ''
+  snapshots: []
+- item_id: post-2026-09-15-0001
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: post
+  text: 'Gepäckkontrollen werden für mich spätestens dann unangenehm, wenn fremde
+    Menschen meinen Koffer öffnen. Noch schöner: Der Koffer ist etwas grösser, und
+    plötzlich passt er nicht mehr in den vorgesehenen Ablauf.
+
+
+    Bei sensiblen Dokumenten will ich genau diese zwei Situationen vermeiden:
+
+    Dass Dritte in den Inhalt schauen.
+
+    Und dass ein grosses PDF wegen eines Upload-Umwegs zum Sonderfall wird.
+
+
+    Für mich heisst Compliance auch: Ein Prüfschritt gehört direkt in den eigenen
+    Prozess. Ich will weder das Dokument noch interne Compliance-Arbeitsschritte nach
+    draussen geben. Und nicht die Dokumentengrösse sollte bestimmen, ob der Prozess
+    funktioniert.
+
+
+    Der Swisscom Document Validator prüft ZertES-/eIDAS-signierte PDFs sowie Signatur-
+    und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, ihr Hash
+    wird lokal gebildet.
+
+
+    So bleibt auch der unangenehme Blick in den Koffer dort, wo er hingehört.
+
+
+    Wo müssen sensible oder grosse Dokumente heute noch euren vorgesehenen Ablauf
+    verlassen?
+
+
+    Vor dem Archivieren prüfen statt hoffen:
+
+    https://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice
+
+    — für eine kurze Demo/Beratung: DM oder Kommentar.
+
+
+    #Compliance #eIDAS #RecordsManagement'
+  source_url: null
+  published_url: https://www.linkedin.com/feed/update/urn:li:activity:7510235760961187840/
+  published_at: '2026-09-28T09:15:40'
+  last_checked_at: null
+  last_error: ''
+  snapshots: []
+- item_id: post-2026-09-21-0001
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: post
+  text: 'Die Mantelnummer ist die digitale Signatur der Garderobe.
+
+
+    Niemand interessiert sich dafür, was sonst noch auf dem Zettel steht. Entscheidend
+    ist, ob Nummer 47 am Mantel zu Nummer 47 in meiner Hand passt.
+
+
+    Bei elektronisch signierten PDFs ist es ähnlich: Entscheidend ist nicht der sichtbare
+    Kringel im Dokument. Die relevanten Signaturinformationen stecken im Zertifikat.
+
+
+    Das sichtbare Signaturbild hat für die technische Prüfung keine Bedeutung. Es
+    kann aber Vertrauen vorspielen – und damit zum Angriffsvektor werden. Sieht offiziell
+    aus. Ist nur leider kein Prüfergebnis.
+
+
+    Darum setzen wir auf unseren diskreten Swisscom Document Validator. Er prüft bei
+    ZertES-/eIDAS-signierten PDFs Signatur- und Zertifikatsinformationen. Die PDF
+    bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.
+
+
+    Prüft ihr noch den Kringel – oder schon das Zertifikat?
+
+
+    Vor dem Archivieren prüfen statt hoffen:
+
+    https://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice
+
+    — für eine kurze Demo/Beratung: DM oder Kommentar.
+
+
+    #Compliance #eIDAS #RecordsManagement #DigitaleSignatur'
+  source_url: null
+  published_url: https://www.linkedin.com/feed/update/urn:li:activity:7510235878955495424/
+  published_at: '2026-09-28T09:16:08'
+  last_checked_at: null
+  last_error: ''
+  snapshots: []
+- item_id: comment-2026-09-15-0002
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: comment
+  text: '“Standards-compliant on paper” is exactly where the easy part ends for me.
+    Right now we are providing verifier for signatures on PDF with privacy first discrete
+    method, wallet has a long way to go. #Compliance #eIDAS #RecordsManagement'
+  source_url: https://lnkd.in/p/eMEnq-m7
+  published_url: https://www.linkedin.com/feed/update/urn:li:activity:7510238221289738240/
+  published_at: '2026-09-28T09:25:26'
+  last_checked_at: null
+  last_error: ''
+  snapshots: []
+- item_id: post-2026-09-18-0001
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: post
+  text: 'Ein guter AI-Agent muss nicht nur wissen, welches Tool als Nächstes dran
+    ist.
+
+
+    Er sollte auch wissen, wann er die Hände von der Tastatur nehmen muss.
+
+
+    Bei eingehenden signierten PDFs liegt dieser Moment für mich vor Freigabe oder
+    Archivierung – in Records/Posteingang, Vertragsadministration und Compliance/Legal
+    Ops.
+
+
+    Wir bauen MCP-Zugriff rund um Business Identity Validator und Document Validator.
+    Damit sollen Prüfinformationen als explizite Unterbrechung im agentischen Ablauf
+    angefragt werden können, bevor der nächste Tool-Schritt folgt.
+
+
+    Der Document Validator prüft bei ZertES-/eIDAS-signierten PDFs Signatur- und Zertifikatsinformationen.
+    Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet. Der BIV
+    kann Kontext zu Zeichner, Unternehmen und Berechtigung ergänzen.
+
+
+    Wo stoppt euer Agent vor dem nächsten Tool-Schritt?
+
+
+    Vor dem Archivieren prüfen statt hoffen:
+
+    https://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice
+
+    — für eine kurze Demo/Beratung: DM oder Kommentar.
+
+
+    #Compliance #eIDAS #RecordsManagement'
+  source_url: null
+  published_url: https://www.linkedin.com/feed/update/urn:li:activity:7510333851043459072/
+  published_at: '2026-09-28T15:45:26'
+  last_checked_at: null
+  last_error: ''
+  snapshots: []
+- item_id: post-2026-09-18-0002
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: post
+  text: "«Bei Bedarf prüfen» ist für mich ungefähr so präzise wie ein Horoskop.\n\n\
+    Klingt erstaunlich passend. Hilft am Dienstag um 16:40 Uhr bei der nächsten PDF\
+    \ nur wenig.\n\nIch hätte für Records/Posteingang, Vertragsadministration und\
+    \ Compliance Ops lieber eine Regel, die schon vor der PDF da ist:\n\n- eingehende\
+    \ signierte PDF\n- Freigabe oder Archivierung vorgesehen\n- sensible oder auditrelevante\
+    \ Unterlagen\n\nDann ist vorab geklärt, welche Dokumente in den Prüfschritt gehen,\
+    \ wer das Ergebnis beurteilt und wo die Entscheidung festgehalten wird.\n\nDer\
+    \ Swisscom Document Validator prüft ZertES-/eIDAS-signierte PDFs sowie Signatur-\
+    \ und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, ihr Hash\
+    \ wird lokal gebildet. \n\nIst euer Prüfauslöser eine klare Regel oder ein freundliches\
+    \ «bei Bedarf»?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n\
+    — für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement"
+  source_url: null
+  published_url: https://www.linkedin.com/feed/update/urn:li:activity:7510627084633800706/
+  published_at: '2026-09-29T11:10:39'
+  last_checked_at: null
+  last_error: ''
+  snapshots: []
+- item_id: post-2026-09-16-0002
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: post
+  text: 'Ein Posteingang ist kein Besteckkasten. ZertES und eIDAS sortieren sich dort
+    nicht freiwillig in getrennte Fächer.
+
+
+    Für Records/Posteingang, Vertragsadministration und Compliance Ops kommt beides
+    im selben Arbeitskorb an: eingehende signierte PDFs aus unterschiedlichen Regelwerken.
+
+
+    Ich würde dafür keinen kleinen Schubladenschrank neben das ECM stellen. Ich würde
+    einen klaren operativen Kontrollpunkt setzen.
+
+
+    Der Swisscom Document Validator prüft ZertES-/eIDAS-signierte PDFs und liefert
+    Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung,
+    ihr Hash wird lokal gebildet.
+
+
+    Sucht euer Team im Eingang erst die passende Prüfschublade – oder gibt es einen
+    klaren Kontrollpunkt für beide?
+
+
+    Vor dem Archivieren prüfen statt hoffen:
+
+    https://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice
+
+    — für eine kurze Demo/Beratung: DM oder Kommentar.
+
+
+    #Compliance #eIDAS #RecordsManagement'
+  source_url: null
+  published_url: null
+  published_at: '2026-10-01T09:05:34'
+  last_checked_at: null
+  last_error: ''
+  snapshots: []
+- item_id: post-2026-09-16-0001
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: post
+  text: 'Digitalisierung sollte Prozesse effizienter machen. Eigentlich selbstverständlich.
+
+
+    Bei der digitalen Signatur endet die Effizienz aber oft genau dort, wo das Dokument
+    im Backoffice ankommt.
+
+
+    Die Signatur wurde eingeführt. Records/Posteingang, Vertragsadministration und
+    Compliance Ops prüfen eingehende signierte PDFs trotzdem manuell. Denn wie die
+    Gegenpartei signiert, lässt sich nicht standardisieren. Wie wir diese Dokumente
+    vor Annahme, Freigabe oder Archivierung prüfen, dagegen schon.
+
+
+    Genau dort wollen wir aus verifizierbaren Daten einen echten Effizienzgewinn machen.
+
+
+    Der Swisscom Document Validator liefert bei ZertES-/eIDAS-signierten PDFs Signatur-
+    und Zertifikatsinformationen für einen festen Kontrollpunkt im eigenen Prozess.
+    Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.
+
+
+    So wird die digitale Signatur nicht nur vorne digital, sondern schafft auch im
+    Backoffice einen Mehrwert.
+
+
+    Wie effizient ist eure digitale Signatur, nachdem das Dokument eingegangen ist?
+
+
+    Vor dem Archivieren prüfen statt hoffen:
+
+    https://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice
+
+    — für eine kurze Demo/Beratung: DM oder Kommentar.
+
+
+    #Compliance #eIDAS #RecordsManagement #Digitalisierung'
+  source_url: null
+  published_url: https://www.linkedin.com/feed/update/urn:li:activity:7511374494020685824/
+  published_at: '2026-10-01T12:40:35'
+  last_checked_at: null
+  last_error: ''
+  snapshots: []
+- item_id: post-2026-09-17-0002
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: post
+  text: 'Ein Cursor hat keinen Pass. Er klickt immer gleich höflich – egal, ob dahinter
+    ein Mensch oder ein Agent sitzt.
+
+
+    Genau das ist die Grenze der Oberfläche: Am Zeiger selbst erkenne ich den Bediener
+    nicht.
+
+
+    Für Records/Posteingang, Vertragsadministration und Compliance Ops wird deshalb
+    wichtig, was neben dem Cursor prüfbar ist. Bei einer eingehenden signierten PDF
+    sind das belastbare Informationen statt eine Vermutung über die Hand am Bildschirm.
+
+
+    Der Swisscom Document Validator prüft bei ZertES-/eIDAS-signierten PDFs Signatur-
+    und Zertifikatsinformationen. Der Business Identity Validator kann Kontext zu
+    Zeichner, Unternehmen und Berechtigung ergänzen.
+
+
+    Welches Vertrauenssignal soll bei euch neben dem Cursor zählen, wenn Mensch und
+    Agent an der Oberfläche gleich aussehen?
+
+
+    Vor dem Archivieren prüfen statt hoffen:
+
+    https://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice
+
+    — für eine kurze Demo/Beratung: DM oder Kommentar.
+
+
+    #Compliance #eIDAS #RecordsManagement'
+  source_url: null
+  published_url: https://www.linkedin.com/feed/update/urn:li:activity:7511741951193358336/
+  published_at: '2026-10-02T13:00:44'
+  last_checked_at: null
+  last_error: ''
+  snapshots: []
+- item_id: post-2026-09-21-0002
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: post
+  text: 'Der Absendername im Posteingang ist wie die Klingelbeschriftung.
+
+
+    Nett zu wissen, wer läutet. Noch kein Prüfbericht für das Paket.
+
+
+    In Records/Posteingang, Vertragsadministration und Compliance Ops kommen signierte
+    PDFs über bekannte Domains, vertraute E-Mail-Adressen oder gewohnte Portale an.
+    Das sagt etwas über den Eingangskanal. Nicht aber, welche Signatur- und Zertifikatsinformationen
+    in der PDF vorliegen.
+
+
+    Darum würde ich zwei Fragen nicht in denselben Briefkasten werfen:
+
+
+    Wie kam das Dokument an?
+
+    Was lässt sich an der signierten PDF prüfen?
+
+
+    Der Swisscom Document Validator prüft bei entsprechend ZertES-/eIDAS-signierten
+    PDFs Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung,
+    ihr Hash wird lokal gebildet. Er authentisiert weder den E-Mail-Absender noch
+    das Portal.
+
+
+    Ein vertrauter Bote und ein geprüftes Paket sind zwei verschiedene Dinge.
+
+
+    Trennt euer Eingang heute klar zwischen «kam über einen vertrauten Kanal» und
+    «die signierte PDF wurde geprüft»?
+
+
+    Vor dem Archivieren prüfen statt hoffen:
+
+    https://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice
+
+    — für eine kurze Demo/Beratung: DM oder Kommentar.
+
+
+    #Compliance #eIDAS #RecordsManagement'
+  source_url: null
+  published_url: https://www.linkedin.com/feed/update/urn:li:activity:7512056526707179520/
+  published_at: '2026-10-03T09:50:45'
+  last_checked_at: null
+  last_error: ''
+  snapshots: []
+- item_id: post-2026-09-12-0003
+  campaign: DocVal + BIV — vor Archiv / vor Freigabe
+  campaign_version: 1
+  kind: post
+  text: 'Ein signiertes PDF kommt per Mail rein – und dann?
+
+
+    Oft wird der Anhang erstmal heruntergeladen, irgendwo hochgeladen, geprüft und
+    danach wieder zurück in den eigentlichen Prozess gebracht.
+
+
+    Eigentlich unnötig kompliziert.
+
+
+    Wir haben deshalb den Swisscom Document Validator direkt in Outlook integriert.
+    Signierte PDF-Anhänge können damit direkt dort geprüft werden, wo sie ankommen.
+
+
+    Der Validator prüft unter anderem die ZertES-/eIDAS-Signatur und die Zertifikatsinformationen.
+    Das PDF selbst bleibt dabei in der eigenen Umgebung, der Hash wird lokal gebildet.
+
+
+    Für mich ist das ein bisschen wie eine Eingangskontrolle direkt an der Tür: prüfen,
+    bevor das Dokument archiviert oder weiterverarbeitet wird – ohne zusätzliche Umwege.
+
+
+    Wichtig ist aber auch: Eine technisch gültige Signatur bedeutet noch nicht automatisch,
+    dass jemand für ein Unternehmen unterschreiben durfte.
+
+
+    Das sind zwei unterschiedliche Fragen:
+
+
+    Ist die Signatur gültig?
+
+
+    Und war die Person auch zeichnungsberechtigt?
+
+
+    Genau für den zweiten Teil kann unser Business Identity Validator zusätzlichen
+    Kontext zu Person, Unternehmen und Berechtigung liefern.
+
+
+    Mich würde interessieren: Wie läuft das bei euch heute? Wie viele Stationen durchläuft
+    ein signierter Anhang, bevor er geprüft und archiviert wird?
+
+
+    https://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice
+
+
+    #Compliance #eIDAS #DigitalSignature #DigitalTrust'
+  source_url: null
+  published_url: https://www.linkedin.com/feed/update/urn:li:activity:7512076633076482049/
+  published_at: '2026-10-03T11:10:39'
+  last_checked_at: null
+  last_error: ''
+  snapshots: []

@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Content-Erzeugung über Codex CLI und projektbezogene Codex-Agenten.
+set -euo pipefail
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+export PYTHONPATH="$ROOT/src"
+PY="$ROOT/.venv/bin/python"
+[ -x "$PY" ] || PY="$(command -v python3)"
+cd "$ROOT"
+exec "$PY" -m linkedin_agents.brain "$@"

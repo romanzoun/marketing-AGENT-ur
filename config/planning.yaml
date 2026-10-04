@@ -1,0 +1,7 @@
+days_ahead: 14
+weekdays_start: 09:00
+weekdays_end: '16:00'
+saturday_start: 09:00
+saturday_end: '13:00'
+sunday_start: '16:00'
+sunday_end: '20:00'

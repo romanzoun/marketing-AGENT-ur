@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Bequemer Wrapper für die deterministischen LinkedIn-Werkzeuge.
+# Nutzung:  ./bin/li wall --keywords ai --limit 10
+set -euo pipefail
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+export PYTHONPATH="$ROOT/src"
+exec python3 -m linkedin_agents.tools "$@"

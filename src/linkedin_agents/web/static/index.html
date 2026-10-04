@@ -1,0 +1,1988 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sara's Marketing AGENT-ur</title>
+<style>
+  :root{
+    --bg:#0f1218; --panel:#171c26; --panel2:#1f2532; --line:#2b3342;
+    --fg:#e8ecf4; --muted:#95a0b4; --accent:#4d9cff; --ok:#37c07a; --warn:#f0b429; --bad:#f2545b;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+       background:var(--bg);color:var(--fg)}
+  header{padding:18px max(24px,calc((100vw - 1440px)/2));border-bottom:1px solid var(--line);display:flex;
+         align-items:center;gap:16px;flex-wrap:wrap;background:var(--panel)}
+  h1{font-size:19px;margin:0;letter-spacing:.2px}
+  h1 span{color:var(--accent)}
+  select,button,input,textarea{font:inherit;color:var(--fg);background:var(--panel2);
+    border:1px solid var(--line);border-radius:8px;padding:8px 11px}
+  button{cursor:pointer}
+  button:hover{border-color:var(--accent)}
+  button:disabled{cursor:not-allowed;opacity:.45}
+  button.primary{background:var(--accent);border-color:var(--accent);color:#05121f;font-weight:600}
+  button.danger{border-color:#5a2a2e;color:#ffb3b7}
+  button.danger:hover{background:#3a1b1e}
+  nav{display:flex;gap:6px;padding:12px max(24px,calc((100vw - 1440px)/2));
+    border-bottom:1px solid var(--line);flex-wrap:wrap}
+  nav button{background:transparent;border:1px solid transparent;color:var(--muted)}
+  nav button.active{background:var(--panel2);border-color:var(--line);color:var(--fg)}
+  main{width:min(calc(100% - 48px),1440px);margin:0 auto;padding:22px 0}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;
+        padding:16px;margin-bottom:14px}
+  .row{display:flex;gap:14px;flex-wrap:wrap;align-items:flex-start}
+  .grow{flex:1;min-width:280px}
+  .pill{display:inline-block;padding:2px 9px;border-radius:999px;font-size:12px;
+        border:1px solid var(--line);color:var(--muted);margin-right:6px}
+  .pill.post{color:#8fd0ff;border-color:#274a63}
+  .pill.comment{color:#ffd48f;border-color:#63512a}
+  .pill.reshare{color:#c8a7ff;border-color:#554078}
+  .pill.connection{color:#8ff0c7;border-color:#28634d}
+  .pill.due{color:#05121f;background:var(--warn);border-color:var(--warn);font-weight:600}
+  textarea{width:100%;min-height:120px;resize:vertical;line-height:1.5}
+  img.preview{max-width:260px;border-radius:10px;border:1px solid var(--line);display:block}
+  .image-panel{width:290px;max-width:100%;padding:12px;background:#111722;
+    border:1px solid var(--line);border-radius:10px}
+  .image-panel h4{margin:0 0 9px}
+  .image-panel img.preview{width:100%;max-width:none;aspect-ratio:1;object-fit:cover}
+  .image-panel input[type="text"]{width:100%;margin-top:9px}
+  .image-panel .actions{margin-top:8px}
+  .image-panel .source{overflow-wrap:anywhere;margin:8px 0 0}
+  .image-error{color:#ff9da2;margin:8px 0 0;font-size:12.5px}
+  .upload-button{display:inline-block;cursor:pointer;color:var(--fg);background:var(--panel2);
+    border:1px solid var(--line);border-radius:8px;padding:8px 11px}
+  .upload-button:hover{border-color:var(--accent)}
+  .upload-button input{display:none}
+  table{width:100%;border-collapse:collapse}
+  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--muted);font-weight:600;font-size:13px}
+  .table-scroll{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .jobs-table{min-width:1040px}
+  .job-campaign{width:190px;max-width:190px}
+  .job-actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  .muted{color:var(--muted)}
+  .mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px}
+  .dot{width:9px;height:9px;border-radius:50%;display:inline-block;margin-right:7px}
+  .dot.ok{background:var(--ok)} .dot.bad{background:var(--bad)} .dot.warn{background:var(--warn)}
+  .actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:12px}
+  .source-post{margin:14px 0;padding:14px;background:#0b0e14;border:1px solid var(--line);
+    border-radius:9px;white-space:pre-wrap;overflow-wrap:anywhere}
+  .source-post h4{margin:0 0 8px;color:var(--muted);font-size:13px}
+  .field-title{display:block;margin:12px 0 6px;font-size:13px;color:var(--muted)}
+  .evaluation{margin:12px 0;padding:11px 13px;border-radius:9px;background:var(--panel2);
+    border-left:3px solid var(--warn)}
+  .evaluation.high{border-left-color:var(--ok)}
+  .evaluation.low{border-left-color:var(--bad)}
+  .evaluation p{margin:4px 0 0}
+  .calendar-card{padding:18px}
+  .planning-overview{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:14px;align-items:start}
+  .planning-suggestion time{display:block;font-size:22px;font-weight:700;margin:10px 0 4px}
+  .calendar-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;
+    flex-wrap:wrap;margin-bottom:12px}
+  .calendar-toolbar h3{margin:0;text-transform:capitalize}
+  .calendar-nav{display:flex;align-items:center;gap:8px}
+  .calendar-weekdays,.calendar-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px}
+  .calendar-weekdays{margin-bottom:6px;color:var(--muted);font-size:12px;text-align:center}
+  .calendar-day{min-height:98px;padding:8px;background:#121722;border:1px solid var(--line);
+    border-radius:9px;text-align:left;color:var(--fg);display:flex;flex-direction:column;gap:4px}
+  .calendar-day:hover{border-color:var(--accent);background:#192233}
+  .calendar-day.outside{opacity:.38}
+  .calendar-day.today .calendar-number{background:var(--accent);color:#07121f}
+  .calendar-day.selected{outline:2px solid var(--accent);outline-offset:1px}
+  .calendar-day.load-light{background:#17231f}
+  .calendar-day.load-medium{background:#292419;border-color:#665421}
+  .calendar-day.load-high{background:#311d20;border-color:#79353a}
+  .calendar-number{align-self:flex-start;min-width:25px;height:25px;border-radius:999px;
+    display:inline-flex;align-items:center;justify-content:center;font-weight:600}
+  .calendar-count{font-size:12px;line-height:1.3;white-space:nowrap}
+  .calendar-count.post{color:#8fd0ff}.calendar-count.comment{color:#ffd48f}
+  .calendar-count.reshare{color:#c8a7ff}
+  .campaign-marks{display:flex;gap:4px;flex-wrap:wrap;margin-top:auto}
+  .campaign-mark{width:8px;height:8px;border-radius:2px;background:var(--campaign-color)}
+  .campaign-legend{display:inline-flex;align-items:center;gap:5px}
+  .calendar-free{font-size:12px;color:var(--muted);margin-top:auto}
+  .calendar-legend{display:flex;gap:14px;flex-wrap:wrap;margin-top:12px;color:var(--muted);font-size:13px}
+  .legend-mark{width:9px;height:9px;border-radius:50%;display:inline-block;margin-right:5px}
+  .legend-mark.post{background:#4d9cff}.legend-mark.comment{background:#f0b429}
+  .legend-mark.reshare{background:#a875ff}
+  .legend-mark.crowded{background:var(--bad)}
+  .planning-list-head{display:flex;justify-content:space-between;align-items:center;gap:10px;
+    flex-wrap:wrap;margin:20px 0 12px}
+  .planning-list-head h3{margin:0}
+  .metric-grid{display:grid;grid-template-columns:repeat(5,minmax(120px,1fr));gap:10px;
+    margin:14px 0}
+  .metric{padding:13px;background:#111722;border:1px solid var(--line);border-radius:9px}
+  .metric b{display:block;font-size:22px;color:var(--fg)}
+  .metric span{font-size:12px;color:var(--muted)}
+  .day-load{display:block;width:100%;font-size:12.5px;color:var(--muted)}
+  .day-load.medium{color:var(--warn)}
+  .day-load.high{color:#ff9da2;font-weight:600}
+  .rewrite-box{margin-top:12px;padding:12px;background:#111722;border:1px solid var(--line);
+    border-radius:9px}
+  .rewrite-box textarea{min-height:70px;margin-top:6px}
+  .rewrite-box .actions{margin-top:8px}
+  .reshare-mode{margin:12px 0;padding:10px 12px;border:1px solid #554078;
+    background:#1c1728;border-radius:9px}
+  .empty{color:var(--muted);padding:30px;text-align:center;border:1px dashed var(--line);border-radius:12px}
+  pre{background:#0b0e14;border:1px solid var(--line);border-radius:8px;padding:12px;
+      overflow:auto;max-height:320px;font-size:12.5px}
+  a{color:var(--accent)}
+  .toast{position:fixed;right:20px;bottom:20px;background:var(--panel2);
+    border:1px solid var(--line);border-left:3px solid var(--accent);
+    padding:12px 16px;border-radius:8px;max-width:420px;display:none}
+  .switch{position:relative;display:inline-block;width:40px;height:22px;flex:none}
+  .switch input{opacity:0;width:0;height:0}
+  .slider{position:absolute;inset:0;background:#3a4152;border-radius:999px;cursor:pointer;transition:.15s}
+  .slider:before{content:"";position:absolute;height:16px;width:16px;left:3px;top:3px;
+    background:#e8ecf4;border-radius:50%;transition:.15s}
+  input:checked + .slider{background:var(--ok)}
+  input:checked + .slider:before{transform:translateX(18px)}
+  .toggle-group{display:flex;gap:5px;flex-wrap:wrap;align-items:center}
+  .toggle-option{padding:5px 8px;border-radius:999px;color:var(--muted);font-size:12px}
+  .toggle-option.active,.toggle-option[aria-pressed="true"]{
+    background:var(--ok);border-color:var(--ok);color:#05120c;font-weight:700}
+  .toggle-option.manual.active{background:var(--accent);border-color:var(--accent);color:#05121f}
+  .approval-filters{margin-bottom:14px}
+  .approval-filter.post[aria-pressed="true"]{background:#274a63;border-color:#4d9cff;color:#d8efff}
+  .approval-filter.comment[aria-pressed="true"]{background:#63512a;border-color:#f0b429;color:#fff0ca}
+  .approval-filter.connection[aria-pressed="true"]{background:#28634d;border-color:#37c07a;color:#d5ffec}
+  .approval-filter.reshare[aria-pressed="true"]{background:#554078;border-color:#a875ff;color:#eadcff}
+  .approval-mode-meta{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:7px;
+    max-width:330px;font-size:12px}
+  .field{display:flex;flex-direction:column;gap:4px;margin-bottom:10px}
+  .field label{font-size:12.5px;color:var(--muted)}
+  .field textarea{min-height:64px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+  .inline{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+  dialog{width:min(680px,calc(100% - 32px));color:var(--fg);background:var(--panel);
+    border:1px solid var(--line);border-radius:12px;padding:20px}
+  dialog::backdrop{background:rgba(4,7,12,.72)}
+  dialog h3{margin-top:0}
+  @media(max-width:700px){
+    header{padding:14px 12px}
+    nav{padding:10px 12px}
+    main{width:calc(100% - 24px);padding:16px 0}
+    .calendar-weekdays,.calendar-grid{gap:3px}
+    .calendar-day{min-height:77px;padding:5px}
+    .calendar-count{font-size:10.5px}
+    .metric-grid{grid-template-columns:1fr 1fr}
+    .grid2,.grid4{grid-template-columns:1fr}
+  }
+  @media(max-width:900px){
+    .planning-overview{grid-template-columns:1fr}
+    .table-scroll:has(.jobs-table){overflow:visible}
+    .jobs-table,.jobs-table tbody{display:block;min-width:0}
+    .jobs-table tr:first-child{display:none}
+    .jobs-table tr{display:block;padding:10px 0;border-bottom:1px solid var(--line)}
+    .jobs-table tr:last-child{border-bottom:0}
+    .jobs-table td{display:grid;grid-template-columns:112px minmax(0,1fr);gap:10px;
+      align-items:start;border:0;padding:5px 0;overflow-wrap:anywhere}
+    .jobs-table td::before{content:attr(data-label);color:var(--muted);font-size:12px;font-weight:600}
+    .job-campaign{width:100%;max-width:100%;min-width:0}
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Sara's Marketing <span>AGENT-ur</span></h1>
+  <select id="campaign"></select>
+  <span id="healthBadge" class="muted">Status …</span>
+  <button id="healthCheckButton" onclick="runHealthCheck()">Health Check</button>
+</header>
+
+<nav>
+  <button data-tab="cron" class="active">Cron</button>
+  <button data-tab="jobs">Jobs</button>
+  <button data-tab="ideas">Ideen</button>
+  <button data-tab="approvals">Freigaben</button>
+  <button data-tab="schedule">Planung</button>
+  <button data-tab="analytics">Auswertung</button>
+  <button data-tab="log">Historie</button>
+  <button data-tab="campaigns">Kampagnen</button>
+  <button data-tab="config">Konfiguration</button>
+</nav>
+
+<main id="view"></main>
+<div class="toast" id="toast"></div>
+<dialog id="healthDialog">
+  <div id="healthResult"></div>
+  <div class="actions"><button onclick="document.getElementById('healthDialog').close()">Schließen</button></div>
+</dialog>
+
+<script>
+const V = document.getElementById('view');
+const SEL = document.getElementById('campaign');
+let TAB = 'cron';
+let PLANNING_ITEMS = [];
+let PLANNING_MONTH = null;
+let PLANNING_DAY = null;
+let SCHEDULE_DAY_COUNTS = {};
+let PLANNING_SUGGESTION = null;
+let HISTORY_ITEMS = [];
+let HISTORY_MONTH = null;
+let HISTORY_DAY = null;
+const APPROVAL_KIND_FILTERS = new Set();
+let BULK_SCORE_PERCENT = Number(localStorage.getItem('bulk-score-percent') || 80);
+if (![70, 75, 80, 85, 90, 95].includes(BULK_SCORE_PERCENT)) BULK_SCORE_PERCENT = 80;
+
+const esc = s => (s ?? '').toString().replace(/[&<>"]/g, c =>
+  ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt = s => s ? s.replace('T', ' ') : '—';
+
+function toast(msg, ms = 3500) {
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.style.display = 'block';
+  clearTimeout(t._h); t._h = setTimeout(() => t.style.display = 'none', ms);
+}
+
+async function api(url, opts) {
+  const r = await fetch(url, opts);
+  if (!r.ok) throw new Error((await r.text()).slice(0, 300));
+  return r.json();
+}
+const campaign = () => SEL.value;
+const CAMPAIGN_COLORS = ['#4d9cff','#f0b429','#37c07a','#c879ff','#ff7f66','#48c7c1','#d7d95c','#ed76a7'];
+
+function campaignColor(path) {
+  const campaigns = window.__campaigns || [];
+  const index = Math.max(0, campaigns.findIndex(item => item.path === path));
+  return CAMPAIGN_COLORS[index % CAMPAIGN_COLORS.length];
+}
+
+function campaignLabel(item) {
+  if (!item.campaign_name) return `Kampagne v${item.campaign_version || 1}`;
+  return `${item.campaign_name} · v${item.campaign_version || 1}`;
+}
+
+function itemDomId(item) {
+  if (!item.campaign_path) return item.id;
+  return `${item.id}-${item.campaign_path}-${item.publish_at || ''}`.replace(/[^a-zA-Z0-9_-]/g, '-');
+}
+
+async function loadCampaigns() {
+  const list = await api('/api/campaigns');
+  const previous = SEL.value || localStorage.getItem('selected-campaign');
+  const nameCounts = list.reduce((counts, item) => {
+    counts[item.name] = (counts[item.name] || 0) + 1;
+    return counts;
+  }, {});
+  SEL.innerHTML = list.map(c => {
+    const folder = c.path.split('/').slice(-2, -1)[0] || c.path;
+    const suffix = nameCounts[c.name] > 1 ? ` · v${c.version} · ${folder}` : '';
+    return `<option value="${esc(c.path)}">${esc(c.name + suffix)}</option>`;
+  }).join('');
+  const fallback = [...list].sort((left, right) => (right.version || 0) - (left.version || 0))[0]?.path;
+  SEL.value = list.some(c => c.path === previous) ? previous : (fallback || '');
+  if (SEL.value) localStorage.setItem('selected-campaign', SEL.value);
+  window.__campaigns = list;
+}
+
+async function health() {
+  const b = document.getElementById('healthBadge');
+  try {
+    const h = await api('/api/health');
+    const cls = h.logged_in ? 'ok' : (h.cdp ? 'warn' : 'bad');
+    const txt = h.logged_in ? 'Browser + Login ok'
+              : h.cdp ? 'Browser da, nicht eingeloggt' : 'Browser offline';
+    const brain = h.brain_cli
+      ? ' <span class="pill">KI: Codex</span>'
+      : ' <span class="pill">Keine KI-CLI bereit</span>';
+    b.innerHTML = `<span class="dot ${cls}"></span>${txt}` + brain;
+  } catch { b.innerHTML = '<span class="dot bad"></span>Status unbekannt'; }
+}
+
+function healthState(ok, success, failure) {
+  return `<span class="dot ${ok ? 'ok' : 'bad'}"></span>${esc(ok ? success : failure)}`;
+}
+
+async function runHealthCheck() {
+  const button = document.getElementById('healthCheckButton');
+  const dialog = document.getElementById('healthDialog');
+  const result = document.getElementById('healthResult');
+  button.disabled = true;
+  button.textContent = 'Prüfe …';
+  result.innerHTML = `<h3>Health Check läuft …</h3>
+    <p class="muted">LinkedIn-Login und eine minimale KI-Testfrage werden geprüft.</p>`;
+  dialog.showModal();
+  try {
+    const h = await api('/api/health/check', {
+      method: 'POST', headers: {'X-Health-Check': 'requested'}
+    });
+    const codex = h.brain_clis?.codex || {};
+    const probe = h.probe || {};
+    const overall = h.overall_ok;
+    result.innerHTML = `
+      <h3>${healthState(overall, 'Alles einsatzbereit', 'Handlungsbedarf')}</h3>
+      <table>
+        <tr><th>Prüfung</th><th>Ergebnis</th></tr>
+        <tr><td>LinkedIn-Browser</td><td>${healthState(h.cdp, 'erreichbar', 'nicht erreichbar')}</td></tr>
+        <tr><td>LinkedIn-Login</td><td>${healthState(h.logged_in, 'eingeloggt', 'Login fehlt')}</td></tr>
+        <tr><td>Codex CLI</td><td>${healthState(codex.available, codex.info || 'bereit', codex.info || 'nicht bereit')}</td></tr>
+        <tr><td>KI-Anfrage / Kontingent</td><td>${healthState(
+          probe.ok,
+          'Codex antwortet',
+          'Testfrage fehlgeschlagen'
+        )}</td></tr>
+      </table>
+      <p class="muted">Testfrage: „Antworte exakt mit HEALTH_OK.“ Sie nutzt eine kleine Menge KI-Kontingent.</p>
+      ${probe.ok ? '' : `<pre>${esc(JSON.stringify(probe.attempts || probe.error || {}, null, 2))}</pre>`}`;
+    health();
+  } catch (e) {
+    result.innerHTML = `<h3>${healthState(false, '', 'Health Check fehlgeschlagen')}</h3>
+      <pre>${esc(e.message)}</pre>`;
+  } finally {
+    button.disabled = false;
+    button.textContent = 'Health Check';
+  }
+}
+
+async function runTask(name, extra = {}) {
+  toast(`„${name}" läuft …`, 60000);
+  try {
+    const r = await api(`/api/tasks/${name}`, {
+      method: 'POST', headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({campaign: campaign(), ...extra})
+    });
+    toast(r.ok ? `„${name}" fertig.` : `„${name}" fehlgeschlagen.`);
+    render();
+  } catch (e) { toast('Fehler: ' + e.message, 6000); }
+}
+
+/* ---------------------------------------------------------------- Tabs */
+
+async function viewCron() {
+  const c = await api('/api/cron');
+  const jobs = c.jobs.length ? `<table>
+    <tr><th>Zeitplan</th><th>Nächste Ausführung</th><th>Befehl</th></tr>
+    ${c.jobs.map(j => `<tr>
+      <td class="mono">${esc(j.expr)}</td>
+      <td>${fmt(j.next)}</td>
+      <td class="mono muted">${esc(j.command)}</td></tr>`).join('')}
+  </table>` : `<div class="empty">Keine Cron-Jobs eingetragen.<br>
+      <span class="mono">crontab -e</span> — Vorlage steht in der Skill-Doku.</div>`;
+
+  const up = c.upcoming.length ? `<table>
+    <tr><th>Wann</th><th>Typ</th><th>ID</th><th>Kampagne</th></tr>
+    ${c.upcoming.map(u => `<tr>
+      <td>${fmt(u.publish_at)} ${u.due ? '<span class="pill due">fällig</span>' : ''}</td>
+      <td><span class="pill ${u.kind}">${u.kind}</span></td>
+      <td class="mono">${esc(u.id)}</td>
+      <td class="muted">${esc(u.campaign)}</td></tr>`).join('')}
+  </table>` : '<div class="empty">Nichts eingeplant.</div>';
+
+  V.innerHTML = `
+    <div class="card"><h3>Eingetragene Cron-Jobs (Betriebssystem)</h3>${jobs}</div>
+    <div class="card"><h3>Als Nächstes fällig</h3>${up}</div>
+    <div class="card"><h3>Einmalig ausführen</h3>
+      <div class="actions">
+        <button onclick="runTask('draft-posts',{count:2})">Posts entwerfen (Codex)</button>
+        <button onclick="runTask('find-and-write',{count:5})">Kommentare finden + texten</button>
+        <button onclick="runTask('find-and-write-connections',{count:5})">Kontakte finden + Notizen</button>
+        <button onclick="runTask('find-and-write-reshares',{count:3})">Reshares finden + texten</button>
+        <button onclick="runTask('find-comments',{limit:5})">Nur Kandidaten sammeln</button>
+        <button onclick="runTask('find-reshares',{limit:3})">Nur Reshare-Kandidaten</button>
+        <button onclick="runTask('analytics')">Kampagnenzahlen aktualisieren</button>
+        <button onclick="runTask('run-due',{dry_run:true})">Fällige testen (Dry-Run)</button>
+        <button class="primary" onclick="runTask('run-due')">Fällige jetzt ausführen</button>
+      </div>
+      <p class="muted">Diese Buttons laufen sofort, unabhängig vom Zeitplan. Für wiederkehrende
+         Ausführung den Tab <b>Jobs</b> nutzen — dort bestimmst du Rhythmus und Aktiv/Inaktiv.</p>
+    </div>`;
+}
+
+function approvalScore(item) {
+  if (['comment', 'reshare', 'connection'].includes(item.kind) && item.fit_score != null) {
+    return item.evaluation_score == null
+      ? item.fit_score
+      : Math.min(item.fit_score, item.evaluation_score);
+  }
+  return item.evaluation_score;
+}
+
+function approvalFilterMarkup(items) {
+  const definitions = [
+    ['post', 'Post'],
+    ['comment', 'Kommentar'],
+    ['connection', 'Kontakt'],
+    ['reshare', 'Share'],
+  ];
+  const counts = items.reduce((result, item) => {
+    result[item.kind] = (result[item.kind] || 0) + 1;
+    return result;
+  }, {});
+  return `<div class="approval-filters toggle-group" aria-label="Freigaben nach Typ filtern">
+    ${definitions.map(([kind, label]) => {
+      const active = APPROVAL_KIND_FILTERS.has(kind);
+      return `<button class="toggle-option approval-filter ${kind}"
+        aria-pressed="${active}" onclick="toggleApprovalKind('${kind}')">${label} (${counts[kind] || 0})</button>`;
+    }).join('')}
+  </div>`;
+}
+
+function toggleApprovalKind(kind) {
+  if (APPROVAL_KIND_FILTERS.has(kind)) APPROVAL_KIND_FILTERS.delete(kind);
+  else APPROVAL_KIND_FILTERS.add(kind);
+  render();
+}
+
+async function viewItems(stage) {
+  const url = `/api/items?campaign=${encodeURIComponent(campaign())}`;
+  const [items, scheduled, learning] = stage === 'approvals'
+    ? await Promise.all([
+        api(`${url}&stage=approvals`),
+        api('/api/items/all?stage=schedule'),
+        api('/api/style-learning/status')
+      ])
+    : [await api(stage === 'schedule' ? '/api/items/all?stage=schedule' : `${url}&stage=${stage}`), null, null];
+  if (stage === 'approvals') {
+    SCHEDULE_DAY_COUNTS = countPlanningDays(scheduled);
+    items.sort((left, right) => (approvalScore(right) ?? -1) - (approvalScore(left) ?? -1));
+  }
+  if (stage === 'schedule') {
+    PLANNING_ITEMS = items;
+    SCHEDULE_DAY_COUNTS = countPlanningDays(items);
+    try {
+      PLANNING_SUGGESTION = await api(`/api/planning/suggestion?campaign=${encodeURIComponent(campaign())}`);
+    } catch {
+      PLANNING_SUGGESTION = null;
+    }
+    if (!PLANNING_MONTH) PLANNING_MONTH = initialPlanningMonth(items);
+    renderPlanning();
+    return;
+  }
+  if (stage === 'log') {
+    HISTORY_ITEMS = items;
+    if (!HISTORY_MONTH) HISTORY_MONTH = initialHistoryMonth(items);
+    renderHistory();
+    return;
+  }
+  if (stage === 'approvals') {
+    const scored = items.filter(item => approvalScore(item) != null).length;
+    const visibleItems = APPROVAL_KIND_FILTERS.size
+      ? items.filter(item => APPROVAL_KIND_FILTERS.has(item.kind))
+      : items;
+    const scoreToggles = [70, 75, 80, 85, 90, 95].map(percent =>
+      `<button class="toggle-option ${BULK_SCORE_PERCENT === percent ? 'active' : ''}"
+        aria-pressed="${BULK_SCORE_PERCENT === percent}"
+        data-bulk-score="${percent}" onclick="selectBulkScore(${percent})">ab ${percent} %</button>`
+    ).join('');
+    const toolbar = `<div class="card">
+      <div class="calendar-toolbar"><div><h3>Score-Sammelfreigabe</h3>
+        <span class="muted">${scored} von ${items.length} Entwürfen haben einen Score.</span><br>
+        <span class="pill">${learning?.auto_approvals ?? 0} bisher automatisch freigegeben</span></div>
+        <div class="actions">
+          <div class="toggle-group" aria-label="Mindestscore für Sammelfreigabe">${scoreToggles}</div>
+          <button class="primary" onclick="autoApproveScored(this)">Passende automatisch freigeben</button>
+        </div>
+      </div>
+      <p class="muted">Automatische Freigaben werden ausschließlich Montag bis Freitag eingeplant,
+        maximal vier pro Tag. Manuelle Freigaben unterliegen diesem Limit nicht.</p>
+    </div>`;
+    const filters = approvalFilterMarkup(items);
+    const content = visibleItems.length
+      ? visibleItems.map(i => card(i, stage)).join('')
+      : `<div class="empty">${items.length
+          ? 'Keine Freigaben für die ausgewählten Labels.'
+          : 'Keine offenen Freigaben.'}</div>`;
+    V.innerHTML = toolbar + filters + content;
+    return;
+  }
+  if (!items.length) {
+    V.innerHTML = `<div class="empty">Nichts in „${stage}".</div>`;
+    return;
+  }
+  V.innerHTML = items.map(i => card(i, stage)).join('');
+}
+
+function selectBulkScore(percent) {
+  BULK_SCORE_PERCENT = percent;
+  localStorage.setItem('bulk-score-percent', String(percent));
+  document.querySelectorAll('[data-bulk-score]').forEach(button => {
+    const active = Number(button.dataset.bulkScore) === percent;
+    button.classList.toggle('active', active);
+    button.setAttribute('aria-pressed', String(active));
+  });
+}
+
+async function autoApproveScored(button) {
+  const percent = BULK_SCORE_PERCENT;
+  button.disabled = true;
+  try {
+    const result = await api('/api/approvals/auto', {
+      method: 'POST', headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({campaign: campaign(), minimum_score: percent / 100})
+    });
+    toast(`${result.count} Inhalte automatisch eingeplant – maximal vier je Werktag.`, 7000);
+    render();
+  } catch (e) {
+    toast('Auto-Freigabe fehlgeschlagen: ' + e.message, 9000);
+    button.disabled = false;
+  }
+}
+
+function dateKey(value) {
+  const match = (value || '').match(/^(\d{4}-\d{2}-\d{2})/);
+  return match ? match[1] : '';
+}
+
+function localDateKey(date) {
+  const pad = value => String(value).padStart(2, '0');
+  return `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())}`;
+}
+
+function countPlanningDays(items) {
+  const counts = {};
+  (items || []).forEach(item => {
+    const day = dateKey(item.publish_at);
+    if (!day) return;
+    counts[day] ||= {post: 0, comment: 0, reshare: 0, other: 0, total: 0, campaigns: {}};
+    const kind = ['post', 'comment', 'reshare'].includes(item.kind) ? item.kind : 'other';
+    counts[day][kind] += 1;
+    counts[day].total += 1;
+    if (item.campaign_path) {
+      counts[day].campaigns[item.campaign_path] = (counts[day].campaigns[item.campaign_path] || 0) + 1;
+    }
+  });
+  return counts;
+}
+
+function initialPlanningMonth(items) {
+  const today = localDateKey(new Date());
+  const dated = (items || []).map(item => dateKey(item.publish_at)).filter(Boolean).sort();
+  const firstUpcoming = dated.find(day => day >= today) || dated[0] || today;
+  return firstUpcoming.slice(0, 7);
+}
+
+function pluralCount(value, singular, plural) {
+  return `${value} ${value === 1 ? singular : plural}`;
+}
+
+function planningCountText(counts) {
+  const parts = [];
+  if (counts.post) parts.push(pluralCount(counts.post, 'Post', 'Posts'));
+  if (counts.comment) parts.push(pluralCount(counts.comment, 'Kommentar', 'Kommentare'));
+  if (counts.reshare) parts.push(pluralCount(counts.reshare, 'Reshare', 'Reshares'));
+  if (counts.other) parts.push(pluralCount(counts.other, 'weiterer Inhalt', 'weitere Inhalte'));
+  return parts.join(', ');
+}
+
+function planningLoadMarkup(id, value, incomingKind) {
+  const day = dateKey(value);
+  if (!day) return `<span id="load-${id}" class="day-load">Noch kein Termin gewählt.</span>`;
+  const counts = SCHEDULE_DAY_COUNTS[day] || {post: 0, comment: 0, reshare: 0, other: 0, total: 0};
+  const projected = counts.total + 1;
+  const cls = projected >= 4 ? 'high' : projected >= 3 ? 'medium' : '';
+  const existing = counts.total ? `Bereits ${planningCountText(counts)} geplant.` : 'Dieser Tag ist noch frei.';
+  const kind = incomingKind === 'comment' ? 'Kommentar'
+    : incomingKind === 'reshare' ? 'Reshare'
+    : incomingKind === 'connection' ? 'Vernetzung' : 'Post';
+  return `<span id="load-${id}" class="day-load ${cls}">${existing} Mit Freigabe: ${projected} Inhalte (${kind} eingeschlossen).</span>`;
+}
+
+function updatePlanningLoad(id, value, incomingKind) {
+  const current = document.getElementById('load-' + id);
+  if (!current) return;
+  const holder = document.createElement('div');
+  holder.innerHTML = planningLoadMarkup(id, value, incomingKind);
+  current.replaceWith(holder.firstElementChild);
+}
+
+function renderPlanning() {
+  const [year, month] = PLANNING_MONTH.split('-').map(Number);
+  const first = new Date(year, month - 1, 1);
+  const startOffset = (first.getDay() + 6) % 7;
+  const daysInMonth = new Date(year, month, 0).getDate();
+  const cellCount = Math.max(35, Math.ceil((startOffset + daysInMonth) / 7) * 7);
+  const gridStart = new Date(year, month - 1, 1 - startOffset);
+  const today = localDateKey(new Date());
+  const cells = [];
+  for (let index = 0; index < cellCount; index += 1) {
+    const dayDate = new Date(gridStart.getFullYear(), gridStart.getMonth(), gridStart.getDate() + index);
+    const key = localDateKey(dayDate);
+    const counts = SCHEDULE_DAY_COUNTS[key] || {post: 0, comment: 0, reshare: 0, other: 0, total: 0, campaigns: {}};
+    const load = counts.total >= 3 ? 'load-high' : counts.total === 2 ? 'load-medium'
+      : counts.total === 1 ? 'load-light' : '';
+    const outside = dayDate.getMonth() !== month - 1 ? 'outside' : '';
+    const selected = PLANNING_DAY === key ? 'selected' : '';
+    const current = key === today ? 'today' : '';
+    const details = counts.total ? planningCountText(counts) : 'frei';
+    cells.push(`<button class="calendar-day ${load} ${outside} ${selected} ${current}"
+        onclick="selectPlanningDay('${key}')" title="${esc(key + ': ' + details)}">
+      <span class="calendar-number">${dayDate.getDate()}</span>
+      ${counts.post ? `<span class="calendar-count post">${pluralCount(counts.post, 'Post', 'Posts')}</span>` : ''}
+      ${counts.comment ? `<span class="calendar-count comment">${pluralCount(counts.comment, 'Kommentar', 'Kommentare')}</span>` : ''}
+      ${counts.reshare ? `<span class="calendar-count reshare">${pluralCount(counts.reshare, 'Reshare', 'Reshares')}</span>` : ''}
+      ${counts.other ? `<span class="calendar-count">${pluralCount(counts.other, 'weiterer', 'weitere')}</span>` : ''}
+      ${counts.total ? `<span class="campaign-marks">${Object.entries(counts.campaigns || {}).map(([path, total]) =>
+        `<i class="campaign-mark" style="--campaign-color:${campaignColor(path)}" title="${esc(path)}: ${total}"></i>`).join('')}</span>`
+        : '<span class="calendar-free">frei</span>'}
+    </button>`);
+  }
+
+  const monthItems = PLANNING_ITEMS.filter(item => dateKey(item.publish_at).slice(0, 7) === PLANNING_MONTH);
+  const monthCounts = countPlanningDays(monthItems);
+  const monthTotal = Object.values(monthCounts).reduce((sum, count) => sum + count.total, 0);
+  const monthPosts = Object.values(monthCounts).reduce((sum, count) => sum + count.post, 0);
+  const monthComments = Object.values(monthCounts).reduce((sum, count) => sum + count.comment, 0);
+  const monthReshares = Object.values(monthCounts).reduce((sum, count) => sum + count.reshare, 0);
+  const label = first.toLocaleDateString('de-DE', {month: 'long', year: 'numeric'});
+  const visible = PLANNING_DAY
+    ? PLANNING_ITEMS.filter(item => dateKey(item.publish_at) === PLANNING_DAY)
+    : PLANNING_ITEMS;
+  const listTitle = PLANNING_DAY
+    ? `Geplant am ${new Date(PLANNING_DAY + 'T12:00:00').toLocaleDateString('de-DE')}`
+    : 'Alle geplanten Inhalte';
+  const list = visible.length
+    ? visible.map(item => card(item, 'schedule')).join('')
+    : `<div class="empty">${PLANNING_DAY ? 'An diesem Tag ist nichts geplant.' : 'Noch nichts eingeplant.'}</div>`;
+
+  const suggestion = PLANNING_SUGGESTION
+    ? `<time datetime="${esc(PLANNING_SUGGESTION.publish_at)}">${fmt(PLANNING_SUGGESTION.publish_at)}</time>
+       <p class="muted">Aktuell ${PLANNING_SUGGESTION.day_load} Inhalte an diesem Tag. Die Uhrzeit liegt zufällig im konfigurierten Zeitfenster.</p>`
+    : '<p class="muted">Aktuell konnte kein Vorschlagsdatum ermittelt werden.</p>';
+  const campaignLegend = (window.__campaigns || []).filter(item => PLANNING_ITEMS.some(plan => plan.campaign_path === item.path))
+    .map(item => `<span class="campaign-legend"><i class="campaign-mark" style="--campaign-color:${campaignColor(item.path)}"></i>${esc(item.name)} · v${item.version}</span>`).join('');
+  V.innerHTML = `<div class="planning-overview"><div class="card calendar-card">
+    <div class="calendar-toolbar">
+      <div>
+        <h3>${esc(label)}</h3>
+        <span class="muted">${monthTotal} Inhalte · ${monthPosts} Posts · ${monthComments} Kommentare · ${monthReshares} Reshares</span>
+      </div>
+      <div class="calendar-nav">
+        <button onclick="shiftPlanningMonth(-1)" aria-label="Vorheriger Monat">←</button>
+        <button onclick="goToPlanningToday()">Heute</button>
+        <button onclick="shiftPlanningMonth(1)" aria-label="Nächster Monat">→</button>
+      </div>
+    </div>
+    <div class="calendar-weekdays"><span>Mo</span><span>Di</span><span>Mi</span><span>Do</span><span>Fr</span><span>Sa</span><span>So</span></div>
+    <div class="calendar-grid">${cells.join('')}</div>
+    <div class="calendar-legend">
+      <span><i class="legend-mark post"></i>Posts</span>
+      <span><i class="legend-mark comment"></i>Kommentare</span>
+      <span><i class="legend-mark reshare"></i>Reshares</span>
+      <span><i class="legend-mark crowded"></i>3 oder mehr Inhalte</span>
+      <span>Tag anklicken, um die Liste zu filtern</span>
+      ${campaignLegend}
+    </div>
+  </div><aside class="card planning-suggestion"><h3>Vorschlagsdatum</h3>${suggestion}
+    <button onclick="refreshPlanningSuggestion(this)">Neu vorschlagen</button>
+    <p class="muted">Der Planer wählt einen der am wenigsten belegten Tage innerhalb des konfigurierten Vorlaufs.</p>
+  </aside></div>
+  <div class="planning-list-head">
+    <h3>${esc(listTitle)}</h3>
+    ${PLANNING_DAY ? '<button onclick="clearPlanningDay()">Alle zeigen</button>' : ''}
+  </div>${list}`;
+}
+
+function shiftPlanningMonth(delta) {
+  const [year, month] = PLANNING_MONTH.split('-').map(Number);
+  const target = new Date(year, month - 1 + delta, 1);
+  PLANNING_MONTH = localDateKey(target).slice(0, 7);
+  PLANNING_DAY = null;
+  renderPlanning();
+}
+
+function goToPlanningToday() {
+  const today = localDateKey(new Date());
+  PLANNING_MONTH = today.slice(0, 7);
+  PLANNING_DAY = today;
+  renderPlanning();
+}
+
+function selectPlanningDay(day) {
+  PLANNING_DAY = PLANNING_DAY === day ? null : day;
+  PLANNING_MONTH = day.slice(0, 7);
+  renderPlanning();
+}
+
+function clearPlanningDay() {
+  PLANNING_DAY = null;
+  renderPlanning();
+}
+
+async function refreshPlanningSuggestion(button) {
+  button.disabled = true;
+  try {
+    PLANNING_SUGGESTION = await api(`/api/planning/suggestion?campaign=${encodeURIComponent(campaign())}`);
+    renderPlanning();
+  } catch (e) {
+    toast('Kein Vorschlagsdatum: ' + e.message, 7000);
+    button.disabled = false;
+  }
+}
+
+async function suggestDate(id, kind, button) {
+  button.disabled = true;
+  try {
+    const suggestion = await api(`/api/planning/suggestion?campaign=${encodeURIComponent(campaign())}`);
+    const input = document.getElementById('d-' + id);
+    input.value = suggestion.publish_at;
+    updatePlanningLoad(id, input.value, kind);
+    toast(`Vorschlag: ${fmt(suggestion.publish_at)} · ${suggestion.day_load} bestehende Inhalte an diesem Tag.`);
+  } catch (e) {
+    toast('Kein Vorschlagsdatum: ' + e.message, 7000);
+  } finally {
+    button.disabled = false;
+  }
+}
+
+function historyAt(item) {
+  return item.published_at || item.publish_at || '';
+}
+
+function initialHistoryMonth(items) {
+  const dated = (items || []).map(item => dateKey(historyAt(item))).filter(Boolean).sort();
+  return (dated[dated.length - 1] || localDateKey(new Date())).slice(0, 7);
+}
+
+function historyDayCounts(items) {
+  return countPlanningDays((items || []).map(item => ({...item, publish_at: historyAt(item)})));
+}
+
+function renderHistory() {
+  const [year, month] = HISTORY_MONTH.split('-').map(Number);
+  const first = new Date(year, month - 1, 1);
+  const offset = (first.getDay() + 6) % 7;
+  const days = new Date(year, month, 0).getDate();
+  const cellCount = Math.max(35, Math.ceil((offset + days) / 7) * 7);
+  const gridStart = new Date(year, month - 1, 1 - offset);
+  const today = localDateKey(new Date());
+  const countsByDay = historyDayCounts(HISTORY_ITEMS);
+  const cells = [];
+  for (let index = 0; index < cellCount; index += 1) {
+    const dayDate = new Date(gridStart.getFullYear(), gridStart.getMonth(), gridStart.getDate() + index);
+    const key = localDateKey(dayDate);
+    const counts = countsByDay[key] || {post: 0, comment: 0, reshare: 0, other: 0, total: 0};
+    const load = counts.total >= 3 ? 'load-high' : counts.total === 2 ? 'load-medium'
+      : counts.total === 1 ? 'load-light' : '';
+    const outside = dayDate.getMonth() !== month - 1 ? 'outside' : '';
+    const selected = HISTORY_DAY === key ? 'selected' : '';
+    const current = key === today ? 'today' : '';
+    const details = counts.total ? planningCountText(counts) : 'keine Veröffentlichung';
+    cells.push(`<button class="calendar-day ${load} ${outside} ${selected} ${current}"
+        onclick="selectHistoryDay('${key}')" title="${esc(key + ': ' + details)}">
+      <span class="calendar-number">${dayDate.getDate()}</span>
+      ${counts.post ? `<span class="calendar-count post">${pluralCount(counts.post, 'Post', 'Posts')}</span>` : ''}
+      ${counts.comment ? `<span class="calendar-count comment">${pluralCount(counts.comment, 'Kommentar', 'Kommentare')}</span>` : ''}
+      ${counts.reshare ? `<span class="calendar-count reshare">${pluralCount(counts.reshare, 'Reshare', 'Reshares')}</span>` : ''}
+      ${counts.total ? '' : '<span class="calendar-free">—</span>'}
+    </button>`);
+  }
+
+  const monthItems = HISTORY_ITEMS.filter(item => dateKey(historyAt(item)).slice(0, 7) === HISTORY_MONTH);
+  const monthCounts = historyDayCounts(monthItems);
+  const sum = key => Object.values(monthCounts).reduce((total, counts) => total + counts[key], 0);
+  const label = first.toLocaleDateString('de-DE', {month: 'long', year: 'numeric'});
+  const visible = HISTORY_DAY
+    ? HISTORY_ITEMS.filter(item => dateKey(historyAt(item)) === HISTORY_DAY)
+    : HISTORY_ITEMS;
+  const listTitle = HISTORY_DAY
+    ? `Veröffentlicht am ${new Date(HISTORY_DAY + 'T12:00:00').toLocaleDateString('de-DE')}`
+    : 'Alle veröffentlichten Inhalte';
+  const list = visible.length
+    ? visible.map(item => card(item, 'log')).join('')
+    : `<div class="empty">${HISTORY_DAY ? 'An diesem Tag wurde nichts veröffentlicht.' : 'Noch keine Historie.'}</div>`;
+
+  V.innerHTML = `<div class="card calendar-card">
+    <div class="calendar-toolbar"><div><h3>${esc(label)}</h3>
+      <span class="muted">${sum('total')} Inhalte · ${sum('post')} Posts · ${sum('comment')} Kommentare · ${sum('reshare')} Reshares</span></div>
+      <div class="calendar-nav">
+        <button onclick="shiftHistoryMonth(-1)" aria-label="Vorheriger Monat">←</button>
+        <button onclick="goToHistoryToday()">Heute</button>
+        <button onclick="shiftHistoryMonth(1)" aria-label="Nächster Monat">→</button>
+      </div>
+    </div>
+    <div class="calendar-weekdays"><span>Mo</span><span>Di</span><span>Mi</span><span>Do</span><span>Fr</span><span>Sa</span><span>So</span></div>
+    <div class="calendar-grid">${cells.join('')}</div>
+    <div class="calendar-legend"><span><i class="legend-mark post"></i>Posts</span>
+      <span><i class="legend-mark comment"></i>Kommentare</span>
+      <span><i class="legend-mark reshare"></i>Reshares</span>
+      <span>Tag anklicken, um die Historie zu filtern</span></div>
+  </div>
+  <div class="planning-list-head"><h3>${esc(listTitle)}</h3>
+    ${HISTORY_DAY ? '<button onclick="clearHistoryDay()">Alle zeigen</button>' : ''}</div>${list}`;
+}
+
+function shiftHistoryMonth(delta) {
+  const [year, month] = HISTORY_MONTH.split('-').map(Number);
+  HISTORY_MONTH = localDateKey(new Date(year, month - 1 + delta, 1)).slice(0, 7);
+  HISTORY_DAY = null;
+  renderHistory();
+}
+
+function goToHistoryToday() {
+  HISTORY_DAY = localDateKey(new Date());
+  HISTORY_MONTH = HISTORY_DAY.slice(0, 7);
+  renderHistory();
+}
+
+function selectHistoryDay(day) {
+  HISTORY_DAY = HISTORY_DAY === day ? null : day;
+  HISTORY_MONTH = day.slice(0, 7);
+  renderHistory();
+}
+
+function clearHistoryDay() {
+  HISTORY_DAY = null;
+  renderHistory();
+}
+
+function metricValue(value) {
+  return value == null ? '—' : Number(value).toLocaleString('de-CH');
+}
+
+async function viewAnalytics() {
+  const data = await api(`/api/analytics?campaign=${encodeURIComponent(campaign())}`);
+  const s = data.summary;
+  const rows = data.records.length ? data.records.map(item => {
+    const m = item.latest || {};
+    const link = item.published_url || (item.kind === 'comment' ? item.source_url : null);
+    const linkLabel = item.kind === 'comment' && link ? 'Originalpost mit Kommentar öffnen'
+      : item.published_url ? 'Eigene Aktion öffnen'
+      : 'Permalink noch nicht gefunden';
+    return `<tr>
+      <td><span class="pill ${item.kind}">${item.kind}</span>
+        <span class="pill">v${item.campaign_version || 1}</span><br>
+        <span class="mono">${esc(item.item_id)}</span></td>
+      <td>${fmt(item.published_at)}<br>
+        ${link ? `<a href="${esc(link)}" target="_blank" rel="noopener">${linkLabel}</a>`
+               : `<span class="muted">${linkLabel}</span>`}</td>
+      <td>${metricValue(m.reactions)}</td>
+      <td>${item.kind === 'comment' ? metricValue(m.replies) : metricValue(m.comments)}</td>
+      <td>${metricValue(m.reposts)}</td>
+      <td>${metricValue(m.impressions)}</td>
+      <td>${fmt(item.last_checked_at)}<br>
+        ${item.last_error ? `<span class="image-error">${esc(item.last_error)}</span>`
+                          : `<span class="muted">${item.snapshot_count} ${item.snapshot_count === 1 ? 'Messpunkt' : 'Messpunkte'}</span>`}</td>
+    </tr>`;
+  }).join('') : '';
+  const table = rows ? `<div class="card"><h3>Veröffentlichte Kampagnenaktionen</h3>
+    <table><tr><th>Inhalt</th><th>Veröffentlicht / URL</th><th>Likes/Reaktionen</th>
+      <th>Kommentare/Antworten</th><th>Reposts</th><th>Impressionen</th><th>Messung</th></tr>
+      ${rows}</table></div>` : '<div class="empty">Noch keine veröffentlichten Kampagneninhalte.</div>';
+  V.innerHTML = `<div class="card">
+    <div class="calendar-toolbar"><div><h3>Kampagnen-Auswertung</h3>
+      <span class="muted">${s.published} veröffentlichte Aktionen · ${s.posts} Posts · ${s.comments_authored} Kommentare · ${s.reshares} Reshares</span></div>
+      <button class="primary" onclick="refreshAnalytics(this)">Kennzahlen jetzt aktualisieren</button>
+    </div>
+    <div class="metric-grid">
+      <div class="metric"><b>${metricValue(s.reactions)}</b><span>Likes / Reaktionen</span></div>
+      <div class="metric"><b>${metricValue(s.comments)}</b><span>Kommentare auf Posts</span></div>
+      <div class="metric"><b>${metricValue(s.replies)}</b><span>Antworten auf Kommentare</span></div>
+      <div class="metric"><b>${metricValue(s.reposts)}</b><span>Reposts</span></div>
+      <div class="metric"><b>${metricValue(s.impressions)}</b><span>sichtbare Impressionen</span></div>
+    </div>
+    <p class="muted">${s.measured}/${s.published} Aktionen wurden bereits gemessen.
+      ${s.missing_published_urls ? `${s.missing_published_urls} eigene Permalinks müssen beim nächsten Lauf noch nachgelöst werden. ` : ''}
+      Bei Kommentaren wird nur der eigene Kommentar im Originalpost ausgewertet; die Reichweite des fremden Posts wird nicht als Kampagnenerfolg addiert. Impressionen erscheinen nur, wenn LinkedIn sie für den eigenen Beitrag sichtbar macht.</p>
+  </div>${table}`;
+}
+
+async function refreshAnalytics(button) {
+  button.disabled = true;
+  button.textContent = 'LinkedIn wird ausgewertet …';
+  toast('Kennzahlen werden von den gespeicherten LinkedIn-URLs gelesen …', 300000);
+  try {
+    const result = await api('/api/tasks/analytics', {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({campaign:campaign()})
+    });
+    toast(result.ok ? 'Kampagnenzahlen aktualisiert.' : 'Einige Messungen sind fehlgeschlagen.', 8000);
+    viewAnalytics();
+  } catch (e) {
+    toast('Auswertungsfehler: ' + e.message, 15000);
+    button.disabled = false;
+    button.textContent = 'Kennzahlen jetzt aktualisieren';
+  }
+}
+
+function card(i, stage) {
+  const isReshare = i.kind === 'reshare';
+  const isConnection = i.kind === 'connection';
+  const withComment = !isReshare || i.reshare_with_comment !== false;
+  const shownAt = stage === 'log' ? historyAt(i) : i.publish_at;
+  const domId = itemDomId(i);
+  const campaignPath = i.campaign_path || '';
+  const encodedCampaign = encodeURIComponent(campaignPath);
+  const target = i.url
+     ? `<p class="muted">${isConnection ? 'Vernetzung mit' : isReshare ? 'Reshare von' : 'Antwort auf'} <b>${esc(i.author)}</b> —
+       <a href="${esc(i.url)}" target="_blank" rel="noopener">${isConnection ? 'Profil öffnen' : 'Post öffnen'}</a></p>
+       ${i.note ? `<div class="source-post"><h4>${isConnection ? 'Profilkontext' : 'Originalbeitrag vollständig'}</h4>${esc(i.note)}</div>`
+             : `<p class="muted">${isConnection ? 'Profilkontext fehlt.' : 'Originalbeitrag noch nicht geladen.'}</p>`}
+       ${stage === 'approvals' && !isConnection ? `<button onclick="refreshSource('${i.id}', this)">Originalbeitrag neu laden</button>` : ''}` : '';
+
+  const editable = stage !== 'log';
+  const combinedScore = approvalScore(i);
+  const score = combinedScore == null ? '' : (() => {
+    const percent = Math.round(combinedScore * 100);
+    const cls = percent >= 75 ? 'high' : percent < 60 ? 'low' : '';
+    return `<div class="evaluation ${cls}">
+      <b>Freigabe-Score: ${percent} %</b>
+      ${i.fit_score == null ? '' : `<p>Kampagnenpassung: ${Math.round(i.fit_score * 100)} %${i.fit_note ? ` – ${esc(i.fit_note)}` : ''}</p>`}
+      ${i.evaluation_score == null ? '' : `<p>Text und persönlicher Stil: ${Math.round(i.evaluation_score * 100)} %</p>`}
+      ${i.evaluation_note ? `<p class="muted">${esc(i.evaluation_note)}</p>` : ''}
+    </div>`;
+  })();
+  const body = editable
+    ? `<label class="field-title" for="t-${i.id}">${isConnection ? 'Deine Vernetzungsnotiz (max. 300 Zeichen)' : i.kind === 'comment' ? 'Dein Kommentar'
+         : isReshare ? 'Dein optionaler Begleittext' : 'Dein Post'}</label>
+      <textarea id="t-${domId}" ${isConnection ? 'maxlength="300"' : ''} ${isReshare && !withComment ? 'disabled' : ''}>${esc(i.text)}</textarea>`
+    : isReshare && !withComment
+      ? '<p class="muted">Awareness-Reshare ohne Begleittext.</p>'
+      : `<pre>${esc(i.text)}</pre>`;
+  const memoryNote = stage === 'approvals'
+    ? `<div class="rewrite-box memory-note">
+        <label class="field-title" for="ln-${i.id}">Notiz fürs Lernen <span class="muted">(optional)</span></label>
+        <textarea id="ln-${i.id}" placeholder="z. B. Diesen direkten Einstieg mag ich. Weniger Produkttext, mehr eigene Haltung.">${esc(i.user_memory_note || '')}</textarea>
+        <p class="muted">Wird beim Freigeben als positives oder beim Ablehnen als negatives Lernsignal gespeichert. Erscheint nicht auf LinkedIn.</p>
+      </div>`
+    : i.user_memory_note
+      ? `<div class="source-post"><h4>Deine Lernnotiz</h4>${esc(i.user_memory_note)}</div>`
+      : '';
+  const modeControl = isReshare ? `<div class="reshare-mode">
+    <label>Reshare-Art
+      <select id="m-${i.id}" onchange="setReshareModeUI('${i.id}', this.value)"
+        ${editable ? '' : 'disabled'}>
+        <option value="commentary" ${withComment ? 'selected' : ''}>Mit Begleittext + Kampagnen-CTA</option>
+        <option value="awareness" ${withComment ? '' : 'selected'}>Ohne Begleittext – nur Awareness</option>
+      </select>
+    </label>
+    <span id="mh-${i.id}" class="muted">${withComment
+      ? 'Der Begleittext wird zusammen mit dem Fremdbeitrag geteilt.'
+      : 'LinkedIn teilt den Fremdbeitrag direkt; der Text wird nicht verwendet.'}</span>
+  </div>` : '';
+
+  let actions = '';
+  if (stage === 'approvals') {
+    actions = `<div class="rewrite-box" id="rw-${i.id}" ${isReshare && !withComment ? 'style="display:none"' : ''}>
+      <label class="muted" for="r-${i.id}">Regieanweisung für den Rewrite</label>
+      <textarea id="r-${i.id}" placeholder="z. B. Kürzer, Einstieg persönlicher, weniger werblich; Kernaussage und Fakten beibehalten."></textarea>
+      <div class="actions">
+        <button onclick="rewriteItem('${i.id}', this)">Mit Codex neu schreiben</button>
+        <span class="muted">Bleibt danach in Freigaben und erhält einen neuen Score.</span>
+      </div>
+    </div>
+    <div class="actions">
+      <label class="muted">Terminvorschlag
+        <input type="datetime-local" id="d-${i.id}" value="${esc(i.publish_at || '')}"
+          title="Vorschlag des Planers — vor der Freigabe frei änderbar"
+          onchange="updatePlanningLoad('${i.id}', this.value, '${i.kind}')">
+      </label>
+      <button onclick="suggestDate('${i.id}', '${i.kind}', this)">Vorschlagen</button>
+      ${planningLoadMarkup(i.id, i.publish_at, i.kind)}
+      <button class="primary" onclick="approve('${i.id}')">Freigeben</button>
+      <button onclick="save('${i.id}','approvals')">Speichern</button>
+      <button class="danger" onclick="del('${i.id}','approvals')">Ablehnen &amp; lernen</button>
+    </div>`;
+  } else if (stage === 'schedule') {
+    actions = `<div class="actions">
+      <input type="datetime-local" id="d-${domId}" value="${esc(i.publish_at || '')}">
+      <button onclick="save('${i.id}','schedule','${encodedCampaign}','${domId}','${encodeURIComponent(i.publish_at || '')}')">Speichern</button>
+      <button class="danger" onclick="del('${i.id}','schedule','${encodedCampaign}','${encodeURIComponent(i.publish_at || '')}')">Löschen</button>
+    </div>`;
+  }
+
+  return `<div class="card" ${campaignPath ? `style="border-left:4px solid ${campaignColor(campaignPath)}"` : ''}>
+    <div class="row">
+      <div class="grow">
+        <span class="pill ${i.kind}">${i.kind}</span>
+        <span class="pill mono">${esc(i.id)}</span>
+        <span class="pill">${esc(campaignLabel(i))}</span>
+        ${i.approval_origin === 'automatic' ? '<span class="pill">Auto-Freigabe</span>' : ''}
+        ${shownAt ? `<span class="pill">${fmt(shownAt)}</span>` : ''}
+        ${i.due && stage !== 'log' ? '<span class="pill due">fällig</span>' : ''}
+        ${target}
+        ${modeControl}
+        ${score}
+        ${body}
+        ${memoryNote}
+        ${actions}
+      </div>
+      ${imagePanel(i, stage)}
+    </div>
+  </div>`;
+}
+
+function imagePanel(i, stage) {
+  if (i.kind !== 'post') return '';
+  const preview = i.has_image
+    ? `<img class="preview" src="/api/image?path=${encodeURIComponent(i.image_path)}&v=${Date.now()}"
+         alt="Bild zum Post">`
+    : '<div class="empty">Noch kein Bild</div>';
+  const origin = i.image_origin === 'generated' ? 'KI-Bild'
+    : i.image_origin === 'web' ? 'Webbild mit Quelle'
+    : i.image_origin === 'upload' ? 'Eigenes Bild' : '';
+  const quota = i.image_auto_selected === true
+    ? '<span class="pill">Bildquote: ausgewählt</span>'
+    : i.image_auto_selected === false
+      ? '<span class="pill">Bildquote: ohne Bild</span>' : '';
+  const controls = stage === 'approvals' ? `
+    <input type="text" id="ip-${i.id}" value="${esc(i.image_prompt || '')}"
+      placeholder="Bildidee oder Suchbegriff – leer = automatisch aus dem Post">
+    <div class="actions">
+      <button onclick="createImage('${i.id}','generated',this)">${i.has_image ? 'KI-Bild ersetzen' : 'KI-Bild erstellen'}</button>
+      <button onclick="createImage('${i.id}','web',this)">Webbild suchen</button>
+      <label class="upload-button">Hochladen
+        <input type="file" accept="image/png,image/jpeg" onchange="uploadImage('${i.id}',this)">
+      </label>
+      ${i.has_image ? `<button class="danger" onclick="removeImage('${i.id}',this)">Entfernen</button>` : ''}
+    </div>
+    <p class="muted">PNG oder JPEG, maximal 8 MB. Die Freigabe umfasst Text und sichtbares Bild.</p>` : '';
+  return `<aside class="image-panel">
+    <h4>Bild zum Post</h4>
+    ${preview}
+    <div class="actions">${quota}${origin ? `<span class="pill">${origin}</span>` : ''}</div>
+    ${i.image_source ? `<p class="muted mono source">${esc(i.image_source)}</p>` : ''}
+    ${i.image_error ? `<p class="image-error">${esc(i.image_error)}</p>` : ''}
+    ${controls}
+  </aside>`;
+}
+
+function reshareWithComment(id) {
+  const mode = document.getElementById('m-' + id);
+  return mode ? mode.value === 'commentary' : null;
+}
+
+function setReshareModeUI(id, mode) {
+  const withComment = mode === 'commentary';
+  const text = document.getElementById('t-' + id);
+  const rewrite = document.getElementById('rw-' + id);
+  const hint = document.getElementById('mh-' + id);
+  if (text) text.disabled = !withComment;
+  if (rewrite) rewrite.style.display = withComment ? '' : 'none';
+  if (hint) hint.textContent = withComment
+    ? 'Der Begleittext wird zusammen mit dem Fremdbeitrag geteilt.'
+    : 'LinkedIn teilt den Fremdbeitrag direkt; der Text wird nicht verwendet.';
+}
+
+async function refreshSource(id, button) {
+  button.disabled = true;
+  button.textContent = 'Lade Original …';
+  try {
+    await api(`/api/items/${id}/refresh-source`, {
+      method: 'POST', headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({campaign: campaign()})
+    });
+    toast('Originalbeitrag vollständig geladen.'); render();
+  } catch (e) {
+    toast('Fehler: ' + e.message, 12000);
+    button.disabled = false;
+    button.textContent = 'Originalbeitrag neu laden';
+  }
+}
+
+async function save(id, stage, encodedCampaign = '', domId = id, encodedMatchPublishAt = '') {
+  const targetCampaign = encodedCampaign ? decodeURIComponent(encodedCampaign) : campaign();
+  const text = document.getElementById('t-' + domId)?.value;
+  const d = document.getElementById('d-' + domId)?.value;
+  const userMemoryNote = document.getElementById('ln-' + id)?.value;
+  const withComment = reshareWithComment(id);
+  try {
+    await api('/api/items/' + id, {
+      method: 'PATCH', headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        campaign: targetCampaign, stage, text, user_memory_note: userMemoryNote,
+        publish_at: d || null,
+        match_publish_at: encodedMatchPublishAt ? decodeURIComponent(encodedMatchPublishAt) : null,
+        reshare_with_comment: withComment
+      })
+    });
+    toast('Gespeichert.'); render();
+  } catch (e) { toast('Fehler: ' + e.message, 6000); }
+}
+
+async function approve(id) {
+  const text = document.getElementById('t-' + id)?.value;
+  const when = document.getElementById('d-' + id)?.value;
+  const userMemoryNote = document.getElementById('ln-' + id)?.value;
+  const withComment = reshareWithComment(id);
+  try {
+    await api('/api/items/' + id, {
+      method: 'PATCH', headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        campaign: campaign(), stage: 'approvals', text,
+        user_memory_note: userMemoryNote,
+        reshare_with_comment: withComment
+      })
+    });
+    const r = await api(`/api/items/${id}/approve`, {
+      method: 'POST', headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({campaign: campaign(), publish_at: when || null})
+    });
+    toast('Freigegeben für ' + fmt(r.publish_at)); render();
+  } catch (e) { toast('Fehler: ' + e.message, 6000); }
+}
+
+async function rewriteItem(id, button) {
+  const instruction = document.getElementById('r-' + id)?.value.trim();
+  const text = document.getElementById('t-' + id)?.value;
+  const userMemoryNote = document.getElementById('ln-' + id)?.value;
+  const withComment = reshareWithComment(id);
+  if (!instruction) return toast('Bitte zuerst eine Regieanweisung eingeben.', 5000);
+  button.disabled = true;
+  button.textContent = 'Codex schreibt …';
+  toast('Rewrite läuft – der Entwurf bleibt in Freigaben …', 300000);
+  try {
+    await api('/api/items/' + id, {
+      method: 'PATCH', headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        campaign: campaign(), stage: 'approvals', text,
+        user_memory_note: userMemoryNote,
+        reshare_with_comment: withComment
+      })
+    });
+    const result = await api(`/api/items/${id}/rewrite`, {
+      method: 'POST', headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({campaign: campaign(), instruction})
+    });
+    const score = result.item?.evaluation_score == null
+      ? '' : ` Neuer Score: ${Math.round(result.item.evaluation_score * 100)} %.`;
+    toast('Neu geschrieben.' + score, 8000);
+    render();
+  } catch (e) {
+    toast('Rewrite-Fehler: ' + e.message, 15000);
+    button.disabled = false;
+    button.textContent = 'Mit Codex neu schreiben';
+  }
+}
+
+async function createImage(id, source, button) {
+  const prompt = document.getElementById('ip-' + id)?.value.trim() || '';
+  if (source === 'web' && !prompt) {
+    return toast('Für ein Webbild bitte einen Suchbegriff eingeben.', 5000);
+  }
+  button.disabled = true;
+  button.textContent = source === 'generated' ? 'KI-Bild entsteht …' : 'Webbild wird gesucht …';
+  toast(source === 'generated'
+    ? 'Bildgenerierung läuft – das kann ein bis zwei Minuten dauern …'
+    : 'Geeignetes, frei nutzbares Webbild wird gesucht …', 180000);
+  try {
+    const text = document.getElementById('t-' + id)?.value;
+    await api('/api/items/' + id, {
+      method: 'PATCH', headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({campaign: campaign(), stage: 'approvals', text})
+    });
+    await api(`/api/items/${id}/image`, {
+      method: 'POST', headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({campaign: campaign(), source, prompt})
+    });
+    toast(source === 'generated' ? 'KI-Bild erstellt.' : 'Webbild samt Quelle übernommen.');
+    render();
+  } catch (e) {
+    toast('Bildfehler: ' + e.message, 15000);
+    render();
+  }
+}
+
+async function uploadImage(id, input) {
+  const file = input.files?.[0];
+  if (!file) return;
+  if (!['image/png', 'image/jpeg'].includes(file.type)) {
+    input.value = '';
+    return toast('Bitte ein PNG- oder JPEG-Bild auswählen.', 6000);
+  }
+  if (file.size > 8 * 1024 * 1024) {
+    input.value = '';
+    return toast('Das Bild darf höchstens 8 MB groß sein.', 6000);
+  }
+  toast('Bild wird hochgeladen …', 30000);
+  try {
+    const dataUrl = await new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => resolve(reader.result);
+      reader.onerror = () => reject(new Error('Datei konnte nicht gelesen werden.'));
+      reader.readAsDataURL(file);
+    });
+    await api(`/api/items/${id}/image-upload`, {
+      method: 'POST', headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        campaign: campaign(), filename: file.name, content_type: file.type,
+        data: dataUrl.split(',', 2)[1]
+      })
+    });
+    toast('Eigenes Bild übernommen.');
+    render();
+  } catch (e) {
+    toast('Upload-Fehler: ' + e.message, 10000);
+    input.value = '';
+  }
+}
+
+async function removeImage(id, button) {
+  button.disabled = true;
+  try {
+    await api(`/api/items/${id}/image?campaign=${encodeURIComponent(campaign())}`, {
+      method: 'DELETE'
+    });
+    toast('Bild entfernt. Der Post bleibt in Freigaben.');
+    render();
+  } catch (e) {
+    toast('Fehler: ' + e.message, 6000);
+    button.disabled = false;
+  }
+}
+
+async function del(id, stage, encodedCampaign = '', encodedMatchPublishAt = '') {
+  const targetCampaign = encodedCampaign ? decodeURIComponent(encodedCampaign) : campaign();
+  const rejecting = stage === 'approvals';
+  const question = rejecting
+    ? `Entwurf ${id} wirklich ablehnen? Er wird gelöscht und als negatives Beispiel für den Evaluator gespeichert.`
+    : `Eintrag ${id} wirklich löschen?`;
+  if (!confirm(question)) return;
+  try {
+    if (rejecting) {
+      const text = document.getElementById('t-' + id)?.value;
+      const userMemoryNote = document.getElementById('ln-' + id)?.value;
+      await api('/api/items/' + id, {
+        method: 'PATCH', headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+          campaign: targetCampaign, stage: 'approvals', text,
+          user_memory_note: userMemoryNote,
+          reshare_with_comment: reshareWithComment(id)
+        })
+      });
+    }
+    const match = encodedMatchPublishAt ? `&match_publish_at=${encodedMatchPublishAt}` : '';
+    const result = await api(`/api/items/${id}?campaign=${encodeURIComponent(targetCampaign)}&stage=${stage}${match}`,
+                             {method: 'DELETE'});
+    toast(result.learned_as_rejection ? 'Abgelehnt – der Evaluator lernt daraus.' : 'Gelöscht.');
+    render();
+  } catch (e) { toast('Fehler: ' + e.message, 6000); }
+}
+
+/* ---------------------------------------------------------------- Ideen */
+
+function ideaCampaignOptions(selected) {
+  const choices = (window.__campaigns || [])
+    .filter(c => c.path !== 'Kampagnen/persoenlich/kampagne.yaml')
+    .map(c => `<option value="${esc(c.path)}" ${selected === c.path ? 'selected' : ''}>${esc(c.name)}</option>`)
+    .join('');
+  return `<option value="" ${selected ? '' : 'selected'}>Keine Kampagne – persönlicher Post</option>${choices}`;
+}
+
+async function viewIdeas() {
+  const ideas = await api('/api/ideas');
+  const list = ideas.length ? ideas.map(i => {
+    const status = i.status === 'open' ? 'offen'
+      : i.status === 'processing' ? 'wird verarbeitet'
+      : i.status === 'done' ? 'Entwurf erstellt' : 'Fehler';
+    const output = i.output_id
+      ? `<p><span class="pill">${esc(i.output_id)}</span>
+         <button onclick="openIdeaApproval('${encodeURIComponent(i.output_campaign || '')}')">In Freigaben öffnen</button></p>`
+      : '';
+    const retry = i.status === 'failed'
+      ? `<button onclick="retryIdea('${i.id}')">Erneut versuchen</button>` : '';
+    return `<div class="card">
+      <span class="pill mono">${esc(i.id)}</span><span class="pill">${status}</span>
+      <label class="field-title" for="idea-${i.id}">Idee oder Rohtext</label>
+      <textarea id="idea-${i.id}" ${i.status === 'processing' ? 'disabled' : ''}>${esc(i.text)}</textarea>
+      <div class="field"><label>Optionale Kampagnenbrille</label>
+        <select id="idea-campaign-${i.id}" ${i.status === 'processing' ? 'disabled' : ''}>
+          ${ideaCampaignOptions(i.campaign)}
+        </select>
+      </div>
+      ${i.last_error ? `<pre>${esc(i.last_error)}</pre>` : ''}
+      ${output}
+      <div class="actions">
+        ${i.status !== 'processing' ? `<button onclick="saveIdea('${i.id}')">Speichern</button>` : ''}
+        ${retry}
+        <button class="danger" onclick="deleteIdea('${i.id}')" ${i.status === 'processing' ? 'disabled' : ''}>Löschen</button>
+      </div>
+    </div>`;
+  }).join('') : '<div class="empty">Noch keine Ideen notiert.</div>';
+
+  V.innerHTML = `<div class="card"><h3>Neue Idee</h3>
+    <div class="field"><label>Idee, Stichpunkte oder fertiger Rohtext</label>
+      <textarea id="new-idea" placeholder="z. B. Deutschland hat jetzt die d-you Wallet – und wir sind ein Teil davon."></textarea>
+    </div>
+    <div class="field"><label>Optionale Kampagnenbrille</label>
+      <select id="new-idea-campaign">${ideaCampaignOptions(null)}</select>
+    </div>
+    <div class="actions">
+      <button class="primary" onclick="createIdea()">Idee speichern</button>
+      <label class="muted">Anzahl <input id="idea-count" type="number" min="1" value="3" style="width:75px"></label>
+      <button onclick="processIdeas()">Offene Ideen jetzt zu Posts machen</button>
+    </div>
+    <p class="muted">Mit Kampagne gelten zusätzlich deren Zielgruppe, Themen und CTA. Ohne Kampagne nutzt der Job nur dein persönliches Profil und deinen gelernten Stil. Jeder fertige Post geht zunächst in die Freigabe.</p>
+  </div>${list}`;
+}
+
+async function createIdea() {
+  const text = document.getElementById('new-idea').value.trim();
+  const selected = document.getElementById('new-idea-campaign').value || null;
+  if (!text) return toast('Bitte zuerst eine Idee eingeben.', 5000);
+  try {
+    await api('/api/ideas', {method:'POST', headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({text, campaign:selected})});
+    toast('Idee gespeichert.'); viewIdeas();
+  } catch (e) { toast('Fehler: ' + e.message, 7000); }
+}
+
+async function saveIdea(id) {
+  const text = document.getElementById('idea-' + id).value.trim();
+  const selected = document.getElementById('idea-campaign-' + id).value || null;
+  try {
+    await api('/api/ideas/' + id, {method:'PATCH', headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({text, campaign:selected})});
+    toast('Idee gespeichert.'); viewIdeas();
+  } catch (e) { toast('Fehler: ' + e.message, 7000); }
+}
+
+async function retryIdea(id) {
+  try {
+    await api('/api/ideas/' + id, {method:'PATCH', headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({retry:true})});
+    toast('Idee wieder geöffnet.'); viewIdeas();
+  } catch (e) { toast('Fehler: ' + e.message, 7000); }
+}
+
+async function deleteIdea(id) {
+  if (!confirm('Idee ' + id + ' wirklich löschen?')) return;
+  try {
+    await api('/api/ideas/' + id, {method:'DELETE'});
+    toast('Idee gelöscht.'); viewIdeas();
+  } catch (e) { toast('Fehler: ' + e.message, 7000); }
+}
+
+function openIdeaApproval(encodedCampaign) {
+  const target = decodeURIComponent(encodedCampaign);
+  if (target) SEL.value = target;
+  TAB = 'approvals';
+  document.querySelectorAll('nav button').forEach(button =>
+    button.classList.toggle('active', button.dataset.tab === 'approvals'));
+  render();
+}
+
+async function processIdeas() {
+  const count = parseInt(document.getElementById('idea-count').value, 10) || 1;
+  await runTask('ideas-to-posts', {count});
+}
+
+/* ---------------------------------------------------------------- Jobs (interner Scheduler) */
+
+const TASKS = [
+  ['draft-posts', 'Posts entwerfen (Codex)'],
+  ['find-and-write', 'Kommentare finden + texten (Codex)'],
+  ['find-and-write-reshares', 'Reshares finden + texten (Codex)'],
+  ['find-and-write-connections', 'Kontakte finden + Notizen (Codex)'],
+  ['ideas-to-posts', 'Offene Ideen zu Posts (Codex)'],
+  ['find-comments', 'Nur Kandidaten sammeln'],
+  ['find-reshares', 'Nur Reshare-Kandidaten sammeln'],
+  ['run-due', 'Fällige Aktionen ausführen'],
+  ['analytics', 'Kampagnenzahlen aktualisieren'],
+];
+
+function approvalModeControl(j) {
+  if (!['draft-posts', 'find-and-write', 'write-comments', 'find-and-write-reshares'].includes(j.task)) {
+    return '<span class="muted">—</span>';
+  }
+  const trust = j.approval_trust || {unchanged_streak: 0, required: 10, unlocked: false};
+  const options = [
+    ['manual', 'Manuell'],
+    ['top_20', 'Top 20 %'],
+    ['top_15', 'Top 15 %'],
+    ['top_10', 'Top 10 %'],
+    ['top_5', 'Top 5 %'],
+  ];
+  const buttons = options.map(([value, label]) => {
+    const active = j.approval_mode === value;
+    const locked = value !== 'manual' && !trust.unlocked;
+    const threshold = j.approval_thresholds?.[value];
+    const thresholdTitle = threshold == null ? ''
+      : ` title="Aktuell ab ${Math.round(threshold * 100)} % Evaluator-Score"`;
+    const nextMode = active && value !== 'manual' ? 'manual' : value;
+    return `<button class="toggle-option ${value === 'manual' ? 'manual' : ''} ${active ? 'active' : ''}"
+      aria-pressed="${active}" onclick="setApprovalMode('${j.id}', '${nextMode}')"
+      ${locked ? 'disabled title="Nach 10 unveränderten manuellen Freigaben verfügbar"' : thresholdTitle}>${label}</button>`;
+  }).join('');
+  const activeThreshold = j.approval_thresholds?.[j.approval_mode];
+  const status = !trust.unlocked
+    ? `<span class="muted">Vertrauen: ${trust.unchanged_streak}/${trust.required}</span>`
+    : j.approval_mode === 'manual'
+      ? '<span class="muted">Automatik aus</span>'
+      : `<span class="muted">Grenze aktuell: ab ${activeThreshold == null ? '—' : Math.round(activeThreshold * 100) + ' %'} Score</span>`;
+  const count = j.auto_approval_stats?.total ?? 0;
+  return `<div class="toggle-group">${buttons}</div>
+    <div class="approval-mode-meta">${status}<span class="pill">${count} automatisch</span></div>`;
+}
+
+function jobCampaignControl(j) {
+  const campaigns = window.__campaigns || [];
+  const options = campaigns.map(c =>
+    `<option value="${esc(c.path)}" ${c.path === j.campaign ? 'selected' : ''}>${esc(c.name)} (v${c.version})</option>`
+  ).join('');
+  const missing = campaigns.some(c => c.path === j.campaign) ? ''
+    : `<option value="${esc(j.campaign)}" selected>${esc(j.campaign)} (nicht gefunden)</option>`;
+  return `<select class="job-campaign" aria-label="Kampagne für ${esc(j.id)}"
+    onchange="setJobCampaign('${j.id}', this.value)">${missing}${options}</select>`;
+}
+
+async function viewJobs() {
+  const [jobs, cron] = await Promise.all([api('/api/jobdefs'), api('/api/cron')]);
+  const rows = jobs.length ? jobs.map(j => `
+    <tr>
+      <td data-label="Aktiv"><label class="switch">
+        <input type="checkbox" ${j.active ? 'checked' : ''} onchange="toggleJob('${j.id}', this.checked)">
+        <span class="slider"></span>
+      </label></td>
+      <td data-label="Aufgabe">${esc(TASKS.find(t => t[0] === j.task)?.[1] || j.task)}</td>
+      <td data-label="Kampagne">${jobCampaignControl(j)}</td>
+      <td data-label="Rhythmus">${esc(j.human)}</td>
+      <td data-label="Freigabe">${approvalModeControl(j)}</td>
+      <td data-label="Letzter Erfolg">${fmt(j.last_run)} ${j.due ? '<span class="pill due">fällig</span>' : ''}</td>
+      <td data-label="Status">${j.last_status === 'running'
+        ? '<span class="pill due">Codex arbeitet …</span>'
+        : j.last_status === 'ok'
+          ? '<span class="pill">Erfolgreich</span>'
+          : j.last_status === 'failed'
+            ? `<span class="pill" title="${esc(j.last_error || '')}">Fehler</span><br><span class="muted">${esc((j.last_error || '').slice(0, 140))}</span>`
+            : '<span class="muted">Noch nie gestartet</span>'}</td>
+      <td data-label="Aktionen"><div class="job-actions">
+        <button onclick="runJobDefNow('${j.id}', this)" ${j.active && j.last_status !== 'running' ? '' : `disabled title="${j.active ? 'Job läuft bereits' : 'Job ist inaktiv'}"`}>${j.last_status === 'running' ? 'Läuft …' : 'Jetzt ausführen'}</button>
+        <button class="danger" onclick="deleteJobDef('${j.id}')">Löschen</button>
+      </div></td>
+    </tr>`).join('') : '';
+
+  const table = jobs.length ? `<div class="table-scroll"><table class="jobs-table">
+    <tr><th>Aktiv</th><th>Aufgabe</th><th>Kampagne</th><th>Rhythmus</th><th>Freigabe</th><th>Letzter Erfolg</th><th>Status</th><th></th></tr>
+    ${rows}
+  </table></div>` : '<div class="empty">Noch keine Jobs angelegt.</div>';
+
+  const campOptions = (window.__campaigns || [])
+    .map(c => `<option value="${esc(c.path)}">${esc(c.name)}</option>`).join('');
+
+  const scheduler = cron.scheduler_installed
+    ? `<p><span class="dot ok"></span><b>Automatik läuft.</b>
+         Der Scheduler prüft alle fünf Minuten, welche aktiven Jobs fällig sind.</p>`
+    : `<p><span class="dot warn"></span><b>Automatik ist noch nicht aktiviert.</b>
+         Jobs sind gespeichert, werden aber noch nicht automatisch gestartet.</p>
+       <div class="actions">
+         <button class="primary" onclick="installScheduler()">Automatik aktivieren</button>
+       </div>
+       <p class="muted mono">${esc(cron.scheduler_entry)}</p>`;
+
+  V.innerHTML = `
+    <div class="card"><h3>Scheduler</h3>${scheduler}</div>
+    <div class="card"><h3>Geplante Jobs</h3>${table}
+      <p class="muted">Nur <b>aktive</b> Jobs werden vom Scheduler ausgeführt
+         (<span class="mono">./bin/li-scheduler</span>, ein einziger Cron-Eintrag alle 5 Minuten).
+         Auto-Freigabe wird pro Job erst nach 10 unveränderten manuellen Freigaben
+         freigeschaltet und verschiebt nur passende Entwürfe in die Planung.</p>
+    </div>
+    <div class="card"><h3>Neuen Job anlegen</h3>
+      <div class="field"><label>Aufgabe</label>
+        <select id="nj-task">${TASKS.map(t => `<option value="${t[0]}">${t[1]}</option>`).join('')}</select>
+      </div>
+      <div class="field"><label>Kampagne</label>
+        <select id="nj-campaign">${campOptions}</select>
+        <span class="muted">Beim Ideen-Job wird die Kampagne pro Idee gewählt; diese Auswahl ist dann nur die technische Standardablage.</span>
+      </div>
+      <div class="field"><label>Anzahl (bei Entwürfen/Kandidaten)</label>
+        <input id="nj-count" type="number" min="1" value="2" style="width:100px">
+        <span class="muted">Bei Vernetzungsanfragen sind aus Sicherheitsgründen maximal 5 pro Tag möglich.</span>
+      </div>
+      <div class="field"><label>Zeitplan in Alltagssprache</label>
+        <input id="nj-schedule" value="jeden Tag um 15 Uhr"
+          placeholder="z. B. jeden Tag um 15 Uhr" style="width:min(100%,430px)">
+        <span class="muted">Beispiele: „alle 30 Minuten“, „werktags um 09:00“,
+          „montags und mittwochs um 15:30“</span>
+      </div>
+      <div class="field"><label class="inline">
+        <input id="nj-active" type="checkbox" checked> Job sofort aktivieren</label>
+      </div>
+      <div class="actions"><button class="primary" onclick="createJobDef()">Job anlegen</button></div>
+    </div>`;
+}
+
+async function createJobDef() {
+  try {
+    const task = document.getElementById('nj-task').value;
+    await api('/api/jobdefs', {
+      method: 'POST', headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        task,
+        campaign: task === 'ideas-to-posts'
+          ? 'Kampagnen/persoenlich/kampagne.yaml'
+          : document.getElementById('nj-campaign').value,
+        count: parseInt(document.getElementById('nj-count').value, 10) || 2,
+        active: document.getElementById('nj-active').checked,
+        schedule: document.getElementById('nj-schedule').value
+      })
+    });
+    toast('Job angelegt.'); viewJobs();
+  } catch (e) { toast('Fehler: ' + e.message, 6000); }
+}
+
+async function installScheduler() {
+  try {
+    const r = await api('/api/scheduler/install', {method: 'POST'});
+    toast(r.message || 'Automatik aktiviert.');
+    viewJobs();
+  } catch (e) { toast('Fehler: ' + e.message, 6000); }
+}
+
+async function toggleJob(id, active) {
+  try {
+    await api('/api/jobdefs/' + id, {
+      method: 'PATCH', headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({active})
+    });
+    toast(active ? 'Job aktiviert.' : 'Job pausiert.');
+  } catch (e) { toast('Fehler: ' + e.message, 6000); viewJobs(); }
+}
+
+async function setJobCampaign(id, campaign) {
+  const select = document.querySelector(`select[aria-label="Kampagne für ${id}"]`);
+  if (select) select.disabled = true;
+  try {
+    await api('/api/jobdefs/' + id, {
+      method: 'PATCH', headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({campaign})
+    });
+    toast('Kampagne des Jobs geändert.');
+    viewJobs();
+  } catch (e) {
+    if (select) select.disabled = false;
+    toast('Fehler: ' + e.message, 6000);
+    viewJobs();
+  }
+}
+
+async function setApprovalMode(id, approval_mode) {
+  try {
+    await api('/api/jobdefs/' + id, {
+      method: 'PATCH', headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({approval_mode})
+    });
+    toast(approval_mode === 'manual'
+      ? 'Manuelle Freigabe aktiviert.'
+      : 'Auto-Freigabe für ' + approval_mode.replace('top_', 'obere ') + ' % aktiviert.');
+    viewJobs();
+  } catch (e) { toast('Fehler: ' + e.message, 8000); viewJobs(); }
+}
+
+async function runJobDefNow(id, button) {
+  button.disabled = true;
+  button.textContent = 'Codex arbeitet …';
+  toast('Codex-Job läuft …', 3000000);
+  try {
+    const r = await api(`/api/jobdefs/${id}/run-now`, {method: 'POST'});
+    toast(r.ok ? 'Fertig – Freigabe-Entwürfe wurden geprüft.'
+               : 'Fehlgeschlagen: ' + (r.error || 'Details stehen im Job-Status.'), 20000);
+    viewJobs();
+  } catch (e) {
+    toast('Fehler: ' + e.message, 20000);
+    button.disabled = false;
+    button.textContent = 'Jetzt ausführen';
+  }
+}
+
+async function deleteJobDef(id) {
+  if (!confirm('Job ' + id + ' wirklich löschen?')) return;
+  try {
+    await api('/api/jobdefs/' + id, {method: 'DELETE'});
+    toast('Gelöscht.'); viewJobs();
+  } catch (e) { toast('Fehler: ' + e.message, 6000); }
+}
+
+/* ---------------------------------------------------------------- Persönliche Konfiguration */
+
+async function viewConfig() {
+  const [p, learning, limits, plan] = await Promise.all([
+    api('/api/personal-profile'), api('/api/style-learning/status'),
+    api('/api/config/timeouts'), api('/api/config/planning')
+  ]);
+  V.innerHTML = `<div class="card"><h3>Persönliches Profil / CV</h3>
+    <p class="muted">Dieser Kontext wird bei allen Posts und Kommentaren berücksichtigt. Nur Dinge eintragen, die der Agent tatsächlich über dich verwenden darf.</p>
+    <div class="grid2">
+      <div class="field"><label>Name</label><input id="pc-name" value="${esc(p.name)}"></div>
+      <div class="field"><label>Aktuelle Rolle</label><input id="pc-role" value="${esc(p.current_role)}"></div>
+      <div class="field"><label>Unternehmen</label><input id="pc-company" value="${esc(p.company)}"></div>
+      <div class="field"><label>LinkedIn-Headline</label><input id="pc-headline" value="${esc(p.headline)}"></div>
+    </div>
+    <div class="field"><label>Wer bin ich? / Kurzprofil</label>
+      <textarea id="pc-about" placeholder="Persönlicher Hintergrund, Motivation, Arbeitsweise …">${esc(p.about)}</textarea>
+    </div>
+    <div class="field"><label>CV / relevante Berufserfahrung</label>
+      <textarea id="pc-cv" style="min-height:180px" placeholder="Stationen, Rollen, Projekte und belegbare Erfahrungen …">${esc(p.cv)}</textarea>
+    </div>
+    <div class="grid2">
+      <div class="field"><label>Fachgebiete – eines pro Zeile</label>
+        <textarea id="pc-expertise">${esc(toLines(p.expertise))}</textarea></div>
+      <div class="field"><label>Persönliche Perspektiven/Themen – eines pro Zeile</label>
+        <textarea id="pc-perspectives">${esc(toLines(p.perspectives))}</textarea></div>
+    </div>
+    <div class="actions"><button class="primary" onclick="saveConfig()">Profil speichern</button></div>
+  </div>
+  <div class="card"><h3>Zeitlimits</h3>
+    <p class="muted">Maximale Laufzeit des jeweiligen Codex-Schritts in Minuten.
+      Evaluator, optionale Stilüberarbeitung und technische Dateiarbeit erhalten
+      automatisch zusätzlichen Puffer. Beim Ideen-Job gilt der Wert pro Idee.</p>
+    <div class="grid2">
+      <div class="field"><label>Posts entwerfen</label>
+        <input id="to-draft-posts" type="number" min="1" max="180" value="${limits.draft_posts}"></div>
+      <div class="field"><label>Kommentare finden + texten</label>
+        <input id="to-find-write" type="number" min="1" max="180" value="${limits.find_and_write}"></div>
+      <div class="field"><label>Gesammelte Kommentare texten</label>
+        <input id="to-write-comments" type="number" min="1" max="180" value="${limits.write_comments}"></div>
+      <div class="field"><label>Reshares finden + texten</label>
+        <input id="to-reshares" type="number" min="1" max="180" value="${limits.find_and_write_reshares}"></div>
+      <div class="field"><label>Kontakte finden + Notizen</label>
+        <input id="to-connections" type="number" min="1" max="180" value="${limits.find_and_write_connections}"></div>
+      <div class="field"><label>Idee → Post (pro Idee)</label>
+        <input id="to-ideas" type="number" min="1" max="180" value="${limits.ideas_to_posts}"></div>
+      <div class="field"><label>Automatische Stilüberarbeitung</label>
+        <input id="to-style" type="number" min="1" max="180" value="${limits.style_revision}"></div>
+      <div class="field"><label>Manuelles Rewrite</label>
+        <input id="to-rewrite" type="number" min="1" max="180" value="${limits.rewrite}"></div>
+      <div class="field"><label>Bildgenerierung</label>
+        <input id="to-image" type="number" min="1" max="180" value="${limits.image_generation}"></div>
+    </div>
+    <div class="actions"><button class="primary" onclick="saveTimeouts()">Zeitlimits speichern</button></div>
+    <p class="muted">Die Werte werden in <span class="mono">config/timeouts.yaml</span>
+      gespeichert und gelten auch für geplante Jobs und Docker.</p>
+  </div>
+  <div class="card"><h3>Automatische Terminvorschläge</h3>
+    <p class="muted">Der Planer sucht innerhalb des Vorlaufs zuerst die am wenigsten belegten Tage und wählt dort eine zufällige Uhrzeit im passenden Zeitfenster.</p>
+    <div class="field"><label>Maximal so viele Tage voraus</label>
+      <input id="pl-days" type="number" min="1" max="90" value="${plan.days_ahead}"></div>
+    <div class="grid2">
+      <div class="field"><label>Montag bis Freitag: von</label><input id="pl-weekdays-start" type="time" value="${plan.weekdays_start}"></div>
+      <div class="field"><label>Montag bis Freitag: bis</label><input id="pl-weekdays-end" type="time" value="${plan.weekdays_end}"></div>
+      <div class="field"><label>Samstag: von</label><input id="pl-saturday-start" type="time" value="${plan.saturday_start}"></div>
+      <div class="field"><label>Samstag: bis</label><input id="pl-saturday-end" type="time" value="${plan.saturday_end}"></div>
+      <div class="field"><label>Sonntag: von</label><input id="pl-sunday-start" type="time" value="${plan.sunday_start}"></div>
+      <div class="field"><label>Sonntag: bis</label><input id="pl-sunday-end" type="time" value="${plan.sunday_end}"></div>
+    </div>
+    <div class="actions"><button class="primary" onclick="savePlanningSettings()">Planungsregeln speichern</button></div>
+  </div>
+  <div class="card"><h3>Lernender Evaluator</h3>
+    <p>
+      <span class="pill">${learning.approvals} Freigaben</span>
+      <span class="pill">${learning.approved_edits} bestätigte Anpassungen</span>
+      <span class="pill">${learning.approved_directives} bestätigte Regieanweisungen</span>
+      <span class="pill">${learning.rejections} Ablehnungen</span>
+      <span class="pill">${learning.patterns} aktive Muster</span>
+      <span class="pill">${learning.user_notes ?? 0} persönliche Lernnotizen</span>
+      <span class="pill">${learning.auto_approvals ?? 0} Auto-Freigaben</span>
+    </p>
+    <p class="muted">Freigegebene Texte sind positive Beispiele. Änderungen werden erst dann
+      zu aktiven Stil-Mustern, wenn du die geänderte Fassung freigibst. „Ablehnen &amp; lernen“
+      speichert den Entwurf als negatives Beispiel; ähnliche Texte erhalten künftig einen
+      niedrigeren Evaluator-Score. Die optionale Lernnotiz ergänzt deine Entscheidung als
+      ausdrückliche Anweisung für künftige Codex-Entwürfe. Nur offen gelassene Entwürfe gelten
+      weiterhin als unbewertet.</p>
+    ${(learning.pending_edits || learning.pending_directives) ? `<p class="muted">
+      ${learning.pending_edits} gespeicherte Anpassungen und ${learning.pending_directives}
+      Regieanweisungen warten noch auf eine Freigabe oder Ablehnung.</p>` : ''}
+  </div>`;
+}
+
+async function saveTimeouts() {
+  const minutes = id => parseInt(document.getElementById(id).value, 10);
+  try {
+    await api('/api/config/timeouts', {
+      method:'PUT', headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({
+        draft_posts:minutes('to-draft-posts'),
+        find_and_write:minutes('to-find-write'),
+        write_comments:minutes('to-write-comments'),
+        find_and_write_reshares:minutes('to-reshares'),
+        find_and_write_connections:minutes('to-connections'),
+        ideas_to_posts:minutes('to-ideas'),
+        style_revision:minutes('to-style'),
+        rewrite:minutes('to-rewrite'),
+        image_generation:minutes('to-image')
+      })
+    });
+    toast('Zeitlimits gespeichert. Sie gelten ab dem nächsten Start eines Jobs.');
+  } catch (e) { toast('Fehler: ' + e.message, 7000); }
+}
+
+async function savePlanningSettings() {
+  const value = id => document.getElementById(id).value;
+  try {
+    await api('/api/config/planning', {
+      method:'PUT', headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({
+        days_ahead:parseInt(value('pl-days'), 10),
+        weekdays_start:value('pl-weekdays-start'), weekdays_end:value('pl-weekdays-end'),
+        saturday_start:value('pl-saturday-start'), saturday_end:value('pl-saturday-end'),
+        sunday_start:value('pl-sunday-start'), sunday_end:value('pl-sunday-end')
+      })
+    });
+    toast('Planungsregeln gespeichert. Neue Vorschläge verwenden sie sofort.');
+  } catch (e) { toast('Fehler: ' + e.message, 7000); }
+}
+
+async function saveConfig() {
+  const value = id => document.getElementById(id).value.trim();
+  try {
+    await api('/api/personal-profile', {
+      method:'PUT', headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({
+        name:value('pc-name') || 'Roman',
+        current_role:value('pc-role'),
+        company:value('pc-company'),
+        headline:value('pc-headline'),
+        about:value('pc-about'),
+        cv:value('pc-cv'),
+        expertise:fromLines(value('pc-expertise')),
+        perspectives:fromLines(value('pc-perspectives'))
+      })
+    });
+    toast('Persönliches Profil gespeichert.');
+  } catch (e) { toast('Fehler: ' + e.message, 7000); }
+}
+
+/* ---------------------------------------------------------------- Kampagnen (editierbar) */
+
+function toLines(arr) { return (arr || []).join('\n'); }
+function fromLines(s) { return (s || '').split('\n').map(x => x.trim()).filter(Boolean); }
+
+function viewCampaigns() {
+  const targetOptions = (window.__campaigns || []).filter(c => c.ok)
+    .map(c => `<option value="${esc(c.path)}">${esc(c.name)} (v${c.version})</option>`).join('');
+  const importer = `<div class="card"><h3>Kampagne importieren</h3>
+    <p class="muted">YAML-Datei auswählen und entscheiden, ob sie eine neue Kampagne oder die nächste Version einer bestehenden Kampagne wird.</p>
+    <div class="field"><label>Importieren als</label>
+      <select id="campaign-import-mode" onchange="toggleImportTarget()">
+        <option value="new">Neue Kampagne</option>
+        <option value="version">Neue Version einer bestehenden Kampagne</option>
+      </select>
+    </div>
+    <div class="field" id="campaign-import-target-wrap" hidden><label>Bestehende Kampagne</label>
+      <select id="campaign-import-target">${targetOptions}</select>
+      <span class="muted">Die aktuelle Version bleibt als Snapshot erhalten. Jobs und Warteschlangen bleiben zugeordnet.</span>
+    </div>
+    <div class="actions"><input id="campaign-import-file" type="file" accept=".yaml,.yml,application/yaml,text/yaml">
+      <button class="primary" onclick="importCampaign(this)">Importieren</button></div>
+  </div>`;
+  V.innerHTML = importer + (window.__campaigns || []).map(c => c.ok ? campaignForm(c) : `
+    <div class="card"><h3>${esc(c.path)}</h3>
+      <p class="muted">Fehler: ${esc(c.error)}</p></div>`).join('');
+}
+
+function toggleImportTarget() {
+  const mode = document.getElementById('campaign-import-mode')?.value;
+  const wrap = document.getElementById('campaign-import-target-wrap');
+  if (wrap) wrap.hidden = mode !== 'version';
+}
+
+function campaignForm(c) {
+  const p = c.path.replace(/'/g, "\\'");
+  return `<div class="card">
+    <h3>${esc(c.name)} <span class="pill">Version ${c.version}</span></h3>
+    <p class="mono muted">${esc(c.path)}</p>
+    <p><span class="pill">Freigaben: ${c.counts?.approvals ?? 0}</span>
+       <span class="pill">Eingeplant: ${c.counts?.schedule ?? 0}</span>
+       <span class="pill">Veröffentlicht: ${c.counts?.log ?? 0}</span>
+       <span class="pill">Gespeicherte Versionen: ${c.versions?.length ?? 0}</span></p>
+
+    <div class="grid2">
+      <div class="field"><label>Name</label><input id="cf-name-${idx(c)}" value="${esc(c.name)}"></div>
+      <div class="field"><label>Sprache</label><input id="cf-language-${idx(c)}" value="${esc(c.language)}"></div>
+    </div>
+    <div class="field"><label>Ziel (objective)</label>
+      <textarea id="cf-objective-${idx(c)}">${esc(c.objective)}</textarea></div>
+    <div class="field"><label>Zielgruppe (audience)</label>
+      <textarea id="cf-audience-${idx(c)}">${esc(c.audience)}</textarea></div>
+    <div class="field"><label>Stimme (voice)</label>
+      <textarea id="cf-voice-${idx(c)}">${esc(c.voice)}</textarea></div>
+
+    <div class="grid2">
+      <div class="field"><label>Personas (eine pro Zeile)</label>
+        <textarea id="cf-personas-${idx(c)}">${esc(toLines(c.personas))}</textarea></div>
+      <div class="field"><label>Produkte (eine pro Zeile)</label>
+        <textarea id="cf-products-${idx(c)}">${esc(toLines(c.products))}</textarea></div>
+    </div>
+    <div class="grid2">
+      <div class="field"><label>Erlaubte Themen (eine pro Zeile)</label>
+        <textarea id="cf-topics-${idx(c)}">${esc(toLines(c.topics))}</textarea></div>
+      <div class="field"><label>Verbotene Themen (eine pro Zeile)</label>
+        <textarea id="cf-banned-${idx(c)}">${esc(toLines(c.banned_topics))}</textarea></div>
+    </div>
+    <div class="grid2">
+      <div class="field"><label>Engagement-Keywords (eine pro Zeile)</label>
+        <textarea id="cf-keywords-${idx(c)}">${esc(toLines(c.keywords_to_engage))}</textarea></div>
+      <div class="field"><label>Pflicht-Hashtags (eine pro Zeile)</label>
+        <textarea id="cf-hashtags-${idx(c)}">${esc(toLines(c.hashtags))}</textarea></div>
+    </div>
+    <div class="field"><label>CTA</label>
+      <textarea id="cf-cta-${idx(c)}">${esc(c.cta || '')}</textarea></div>
+
+    <div class="grid4">
+      <div class="field"><label>Max. Zeichen Post</label>
+        <input id="cf-maxpost-${idx(c)}" type="number" value="${c.max_post_chars}"></div>
+      <div class="field"><label>Max. Zeichen Kommentar</label>
+        <input id="cf-maxcomment-${idx(c)}" type="number" value="${c.max_comment_chars}"></div>
+      <div class="field"><label>Posts / Zyklus</label>
+        <input id="cf-lposts-${idx(c)}" type="number" value="${c.limits.posts_per_run}"></div>
+      <div class="field"><label>Kommentare / Zyklus</label>
+        <input id="cf-lcomments-${idx(c)}" type="number" value="${c.limits.comments_per_run}"></div>
+      <div class="field"><label>Replies / Zyklus</label>
+        <input id="cf-lreplies-${idx(c)}" type="number" value="${c.limits.replies_per_run}"></div>
+      <div class="field"><label>Reshares / Zyklus</label>
+        <input id="cf-lreshares-${idx(c)}" type="number" value="${c.limits.reshares_per_run}"></div>
+    </div>
+
+    <h4>Laufzeit &amp; Aktivfenster</h4>
+    <div class="grid4">
+      <div class="field"><label>Aktiv von (Datum)</label>
+        <input id="cf-start-${idx(c)}" type="date" value="${esc(c.schedule.start || '')}"></div>
+      <div class="field"><label>Aktiv bis (Datum)</label>
+        <input id="cf-end-${idx(c)}" type="date" value="${esc(c.schedule.end || '')}"></div>
+      <div class="field"><label>Aktiv ab (Stunde)</label>
+        <input id="cf-hfrom-${idx(c)}" type="number" min="0" max="23" value="${c.schedule.active_hours[0]}"></div>
+      <div class="field"><label>Aktiv bis (Stunde)</label>
+        <input id="cf-hto-${idx(c)}" type="number" min="0" max="23" value="${c.schedule.active_hours[1]}"></div>
+    </div>
+    <div class="grid2">
+      <div class="field"><label>Zyklus-Intervall (Minuten)</label>
+        <input id="cf-cycle-${idx(c)}" type="number" value="${c.schedule.cycle_interval_minutes}"></div>
+      <div class="field"><label>Max. Zyklen (leer = unbegrenzt)</label>
+        <input id="cf-maxcycles-${idx(c)}" type="number" value="${c.schedule.max_cycles ?? ''}"></div>
+    </div>
+
+    <h4>Bilder</h4>
+    <div class="grid2">
+      <div class="field"><label class="inline">
+        <input type="checkbox" id="cf-imgenabled-${idx(c)}" ${c.images.enabled ? 'checked' : ''}> Bilder aktiv</label>
+      </div>
+      <div class="field"><label>Anteil mit Bild (0–1)</label>
+        <input id="cf-imgratio-${idx(c)}" type="number" step="0.1" min="0" max="1" value="${c.images.ratio}"></div>
+    </div>
+    <div class="field"><label>Bildstil</label>
+      <textarea id="cf-imgstyle-${idx(c)}">${esc(c.images.style)}</textarea></div>
+
+    <div class="actions">
+      <button class="primary" onclick="saveCampaign('${p}', ${idx(c)})">Kampagne speichern</button>
+      <a class="upload-button" href="/api/campaigns/export?campaign=${encodeURIComponent(c.path)}" download>YAML exportieren</a>
+    </div>
+  </div>`;
+}
+
+function idx(c) { return (window.__campaigns || []).indexOf(c); }
+
+async function saveCampaign(path, i) {
+  const c = window.__campaigns[i];
+  const g = id => document.getElementById(id + '-' + i);
+  const maxCyclesRaw = g('cf-maxcycles').value.trim();
+  const body = {
+    path,
+    version: c.version,
+    name: g('cf-name').value,
+    language: g('cf-language').value,
+    objective: g('cf-objective').value,
+    audience: g('cf-audience').value,
+    voice: g('cf-voice').value,
+    personas: fromLines(g('cf-personas').value),
+    products: fromLines(g('cf-products').value),
+    topics: fromLines(g('cf-topics').value),
+    banned_topics: fromLines(g('cf-banned').value),
+    keywords_to_engage: fromLines(g('cf-keywords').value),
+    required_hashtags: fromLines(g('cf-hashtags').value),
+    cta: g('cf-cta').value || null,
+    max_post_chars: parseInt(g('cf-maxpost').value, 10),
+    max_comment_chars: parseInt(g('cf-maxcomment').value, 10),
+    limits: {
+      posts_per_run: parseInt(g('cf-lposts').value, 10),
+      comments_per_run: parseInt(g('cf-lcomments').value, 10),
+      replies_per_run: parseInt(g('cf-lreplies').value, 10),
+      reshares_per_run: parseInt(g('cf-lreshares').value, 10),
+    },
+    images: {
+      enabled: g('cf-imgenabled').checked,
+      style: g('cf-imgstyle').value,
+      ratio: parseFloat(g('cf-imgratio').value),
+    },
+    schedule: {
+      start: g('cf-start').value || null,
+      end: g('cf-end').value || null,
+      active_hours: [parseInt(g('cf-hfrom').value, 10), parseInt(g('cf-hto').value, 10)],
+      cycle_interval_minutes: parseInt(g('cf-cycle').value, 10),
+      max_cycles: maxCyclesRaw ? parseInt(maxCyclesRaw, 10) : null,
+    },
+  };
+  try {
+    await api('/api/campaigns/save', {
+      method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(body)
+    });
+    toast(`Kampagne als Version ${c.version + 1} gespeichert.`);
+    await loadCampaigns(); render();
+  } catch (e) { toast('Fehler: ' + e.message, 6000); }
+}
+
+async function importCampaign(button) {
+  const file = document.getElementById('campaign-import-file')?.files?.[0];
+  if (!file) return toast('Bitte zuerst eine YAML-Datei auswählen.', 6000);
+  const mode = document.getElementById('campaign-import-mode').value;
+  const targetCampaign = document.getElementById('campaign-import-target')?.value || null;
+  if (mode === 'version' && !targetCampaign) {
+    return toast('Bitte eine bestehende Kampagne auswählen.', 6000);
+  }
+  button.disabled = true;
+  try {
+    const result = await api('/api/campaigns/import', {
+      method: 'POST', headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        filename: file.name,
+        content: await file.text(),
+        mode,
+        target_campaign: mode === 'version' ? targetCampaign : null
+      })
+    });
+    toast(mode === 'version'
+      ? `${result.name} als Version ${result.version} übernommen.`
+      : `${result.name} (Version ${result.version}) neu importiert.`, 7000);
+    await loadCampaigns();
+    SEL.value = result.path;
+    localStorage.setItem('selected-campaign', result.path);
+    render();
+  } catch (e) {
+    toast('Import fehlgeschlagen: ' + e.message, 9000);
+    button.disabled = false;
+  }
+}
+
+/* ---------------------------------------------------------------- Routing */
+
+function render() {
+  if (TAB === 'cron') return viewCron();
+  if (TAB === 'jobs') return viewJobs();
+  if (TAB === 'ideas') return viewIdeas();
+  if (TAB === 'config') return viewConfig();
+  if (TAB === 'campaigns') return viewCampaigns();
+  if (TAB === 'analytics') return viewAnalytics();
+  return viewItems(TAB);
+}
+
+document.querySelectorAll('nav button').forEach(b => b.onclick = () => {
+  document.querySelectorAll('nav button').forEach(x => x.classList.remove('active'));
+  b.classList.add('active');
+  TAB = b.dataset.tab;
+  render();
+});
+SEL.onchange = () => {
+  localStorage.setItem('selected-campaign', SEL.value);
+  PLANNING_MONTH = null;
+  PLANNING_DAY = null;
+  PLANNING_ITEMS = [];
+  SCHEDULE_DAY_COUNTS = {};
+  HISTORY_ITEMS = [];
+  HISTORY_MONTH = null;
+  HISTORY_DAY = null;
+  render();
+};
+
+(async () => {
+  await loadCampaigns();
+  render();
+  health();
+  setInterval(health, 60000);
+})();
+</script>
+</body>
+</html>

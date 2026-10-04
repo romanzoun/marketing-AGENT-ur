@@ -1,0 +1,1337 @@
+{
+  "version": 2,
+  "edits": [
+    {
+      "at": "2026-09-13T22:04:37",
+      "item_id": "comment-2026-09-13-0007",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "before": "For me, the uncomfortable bit is not that the next privileged user may be software; it is that nobody may feel personally responsible for its keys. An AI agent with standing access is like a keyring that never sleeps—give it an owner, the fewest keys possible, short expiry dates, and a trail humans can review. #Compliance #eIDAS #RecordsManagement",
+      "after": "For me, the uncomfortable bit is not that the next privileged user may be software; it is that nobody may feel personally responsible for its keys. An AI agent with standing access is like a keyring that never sleeps—give it an owner, the fewest keys possible, short expiry dates, and a trail humans can review. I would add a qualified signature, so liability is clear, even if someone gives acces to his agent. #Compliance #eIDAS #RecordsManagement",
+      "approved": true
+    },
+    {
+      "at": "2026-09-13T22:06:35",
+      "item_id": "post-2026-09-11-0001",
+      "kind": "post",
+      "source_job_id": "job-0001",
+      "before": "Eine sensible PDF zur Prüfung in eine unbekannte Cloud hochladen?\n\nFür mich ist das wie ein Mantel an einer Garderobe, bei der niemand weiss, wer hinter dem Vorhang steht. Nur steckt in der Innentasche nicht bloss ein Kaugummi, sondern vielleicht ein Vertrag.\n\nDarum schaue ich beim Prüfprozess auch auf den Datenweg.\n\nBeim Swisscom Document Validator bleibt die PDF in der eigenen Umgebung. Ihr Hash wird lokal gebildet. So lassen sich ZertES-/eIDAS-Signatur und Zertifikatsinformationen belastbarer prüfen, ohne die vollständige Datei in eine Fremd-Cloud hochzuladen.\n\nDas ersetzt keine rechtliche Beurteilung. Es nimmt dem Schritt vor Freigabe oder Archivierung aber etwas von seinem «wird schon passen».\n\nMeine Frage an Records- und Compliance-Teams: Wo darf eine sensible PDF in eurem Prüfprozess überhaupt hin?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "after": "Eine sensible PDF zur Prüfung in eine unbekannte Cloud hochladen?\n\nFür mich ist das wie ein Mantel an einer Garderobe, bei der niemand weiss, wer hinter dem Vorhang steht. Nur steckt in der Innentasche nicht bloss ein Kaugummi, sondern vielleicht ein Vertrag.\n\nDarum schaue ich beim Prüfprozess auch auf den Datenweg.\n\nBeim Swisscom Document Validator bleibt die PDF in der eigenen Umgebung, ohne on-prem installationen. Ihr Hash wird lokal gebildet im Browser. So lassen sich ZertES-/eIDAS-Signatur und Zertifikatsinformationen belastbarer prüfen, ohne die vollständige Datei in eine Fremd-Cloud hochzuladen oder mühsame on-prem operations.\n\nMeine Frage an Records- und Compliance-Teams: Wo darf eine sensible PDF in eurem Prüfprozess überhaupt hin?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "approved": true
+    },
+    {
+      "at": "2026-09-13T22:07:41",
+      "item_id": "post-2026-09-11-0002",
+      "kind": "post",
+      "source_job_id": "job-0001",
+      "before": "Ein Audit ist wie ein sehr höflicher Detektiv.\n\nEs sagt nicht: «Das sah damals schon vernünftig aus.»\nEs fragt: «Wie genau seid ihr zu dieser Entscheidung gekommen?»\n\nUnd plötzlich ist «Wir haben die PDF angeschaut» ungefähr so hilfreich wie ein Alibi auf einer Serviette.\n\nVor Freigabe oder Archivierung zählt deshalb nicht nur die Prüfung. Auch ihr Ergebnis sollte nachvollziehbar festgehalten werden: Signatur, Zertifikatsinformationen und die Grundlage der Entscheidung.\n\nDer Swisscom Document Validator liefert dafür eine belastbarere Auswertung. Der Business Identity Validator kann zusätzlich Kontext zu Zeichner, Unternehmen und Berechtigung geben.\n\nKeine juristische Garantie. Aber eine deutlich bessere Antwort als «Das müsste damals jemand geprüft haben».\n\nKönnte euer Team eine Freigabeentscheidung Monate später noch sauber erklären?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "after": "Ein Audit ist wie ein sehr höflicher Detektiv.\n\nEs sagt nicht: «Das sah damals schon vernünftig aus.»\nEs fragt: «Wie genau seid ihr zu dieser Entscheidung gekommen?»\n\nUnd plötzlich ist «Wir haben die PDF angeschaut» ungefähr so hilfreich wie ein Alibi auf einer Serviette.\n\nVor Freigabe oder Archivierung zählt deshalb nicht nur die Prüfung. Auch ihr Ergebnis sollte nachvollziehbar festgehalten werden: Signatur, Zertifikatsinformationen und die Grundlage der Entscheidung.\n\nDer Swisscom Document Validator liefert dafür eine belastbarere Auswertung. Der Business Identity Validator kann zusätzlich Kontext zu Zeichner, Unternehmen und Berechtigung geben.\n\nKönnte euer Team eine Freigabeentscheidung Monate später noch sauber erklären?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "approved": true
+    },
+    {
+      "at": "2026-09-14T10:28:37",
+      "item_id": "post-2026-09-12-0001",
+      "kind": "post",
+      "source_job_id": "job-0001",
+      "before": "Einen LKW würde ich am Werkstor nicht jedes Mal komplett ausladen, nur um danach denselben Kontrollzettel von Hand auszufüllen.\n\nBei regelmässig eingehenden signierten PDFs sehe ich das ähnlich. Wenn Records-, Posteingang- oder Vertragsadmin-Teams jede Prüfung als spontane Einzelaktion behandeln, wird aus einem Kontrollpunkt schnell eine kleine Tagesreise.\n\nMir ist lieber, die Prüfung steht fest im Records-/ECM-Workflow: vor Freigabe oder Archivierung, wiederholbar und nachvollziehbar. Per API kann der Swisscom Document Validator als solcher Prüfschritt eingebunden werden. Er prüft ZertES-/eIDAS-Signatur und Zertifikatsinformationen belastbarer. Die PDF bleibt in der eigenen Umgebung; ihr Hash wird lokal gebildet.\n\nDie Technik entscheidet dabei weder rechtlich noch gibt sie das Dokument selbst frei. Der Mensch bleibt am Steuer – der LKW muss nur nicht für jeden Kontrollblick zerlegt werden.\n\nWo steht euer fester Prüfschalter im Records-/ECM-Prozess?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "after": "Einen LKW würde ich am Werkstor nicht jedes Mal komplett ausladen, wenn ich nicht den nicht kenne. Manuelle Überprüfung ist mühsam.\n\nBei regelmässig eingehenden signierten PDFs sehe ich das ähnlich. Wenn Records-, Posteingang- oder Vertragsadmin-Teams jede Prüfung als spontane Einzelaktion behandeln, wird aus einem Kontrollpunkt schnell eine kleine Tagesreise.\n\nMir ist lieber, die Prüfung steht fest im Records-/ECM-Workflow: vor Freigabe oder Archivierung, wiederholbar und nachvollziehbar. Per API kann der Swisscom Document Validator als solcher Prüfschritt eingebunden werden. Er prüft ZertES-/eIDAS-Signatur und Zertifikatsinformationen belastbarer. Die PDF bleibt in der eigenen Umgebung; ihr Hash wird lokal gebildet.\n\nDer Mensch bleibt am Steuer – der LKW muss nur nicht für jeden Kontrollblick zerlegt werden.\n\nWo steht euer fester Prüfschalter im Records-/ECM-Prozess?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "approved": true
+    },
+    {
+      "at": "2026-09-14T22:32:10",
+      "item_id": "comment-2026-09-13-0005",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "before": "I like the distinction: an attribute sitting in the PID is not the same as the user disclosing it. For cross-border workflows, assuming every national wallet contains the same drawers is asking for trouble; build around the common minimum, then request more only when it is genuinely needed. #Compliance #eIDAS #RecordsManagement",
+      "after": "I like the distinction: an attribute sitting in the PID is not the same as the user disclosing it. For cross-border workflows, assuming every national wallet contains the same drawers is asking for trouble; build around the common minimum, then request more only when it is genuinely needed. I'm curious how fraud detection will change as you have selective disclosure in the PID #Compliance #eIDAS #RecordsManagement",
+      "approved": true,
+      "outcome": "approved"
+    },
+    {
+      "at": "2026-09-14T22:34:47",
+      "item_id": "post-2026-09-13-0002",
+      "kind": "post",
+      "source_job_id": "job-0001",
+      "before": "Vor einer Demo würde ich keine Folienschlacht starten. Ich würde einer signierten Test-PDF 15 Minuten lang mit Stoppuhr und Klemmbrett durch den Prozess folgen.\n\nMeine Generalprobe für IT/Security, Records und Legal Ops:\n\n1. Wo liegt die PDF?\n2. Was verlässt die eigene Umgebung?\n3. Welche Signatur- und Zertifikatsinformationen werden ausgewertet?\n4. Wer trifft danach die Entscheidung?\n\nBeim Swisscom Document Validator bleibt die PDF in der eigenen Umgebung, ihr Hash wird lokal gebildet. Er prüft ZertES-/eIDAS-signierte PDFs beziehungsweise deren Signatur- und Zertifikatsinformationen belastbarer. Der Business Identity Validator kann Kontext zu Zeichner, Unternehmen und Berechtigung ergänzen.\n\nDie Stoppuhr misst den Datenweg, nicht juristische Sicherheit. Die Produkte liefern Prüfinformationen. Freigeben oder ablehnen muss der zuständige Mensch.\n\nWürde euer heutiger Prüfprozess diesen 15-Minuten-Test bestehen?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "after": "Vor einer Demo würde ich keine Folienschlacht starten. Ich würde einer signiertes PDF mit sensitiven Daten oder mit vielen Bilddaten und dadurch grosses Dokument Minuten lang mit Stoppuhr und Klemmbrett durch den Prozess folgen, wo der Validator ein Upload bedeutet.\n\nMeine Generalprobe für IT/Security, Records und Legal Ops:\n\n1. Wo liegt die PDF?\n2. Was verlässt die eigene Umgebung?\n3. Welche Signatur- und Zertifikatsinformationen werden ausgewertet?\n4. Wer trifft danach die Entscheidung?\n\nBeim Swisscom Document Validator bleibt die PDF in der eigenen Umgebung, sogar im Prozess, ihr Hash wird lokal gebildet. Er prüft ZertES-/eIDAS-signierte PDFs beziehungsweise deren Signatur- und Zertifikatsinformationen belastbarer. Der Business Identity Validator kann Kontext zu Zeichner, Unternehmen und Berechtigung ergänzen.\n\nWürde euer heutiger Prüfprozess diesen 15-Minuten-Test bestehen?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "approved": true,
+      "outcome": "approved"
+    },
+    {
+      "at": "2026-09-14T22:38:22",
+      "item_id": "post-2026-09-13-0001",
+      "kind": "post",
+      "source_job_id": "job-0001",
+      "before": "Eine signierte PDF macht im Unternehmen manchmal mehr Stationen als ein Regionalzug.\n\nPosteingang. Fachbereich. ECM. Archiv.\n\nUnd an jeder Übergabe droht stille Post: Aus «Signatur geprüft» wird erst «müsste geprüft sein» und am Ende «hat sicher jemand gemacht». Mein Lieblingssatz für spätere Rückfragen. Also: überhaupt nicht.\n\nFür mich gehört der Kontrollpunkt deshalb klar vor die Freigabe oder Archivierung. Der Swisscom Document Validator prüft bei ZertES-/eIDAS-signierten PDFs Signatur und Zertifikatsinformationen belastbarer. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.\n\nDas Prüfergebnis unterstützt Records- und Compliance-Teams. Es trifft keine rechtliche Entscheidung und gibt nichts automatisch frei. Der zuständige Mensch entscheidet.\n\nAn welcher Übergabe wird «geprüft» bei euch zu einem nachvollziehbaren Prozessschritt?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "after": "Eine signierte PDF macht im Unternehmen manchmal mehr Stationen als ein Regionalzug.\n\nPosteingang. Fachbereich. ECM. Archiv.\n\nUnd an jeder Übergabe droht stille Post: Aus «Signatur geprüft» wird erst «müsste geprüft sein» und am Ende «hat sicher jemand gemacht». Mein Lieblingssatz für spätere Rückfragen.\n\nFür mich gehört der Kontrollpunkt deshalb klar vor die Freigabe oder Archivierung. Der Swisscom Document Validator prüft bei ZertES-/eIDAS-signierten PDFs Signatur und Zertifikatsinformationen belastbarer. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.\n\nDas Prüfergebnis unterstützt Records- und Compliance-Teams ohne Stille Post, integrativ in deiner Umgebung, egal ob sensitive Daten oder grosse Dokumente\n\nAn welcher Übergabe wird «geprüft» bei euch zu einem nachvollziehbaren Prozessschritt?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "approved": true,
+      "outcome": "approved"
+    },
+    {
+      "at": "2026-09-14T22:42:30",
+      "item_id": "post-2026-09-12-0004",
+      "kind": "post",
+      "source_job_id": "job-0003",
+      "before": "Ein grüner Haken im Nebel ist wie eine Ampel, von der ich nur die Farbe sehe. Beruhigend? Ja. Genug für eine belastbare Entscheidung? Eher nicht.\n\nFür Records-Teams, Vertragsadministration und Compliance Ops mit regelmässig eingehenden signierten PDFs steckt die Arbeit hinter dem Haken:\n\n- Welche ZertES-/eIDAS-Signatur wurde geprüft?\n- Welche Zertifikatsinformationen tragen das Ergebnis?\n- Was muss dokumentiert sein, damit die Entscheidung Monate später nachvollziehbar bleibt?\n\nDer Swisscom Document Validator prüft die Signatur und wertet Zertifikatsinformationen belastbarer aus. Die PDF bleibt in der eigenen Umgebung; lokal wird ihr Hash gebildet.\n\nIch mag dieses Bild: Der Haken ist der Wegweiser, nicht das Ziel. Das Prüfergebnis unterstützt den Prozess, ersetzt aber weder die rechtliche Würdigung noch die menschliche Freigabe. Auch Revisionssicherheit entsteht nicht automatisch.\n\nWelche Details müssen bei euch sichtbar bleiben, damit aus dem grünen Licht kein späteres Rätsel wird?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "after": "Ein grüner Haken im Nebel ist wie eine Ampel, von der ich nur die Farbe sehe. Beruhigend? Ja. Genug für eine belastbare Entscheidung? Eher nicht.\n\nFür Records-Teams, Vertragsadministration und Compliance Ops mit regelmässig eingehenden signierten PDFs steckt die Arbeit hinter dem Haken:\n\n- Welche ZertES-/eIDAS-Signatur wurde geprüft?\n- Welche Zertifikatsinformationen tragen das Ergebnis?\n- Was muss dokumentiert sein, damit die Entscheidung Monate später nachvollziehbar bleibt?\n\nDer Swisscom Document Validator prüft die Signatur und wertet Zertifikatsinformationen belastbarer aus. Die PDF bleibt in der eigenen Umgebung; lokal wird ihr Hash gebildet. Also Kein Aufwand, nur grünes Licht direkt im Prozess anwendbar für sensitive oder grosse Dokumente, weil das Dokument ihren Browser nicht verlässt.\n\nWelche Details müssen bei euch sichtbar bleiben, damit aus dem grünen Licht kein späteres Rätsel wird?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "approved": true,
+      "outcome": "approved"
+    },
+    {
+      "at": "2026-09-14T22:46:53",
+      "item_id": "post-2026-09-12-0003",
+      "kind": "post",
+      "source_job_id": "job-0003",
+      "before": "Ein Anhang sollte nicht erst auf Wanderschaft gehen, bevor jemand prüft, ob seine Signatur belastbar ist.\n\nWir haben den Swisscom Document Validator direkt in Outlook eingebunden. So wird jeder eingehende signierte PDF-Anhang direkt dort validiert, wo er ankommt – integriert in den gewohnten Arbeitsablauf statt als zusätzlicher Ausflug in ein separates Tool.\n\nDer Validator prüft ZertES-/eIDAS-Signatur und Zertifikatsinformationen belastbarer. Die PDF bleibt in der eigenen Umgebung; ihr Hash wird lokal gebildet.\n\nFür mich ist das wie eine Eingangskontrolle direkt an der Tür: weniger «Lade das mal irgendwo hoch» und weniger «Hat das schon jemand geprüft?».\n\nTechnische Signaturprüfung und geschäftliche Berechtigung bleiben dabei zwei Fragen. Der Business Identity Validator kann zusätzlich Kontext zu Zeichner, Unternehmen und Berechtigung liefern. Die rechtliche Würdigung und Freigabe bleiben beim zuständigen Team.\n\nWie viele Umwege macht ein signierter Anhang bei euch, bevor er archiviert oder freigegeben wird?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "after": "Ein signiertes PDF kommt per Mail rein – und dann?\n\nOft wird der Anhang erstmal heruntergeladen, irgendwo hochgeladen, geprüft und danach wieder zurück in den eigentlichen Prozess gebracht.\n\nEigentlich unnötig kompliziert.\n\nWir haben deshalb den Swisscom Document Validator direkt in Outlook integriert. Signierte PDF-Anhänge können damit direkt dort geprüft werden, wo sie ankommen.\n\nDer Validator prüft unter anderem die ZertES-/eIDAS-Signatur und die Zertifikatsinformationen. Das PDF selbst bleibt dabei in der eigenen Umgebung, der Hash wird lokal gebildet.\n\nFür mich ist das ein bisschen wie eine Eingangskontrolle direkt an der Tür: prüfen, bevor das Dokument archiviert oder weiterverarbeitet wird – ohne zusätzliche Umwege.\n\nWichtig ist aber auch: Eine technisch gültige Signatur bedeutet noch nicht automatisch, dass jemand für ein Unternehmen unterschreiben durfte.\n\nDas sind zwei unterschiedliche Fragen:\n\nIst die Signatur gültig?\n\nUnd war die Person auch zeichnungsberechtigt?\n\nGenau für den zweiten Teil kann unser Business Identity Validator zusätzlichen Kontext zu Person, Unternehmen und Berechtigung liefern.\n\nDie rechtliche Bewertung und die finale Freigabe bleiben natürlich weiterhin beim zuständigen Team.\n\nMich würde interessieren: Wie läuft das bei euch heute? Wie viele Stationen durchläuft ein signierter Anhang, bevor er geprüft und archiviert wird?\n\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n\n#Compliance #eIDAS #DigitalSignature #DigitalTrust",
+      "approved": true,
+      "outcome": "approved"
+    },
+    {
+      "at": "2026-09-14T22:50:02",
+      "item_id": "post-2026-09-12-0003",
+      "kind": "post",
+      "source_job_id": "job-0003",
+      "before": "Ein signiertes PDF kommt per Mail rein – und dann?\n\nOft wird der Anhang erstmal heruntergeladen, irgendwo hochgeladen, geprüft und danach wieder zurück in den eigentlichen Prozess gebracht.\n\nEigentlich unnötig kompliziert.\n\nWir haben deshalb den Swisscom Document Validator direkt in Outlook integriert. Signierte PDF-Anhänge können damit direkt dort geprüft werden, wo sie ankommen.\n\nDer Validator prüft unter anderem die ZertES-/eIDAS-Signatur und die Zertifikatsinformationen. Das PDF selbst bleibt dabei in der eigenen Umgebung, der Hash wird lokal gebildet.\n\nFür mich ist das ein bisschen wie eine Eingangskontrolle direkt an der Tür: prüfen, bevor das Dokument archiviert oder weiterverarbeitet wird – ohne zusätzliche Umwege.\n\nWichtig ist aber auch: Eine technisch gültige Signatur bedeutet noch nicht automatisch, dass jemand für ein Unternehmen unterschreiben durfte.\n\nDas sind zwei unterschiedliche Fragen:\n\nIst die Signatur gültig?\n\nUnd war die Person auch zeichnungsberechtigt?\n\nGenau für den zweiten Teil kann unser Business Identity Validator zusätzlichen Kontext zu Person, Unternehmen und Berechtigung liefern.\n\nDie rechtliche Bewertung und die finale Freigabe bleiben natürlich weiterhin beim zuständigen Team.\n\nMich würde interessieren: Wie läuft das bei euch heute? Wie viele Stationen durchläuft ein signierter Anhang, bevor er geprüft und archiviert wird?\n\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n\n#Compliance #eIDAS #DigitalSignature #DigitalTrust",
+      "after": "Ein signiertes PDF kommt per Mail rein – und dann?\n\nOft wird der Anhang erstmal heruntergeladen, irgendwo hochgeladen, geprüft und danach wieder zurück in den eigentlichen Prozess gebracht.\n\nEigentlich unnötig kompliziert.\n\nWir haben deshalb den Swisscom Document Validator direkt in Outlook integriert. Signierte PDF-Anhänge können damit direkt dort geprüft werden, wo sie ankommen.\n\nDer Validator prüft unter anderem die ZertES-/eIDAS-Signatur und die Zertifikatsinformationen. Das PDF selbst bleibt dabei in der eigenen Umgebung, der Hash wird lokal gebildet.\n\nFür mich ist das ein bisschen wie eine Eingangskontrolle direkt an der Tür: prüfen, bevor das Dokument archiviert oder weiterverarbeitet wird – ohne zusätzliche Umwege.\n\nWichtig ist aber auch: Eine technisch gültige Signatur bedeutet noch nicht automatisch, dass jemand für ein Unternehmen unterschreiben durfte.\n\nDas sind zwei unterschiedliche Fragen:\n\nIst die Signatur gültig?\n\nUnd war die Person auch zeichnungsberechtigt?\n\nGenau für den zweiten Teil kann unser Business Identity Validator zusätzlichen Kontext zu Person, Unternehmen und Berechtigung liefern.\n\nMich würde interessieren: Wie läuft das bei euch heute? Wie viele Stationen durchläuft ein signierter Anhang, bevor er geprüft und archiviert wird?\n\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n\n#Compliance #eIDAS #DigitalSignature #DigitalTrust",
+      "approved": true,
+      "outcome": "approved"
+    },
+    {
+      "at": "2026-09-15T19:50:47",
+      "item_id": "comment-2026-09-15-0012",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "before": "Great to see the team putting Wallet Unit Attestations and ZKPs on the table—well done. In real records and compliance workflows, how do you combine minimal disclosure with enough verifiable evidence to retrace a decision later? Privacy should not turn the trail into a black box. #Compliance #eIDAS #RecordsManagement",
+      "after": "Great to see the team putting Wallet Unit Attestations and ZKPs on the table—well done. In real records and compliance workflows, how do you combine minimal disclosure with enough verifiable evidence to retrace a decision later? We developed ZKP signature validation, a descrete, so we never see the document. #Compliance #eIDAS #RecordsManagement",
+      "approved": true,
+      "outcome": "approved"
+    },
+    {
+      "at": "2026-09-15T20:05:19",
+      "item_id": "comment-2026-09-15-0006",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "before": "The year of the wallets sounds exciting; the Records part of my brain immediately asks what happens after the applause. A wallet becomes operational when every trust check, approval and archived record leaves a trail people can retrace later—not just a shiny credential on a phone. #Compliance #eIDAS #RecordsManagement",
+      "after": "The year of the wallets sounds exciting; the Records part of my brain immediately asks what happens after the applause. A wallet becomes operational when every trust check, approval and archived record leaves a trail people can retrace later—not just a shiny credential on a phone. Furthermore, lets do not forget that PDF and contracts will still exists and need validation, too #Compliance #eIDAS #RecordsManagement",
+      "approved": true,
+      "outcome": "approved"
+    },
+    {
+      "at": "2026-09-15T20:07:56",
+      "item_id": "comment-2026-09-15-0008",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "before": "Ich finde den Hinweis wichtig: Nicht jeder Kontrollverlust ist technisch unvermeidbar; manchmal hat vorher jemand Leitplanken abgebaut. Gerade deshalb sollten wir nüchtern trennen, was ein System tatsächlich getan hat und welche menschliche Entscheidung davorstand. Sonst diskutieren wir den Rauch und übersehen, wer die Streichhölzer verteilt hat. #Compliance #eIDAS #RecordsManagement",
+      "after": "Ich finde den Hinweis wichtig: Nicht jeder Kontrollverlust ist technisch unvermeidbar. Gerade deshalb sollten wir nüchtern trennen, was ein System tatsächlich getan hat und welche menschliche Entscheidung davorstand. Kontrolle ist nämlich bereits verloren, da ich als Nutzer die Kontrolle über die Human Interfaces (Browser) direkt abgeben kann zu einem Agenten. Damit ist die Kontrolle bereits weg, und Systeme online müssen nun mit Agenten und Menschen über gleiche HTML Webseite klar kommen müssen #Compliance #eIDAS #RecordsManagement",
+      "approved": true,
+      "outcome": "approved"
+    },
+    {
+      "at": "2026-09-15T20:08:41",
+      "item_id": "comment-2026-09-15-0009",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "before": "For me, cross-border recognition becomes real when the evidence behind a qualified signature travels as clearly as the document itself. Citizens, businesses and public authorities should be able to verify what was checked, under which trust framework, and record that decision for later. Otherwise, mutual recognition is a bridge with no inspection log. #Compliance #eIDAS #RecordsManagement",
+      "after": "For me, cross-border recognition becomes real when the evidence behind a qualified signature travels as clearly as the document itself. Citizens, businesses and public authorities should be able to verify what was checked, under which trust framework, and record that decision for later. Otherwise, mutual recognition is a bridge with no inspection log. We built a discrete validator for checking signature without sharing document. #Compliance #eIDAS #RecordsManagement",
+      "approved": true,
+      "outcome": "approved"
+    },
+    {
+      "at": "2026-09-15T20:30:08",
+      "item_id": "post-2026-09-15-0001",
+      "kind": "post",
+      "source_job_id": "job-0001",
+      "before": "Am Flughafen ist der einfache Teil, wenn jede Schale lautlos durchfährt. Der Prozess zeigt sich, wenn es piept.\n\nDann stehen fünf sehr professionelle Menschen herum. Jeder wartet kurz darauf, wer zuerst zuständig ist.\n\nGenau dieser Moment interessiert mich bei signierten PDFs: Was tun Records/Posteingang, Vertragsadministration oder Compliance/Legal Ops, wenn die Auswertung unklar bleibt?\n\nDer Swisscom Document Validator prüft ZertES-/eIDAS-signierte PDFs sowie Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, der Hash wird lokal gebildet.\n\nDie Auswertung ist aber noch kein Ausnahmeweg. Der braucht Namen: Wer stoppt Freigabe oder Archivierung? Wer beurteilt? Was wird festgehalten?\n\nDas Ergebnis ersetzt keine menschliche Beurteilung, Freigabe oder Rechtsprüfung.\n\nWer besitzt bei euch den Ausnahmeweg, wenn es bei einer signierten PDF «piept»?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "after": "Am Flughafen ist der einfache Teil, wenn jede Schale lautlos durchfährt. Der Prozess zeigt sich, wenn es piept.\n\nDann stehen fünf sehr professionelle Menschen herum. Jeder wartet kurz darauf, wer zuerst zuständig ist.\n\nGenau dieser Moment interessiert mich bei signierten PDFs: Was tun Records/Posteingang, Vertragsadministration oder Compliance/Legal Ops, wenn die Auswertung unklar bleibt?\n\nDer Swisscom Document Validator prüft ZertES-/eIDAS-signierte PDFs sowie Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, der Hash wird lokal gebildet. \n\nWer besitzt bei euch den Ausnahmeweg, wenn es bei einer signierten PDF «piept»?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "approved": true,
+      "outcome": "approved"
+    },
+    {
+      "at": "2026-09-15T20:49:06",
+      "item_id": "post-2026-09-15-0001",
+      "kind": "post",
+      "source_job_id": "job-0001",
+      "before": "Gepäckkontrollen werden für mich spätestens dann unangenehm, wenn fremde Menschen meinen Koffer öffnen. Noch schöner: Der Koffer ist etwas grösser, und plötzlich passt er nicht mehr in den vorgesehenen Ablauf.\n\nBei sensiblen Dokumenten will ich genau diese zwei Situationen vermeiden:\nDass Dritte in den Inhalt schauen.\nUnd dass ein grosses PDF wegen eines Upload-Umwegs zum Sonderfall wird.\n\nFür mich heisst Compliance auch: Ein Prüfschritt gehört direkt in den eigenen Prozess. Ich will weder das Dokument noch interne Compliance-Arbeitsschritte nach draussen geben. Und nicht die Dokumentengrösse sollte bestimmen, ob der Prozess funktioniert.\n\nDer Swisscom Document Validator prüft ZertES-/eIDAS-signierte PDFs sowie Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.\n\nSo bleibt auch der unangenehme Blick in den Koffer dort, wo er hingehört: beim Flughafen.\n\nWo müssen sensible oder grosse Dokumente heute noch euren vorgesehenen Ablauf verlassen?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "after": "Gepäckkontrollen werden für mich spätestens dann unangenehm, wenn fremde Menschen meinen Koffer öffnen. Noch schöner: Der Koffer ist etwas grösser, und plötzlich passt er nicht mehr in den vorgesehenen Ablauf.\n\nBei sensiblen Dokumenten will ich genau diese zwei Situationen vermeiden:\nDass Dritte in den Inhalt schauen.\nUnd dass ein grosses PDF wegen eines Upload-Umwegs zum Sonderfall wird.\n\nFür mich heisst Compliance auch: Ein Prüfschritt gehört direkt in den eigenen Prozess. Ich will weder das Dokument noch interne Compliance-Arbeitsschritte nach draussen geben. Und nicht die Dokumentengrösse sollte bestimmen, ob der Prozess funktioniert.\n\nDer Swisscom Document Validator prüft ZertES-/eIDAS-signierte PDFs sowie Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.\n\nSo bleibt auch der unangenehme Blick in den Koffer dort, wo er hingehört.\n\nWo müssen sensible oder grosse Dokumente heute noch euren vorgesehenen Ablauf verlassen?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "approved": true,
+      "outcome": "approved"
+    },
+    {
+      "at": "2026-09-15T20:57:47",
+      "item_id": "post-2026-09-15-0002",
+      "kind": "post",
+      "source_job_id": "job-0001",
+      "before": "Die meiste Compliance-Arbeit passiert heute im Browser.\n\nBis ein Vertrag geprüft werden muss.\n\nDann heisst es plötzlich: PDF herunterladen, Adobe Reader öffnen, Signaturen suchen, Zertifikate einzeln prüfen und das Ergebnis wieder in den eigentlichen Prozess übertragen.\n\nEin kleiner Kontextwechsel mit erstaunlich viel Handarbeit. Der Mensch spielt dabei Kurier zwischen Browser, Dokument und Compliance-Prozess.\n\nWir haben deshalb den Swisscom Document Validator als diskrete Prüfung direkt in den Browser integriert. Er prüft bei ZertES-/eIDAS-signierten PDFs die Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.\n\nDer Business Identity Validator zusätzlichen Kontext zu Zeichner, Unternehmen und Berechtigung liefern.\n\nSo wird aus der Vertragsprüfung ein Schritt im Prozess statt ein Ausflug durch mehrere Programme. Die menschliche Beurteilung, Freigabe oder Rechtsprüfung ersetzt das natürlich nicht. Aber der Mensch muss nicht mehr die Arbeit verrichten, die der Browserprozess bereits übernehmen kann.\n\nWie viele Kontextwechsel braucht eure Vertragsprüfung heute?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "after": "Die meiste Compliance-Arbeit passiert heute im Browser.\n\nBis ein Vertrag geprüft werden muss.\n\nDann heisst es plötzlich: PDF herunterladen, Adobe Reader öffnen, Signaturen suchen, Zertifikate einzeln prüfen und das Ergebnis wieder in den eigentlichen Prozess übertragen.\n\nEin kleiner Kontextwechsel mit erstaunlich viel Handarbeit. Der Mensch spielt dabei Kurier zwischen Browser, Dokument und Compliance-Prozess.\n\nWir haben deshalb den Swisscom Document Validator als diskrete Prüfung direkt in den Browser integriert. Er prüft bei ZertES-/eIDAS-signierten PDFs die Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.\n\nDer Business Identity Validator zusätzlichen Kontext zu Zeichner, Unternehmen und Berechtigung liefern.\n\nSo wird aus der Vertragsprüfung ein Schritt im Prozess statt ein Ausflug durch mehrere Programme. \n\nWie viele Kontextwechsel braucht eure Vertragsprüfung heute?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "approved": true,
+      "outcome": "approved"
+    },
+    {
+      "at": "2026-09-15T22:48:17",
+      "item_id": "post-2026-09-15-0001",
+      "kind": "post",
+      "source_job_id": "job-0001",
+      "before": "`Vertrag_final_SIGNIERT_v7.pdf` klingt schon ziemlich amtlich.\n\nFür mich ist der Dateiname trotzdem ungefähr so beweiskräftig wie ein selbst gemalter Stempel auf einem Reisepass. Hübsch beschriftet ist noch nicht geprüft.\n\nGerade in Records- oder Vertragsadmin-Teams mit regelmässig eingehenden signierten PDFs darf «ist signiert» nicht das Prüfergebnis sein.\n\nDer Swisscom Document Validator prüft bei ZertES-/eIDAS-signierten PDFs die Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.\n\nMit dem Business Identity Validator kommt Kontext zu Zeichner, Unternehmen und Berechtigung hinzu. Die Freigabe, der Archivierungsentscheid und die rechtliche Beurteilung bleiben beim zuständigen Team.\n\nWelche Dateinamen oder Labels gelten bei euch im Alltag noch unbewusst als Prüfnachweis?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "after": "`Vertrag_final_SIGNIERT_v7.pdf` klingt schon ziemlich amtlich.\n\nFür mich ist der Dateiname trotzdem ungefähr so beweiskräftig wie ein selbst gemalter Stempel auf einem Reisepass. Hübsch beschriftet ist noch nicht geprüft.\n\nGerade in Records- oder Vertragsadmin-Teams mit regelmässig eingehenden signierten PDFs darf «ist signiert» nicht das Prüfergebnis sein.\n\nDer Swisscom Document Validator prüft bei ZertES-/eIDAS-signierten PDFs die Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.\n\nMit dem Business Identity Validator kommt Kontext zu Zeichner, Unternehmen und Berechtigung hinzu. Also für Teams die Signaturfähigkeit und Signaturen prüfen wird die Validierung direkt im System sichtbar, ohne Compliancerisiken und Medienbrüche. \n\nWelche Dateinamen oder Labels gelten bei euch im Alltag noch unbewusst als Prüfnachweis?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "approved": true,
+      "outcome": "approved"
+    },
+    {
+      "at": "2026-09-15T22:52:41",
+      "item_id": "post-2026-09-15-0002",
+      "kind": "post",
+      "source_job_id": "job-0001",
+      "before": "Wenn ein Prüfprozess nur funktioniert, weil eine Person das geheime Klopfmuster kennt, ist das für mich kein Prozess. Das ist ein Escape Room mit Ferienplan.\n\nBei 10+ signierten PDFs im Monat wird spätestens die Urlaubsvertretung zum Realitätstest: Kann sie denselben Prüfschritt vor Freigabe oder Archivierung durchführen? Und dieselben relevanten Prüfinformationen nachvollziehen – ohne auf Zuruf zu arbeiten?\n\nDer Swisscom Document Validator kann als wiederholbarer Prüfbaustein in den Records-/ECM-Workflow eingebunden werden, auch per API. Er prüft bei ZertES-/eIDAS-signierten PDFs Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.\n\nDas Produkt liefert Prüfinformationen. Zuständigkeit, Ausnahmebehandlung, Freigabe und Rechtsprüfung bleiben beim Team.\n\nBesteht euer heutiger Ablauf den Urlaubsvertretungs-Test?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "after": "Wenn ein Prüfprozess nur funktioniert, weil eine Person das geheime Klopfmuster kennt, ist das für mich kein Prozess. Das ist ein Escape Room.\n\nBei 10+ signierten PDFs im Monat wird spätestens die Urlaubsvertretung zum Realitätstest: Kann sie denselben Prüfschritt vor Freigabe oder Archivierung durchführen? Und dieselben relevanten Prüfinformationen nachvollziehen – ohne auf Zuruf zu arbeiten?\n\nDer Swisscom Document Validator kann als wiederholbarer Prüfbaustein in den Records-/ECM-Workflow eingebunden werden, auch per API oder im browser. Er prüft bei ZertES-/eIDAS-signierten PDFs Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.\n\nBesteht euer heutiger Ablauf den Urlaubsvertretungs-Test?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "approved": true,
+      "outcome": "approved"
+    },
+    {
+      "at": "2026-09-15T23:43:18",
+      "item_id": "post-2026-09-15-0001",
+      "kind": "post",
+      "source_job_id": "job-0006",
+      "before": "Bei Kunden versucht man meist, sie glücklich zu machen. Bei Compliance-Teams ist ein guter Tag oft schon: weniger traurig.\n\nIch finde, unsere Produkte sollten sie richtig untraurig machen.\n\nZum Beispiel bei Records-, Vertragsadmin- und Compliance-Ops-Teams, die signierte PDFs vor Freigabe oder Archivierung prüfen: diskret im Browser, auch mit sensiblen Informationen oder sehr grossen Dateien. Das Ergebnis oder ein Label lässt sich im SharePoint- oder ERP-Prozess sichtbar machen.\n\nDer Swisscom Document Validator prüft bei ZertES-/eIDAS-signierten PDFs Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung. Ihr Hash wird lokal gebildet.\n\nDer Business Identity Validator ergänzt Kontext zu Zeichner, Unternehmen und Berechtigung. So lassen sich Risiken im Umgang mit Geschäftskunden besser einordnen.\n\nDas ist kein juristischer Glücklichmach-Knopf: Beurteilung und Freigabe bleiben beim zuständigen Menschen. Weniger Medienbruch und mehr Klarheit? Ziemlich untraurig.\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "after": "Bei Kunden versucht man meist, sie glücklich zu machen. Bei Compliance-Teams ist ein guter Tag oft schon: weniger traurig.\n\nIch finde, unsere Produkte sollten sie richtig untraurig machen.\n\nZum Beispiel bei Records-, Vertragsadmin- und Compliance-Ops-Teams, die signierte PDFs vor Freigabe oder Archivierung prüfen: diskret im Browser, auch mit sensiblen Informationen oder sehr grossen Dateien. Das Ergebnis oder ein Label lässt sich im SharePoint- oder ERP-Prozess sichtbar machen.\n\nDer Swisscom Document Validator prüft bei ZertES-/eIDAS-signierten PDFs Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung. Ihr Hash wird lokal gebildet.\n\nDer Business Identity Validator ergänzt Kontext zu Zeichner, Unternehmen und Berechtigung. So lassen sich Risiken im Umgang mit Geschäftskunden besser einordnen.\n\nWeniger Medienbruch und mehr Klarheit? Ziemlich untraurig.\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "approved": true,
+      "outcome": "approved"
+    },
+    {
+      "at": "2026-09-16T00:38:56",
+      "item_id": "comment-2026-09-15-0002",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "before": "“Standards-compliant on paper” is exactly where the easy part ends for me. The real test is whether certificate lifecycles and verification flows can be rerun, traced and explained when national implementations keep moving. Otherwise, interoperability is a railway map with thirty slightly different track gauges. #Compliance #eIDAS #RecordsManagement",
+      "after": "“Standards-compliant on paper” is exactly where the easy part ends for me. Right now we are providing verifier for signatures on PDF with privacy first discrete method, wallet has a long way to go. #Compliance #eIDAS #RecordsManagement",
+      "approved": true,
+      "outcome": "approved"
+    },
+    {
+      "at": "2026-09-16T06:58:50",
+      "item_id": "comment-2026-09-16-0001",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "before": "An agent’s base identity is the score; the runtime instance is tonight’s performance. For me, continuous trust means listening as context, environment and behaviour change, while keeping the organisation it represents, its scoped authority and the responsible party verifiable throughout. #Compliance #eIDAS #RecordsManagement",
+      "after": "As Agents took over the browser, you will not recognize as a system who is using my website right now. High Risk transactions, need 2FA or even a signature on qualified level, so at least for liability you are on a safe site. Qualified digital signature solves the liability and validate signature is very easy, we created here a really privacy first validator, without sharing data. #Compliance #eIDAS #RecordsManagement",
+      "approved": true,
+      "outcome": "approved"
+    },
+    {
+      "at": "2026-09-16T07:25:39",
+      "item_id": "post-2026-09-16-0001",
+      "kind": "post",
+      "source_job_id": "job-0003",
+      "before": "Eine unbeschriftete Dose im Gefrierschrank wird nach drei Monaten nicht verständlicher. Sie wird nur kälter.\n\nBei signierten PDFs ist mein Archiv ähnlich talentiert: Es konserviert sehr zuverlässig – leider auch Unklarheit.\n\nDarum gehört die Prüfung für mich vor die Freigabe oder Archivierung. Gerade für Records/Posteingang, Vertragsadministration und Compliance Ops.\n\nDer Swisscom Document Validator prüft bei ZertES-/eIDAS-signierten PDFs Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.\n\nDas Ergebnis liefert Prüfinformationen, aber keine automatische Freigabe und keinen juristischen Zaubertrick. Fachliche Beurteilung, Rechtsprüfung und Archivierungsentscheid bleiben beim zuständigen Team.\n\nWas muss bei euch sichtbar geklärt sein, bevor eine signierte PDF ins Archiv wandert?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "after": "Eine unbeschriftete Dose im Gefrierschrank wird nach drei Monaten nicht verständlicher. Sie wird nur kälter.\n\nBei signierten PDFs ist mein Archiv ähnlich talentiert: Es konserviert sehr zuverlässig – leider auch Unklarheit.\n\nDarum gehört die Prüfung für mich vor die Freigabe oder Archivierung. Gerade für Records/Posteingang, Vertragsadministration und Compliance Ops.\n\nDer Swisscom Document Validator prüft bei ZertES-/eIDAS-signierten PDFs Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.\n\nWas muss bei euch sichtbar geklärt sein, bevor eine signierte PDF ins Archiv wandert?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "approved": true,
+      "outcome": "approved"
+    },
+    {
+      "at": "2026-09-16T07:27:36",
+      "item_id": "post-2026-09-16-0002",
+      "kind": "post",
+      "source_job_id": "job-0003",
+      "before": "Ein Knopf mit zwei Beschriftungen ist im Aufzug vielleicht charmant. Im Compliance-Prozess eher weniger.\n\n«Technisch geprüft» und «fachlich freigegeben» sind für mich zwei Zustände, nicht ein Statusfeld mit Doppelleben.\n\nFür Vertragsadministration, Records/ECM und Compliance/Legal Ops würde ich deshalb zwei klare Stempel setzen:\n\n1. Prüfinformationen vorhanden.\n2. Fachliche Entscheidung getroffen.\n\nDer Swisscom Document Validator liefert bei ZertES-/eIDAS-signierten PDFs Signatur- und Zertifikatsinformationen. Der Business Identity Validator liefert ergänzenden Kontext zu Zeichner, Unternehmen und Berechtigung. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.\n\nKeines der Produkte gibt das Dokument automatisch frei oder ersetzt die menschliche Beurteilung und Rechtsprüfung. Der zweite Stempel gehört weiterhin einem verantwortlichen Menschen.\n\nZeigt euer Workflow getrennt, was geprüft wurde und wer danach entschieden hat?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "after": "Ein Knopf mit zwei Beschriftungen ist im Aufzug vielleicht charmant. Im Compliance-Prozess eher weniger.\n\n«Technisch geprüft» und «fachlich freigegeben» sind für mich zwei Zustände, nicht ein Statusfeld mit Doppelleben.\n\nFür Vertragsadministration, Records/ECM und Compliance/Legal Ops würde ich deshalb zwei klare Stempel setzen:\n\n1. Prüfinformationen vorhanden.\n2. Fachliche Entscheidung getroffen.\n\nDer Swisscom Document Validator liefert bei ZertES-/eIDAS-signierten PDFs Signatur- und Zertifikatsinformationen. Der Business Identity Validator liefert ergänzenden Kontext zu Zeichner, Unternehmen und Berechtigung. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.\n\nZeigt euer Workflow getrennt, was geprüft wurde und wer danach entschieden hat?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement #trust",
+      "approved": true,
+      "outcome": "approved"
+    },
+    {
+      "at": "2026-09-17T22:24:21",
+      "item_id": "post-2026-09-16-0002",
+      "kind": "post",
+      "source_job_id": "job-0007",
+      "before": "Ein Posteingang ist kein Besteckkasten. ZertES und eIDAS sortieren sich dort nicht freiwillig in getrennte Fächer.\n\nFür Records/Posteingang, Vertragsadministration und Compliance Ops kommt beides im selben Arbeitskorb an: eingehende signierte PDFs aus unterschiedlichen Regelwerken.\n\nIch würde dafür keinen kleinen Schubladenschrank neben das ECM stellen. Ich würde einen klaren operativen Kontrollpunkt setzen.\n\nDer Swisscom Document Validator prüft ZertES-/eIDAS-signierte PDFs und liefert Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.\n\nDas behauptet weder rechtliche Gleichwertigkeit noch gegenseitige Anerkennung. Es ist schlicht ein gemeinsamer operativer Prüfpunkt.\n\nSucht euer Team im Eingang erst die passende Prüfschublade – oder gibt es einen klaren Kontrollpunkt für beide?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "after": "Ein Posteingang ist kein Besteckkasten. ZertES und eIDAS sortieren sich dort nicht freiwillig in getrennte Fächer.\n\nFür Records/Posteingang, Vertragsadministration und Compliance Ops kommt beides im selben Arbeitskorb an: eingehende signierte PDFs aus unterschiedlichen Regelwerken.\n\nIch würde dafür keinen kleinen Schubladenschrank neben das ECM stellen. Ich würde einen klaren operativen Kontrollpunkt setzen.\n\nDer Swisscom Document Validator prüft ZertES-/eIDAS-signierte PDFs und liefert Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.\n\nSucht euer Team im Eingang erst die passende Prüfschublade – oder gibt es einen klaren Kontrollpunkt für beide?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "approved": true,
+      "outcome": "approved"
+    },
+    {
+      "at": "2026-09-17T22:26:46",
+      "item_id": "post-2026-09-17-0001",
+      "kind": "post",
+      "source_job_id": "job-0007",
+      "before": "Die deutsche Wallet heisst D-you.\nDie Schweizer Wallet heisst Swi-yu.\nUnd Frankreich?\n\nIch war bereit für den nächsten «-you»-Wortwitz.\n\nPlot Twist: France Identité. 😄\n\nHeute war ein grossartiges Meeting. Ich bin stolz, Teil dieser Reise zu sein.\n\nBei aller Wallet-Zukunft bleibt für mich eine praktische Frage: Wie prüft ihr signierte PDFs, bevor ihr sie freigebt oder archiviert?\n\nFragen? Sehr gern per Kommentar oder DM.\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "after": "Die deutsche Wallet heisst D-you.\nDie Schweizer Wallet heisst Swi-yu.\nUnd Frankreich?\n\nIch war bereit für den nächsten «-you»-Wortwitz.\n\nPlot Twist: France Identité. 😄\n\nDiese Woche war ein grossartiges Meeting. Ich bin stolz, Teil dieser Reise zu sein. Mir gefällt dass mit Wallet die Menschen anfangen signierte Credentials zu verifizieren und dem vertrauen.\n\nBei aller Wallet-Zukunft bleibt für mich eine praktische Frage: Wie prüft ihr signierte PDFs, bevor ihr sie freigebt oder archiviert?\n\nFragen? Sehr gern per Kommentar oder DM.\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "approved": true,
+      "outcome": "approved"
+    },
+    {
+      "at": "2026-09-17T22:28:22",
+      "item_id": "post-2026-09-17-0002",
+      "kind": "post",
+      "source_job_id": "job-0003",
+      "before": "Ein Cursor hat keinen Pass. Er klickt immer gleich höflich – egal, ob dahinter ein Mensch oder ein Agent sitzt.\n\nGenau das ist die Grenze der Oberfläche: Am Zeiger selbst erkenne ich den Bediener nicht.\n\nFür Records/Posteingang, Vertragsadministration und Compliance Ops wird deshalb wichtig, was neben dem Cursor prüfbar ist. Bei einer eingehenden signierten PDF sind das belastbare Informationen statt eine Vermutung über die Hand am Bildschirm.\n\nDer Swisscom Document Validator prüft bei ZertES-/eIDAS-signierten PDFs Signatur- und Zertifikatsinformationen. Der Business Identity Validator kann Kontext zu Zeichner, Unternehmen und Berechtigung ergänzen.\n\nBeide erkennen weder Mensch noch Agent hinter dem Browser. Und beide erteilen einem Agenten kein Mandat.\n\nWelches Vertrauenssignal soll bei euch neben dem Cursor zählen, wenn Mensch und Agent an der Oberfläche gleich aussehen?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "after": "Ein Cursor hat keinen Pass. Er klickt immer gleich höflich – egal, ob dahinter ein Mensch oder ein Agent sitzt.\n\nGenau das ist die Grenze der Oberfläche: Am Zeiger selbst erkenne ich den Bediener nicht.\n\nFür Records/Posteingang, Vertragsadministration und Compliance Ops wird deshalb wichtig, was neben dem Cursor prüfbar ist. Bei einer eingehenden signierten PDF sind das belastbare Informationen statt eine Vermutung über die Hand am Bildschirm.\n\nDer Swisscom Document Validator prüft bei ZertES-/eIDAS-signierten PDFs Signatur- und Zertifikatsinformationen. Der Business Identity Validator kann Kontext zu Zeichner, Unternehmen und Berechtigung ergänzen.\n\nWelches Vertrauenssignal soll bei euch neben dem Cursor zählen, wenn Mensch und Agent an der Oberfläche gleich aussehen?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "approved": true,
+      "outcome": "approved"
+    },
+    {
+      "at": "2026-09-21T08:21:34",
+      "item_id": "post-2026-09-18-0002",
+      "kind": "post",
+      "source_job_id": "job-0007",
+      "before": "«Bei Bedarf prüfen» ist für mich ungefähr so präzise wie ein Horoskop.\n\nKlingt erstaunlich passend. Hilft am Dienstag um 16:40 Uhr bei der nächsten PDF nur wenig.\n\nIch hätte für Records/Posteingang, Vertragsadministration und Compliance Ops lieber eine Regel, die schon vor der PDF da ist:\n\n- eingehende signierte PDF\n- Freigabe oder Archivierung vorgesehen\n- sensible oder auditrelevante Unterlagen\n\nDann ist vorab geklärt, welche Dokumente in den Prüfschritt gehen, wer das Ergebnis beurteilt und wo die Entscheidung festgehalten wird.\n\nDer Swisscom Document Validator prüft ZertES-/eIDAS-signierte PDFs sowie Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet. Er erfindet keine interne Policy, klassifiziert nicht automatisch und gibt nichts frei. Auch Revisionssicherheit entsteht nicht automatisch.\n\nIst euer Prüfauslöser eine klare Regel oder ein freundliches «bei Bedarf»?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "after": "«Bei Bedarf prüfen» ist für mich ungefähr so präzise wie ein Horoskop.\n\nKlingt erstaunlich passend. Hilft am Dienstag um 16:40 Uhr bei der nächsten PDF nur wenig.\n\nIch hätte für Records/Posteingang, Vertragsadministration und Compliance Ops lieber eine Regel, die schon vor der PDF da ist:\n\n- eingehende signierte PDF\n- Freigabe oder Archivierung vorgesehen\n- sensible oder auditrelevante Unterlagen\n\nDann ist vorab geklärt, welche Dokumente in den Prüfschritt gehen, wer das Ergebnis beurteilt und wo die Entscheidung festgehalten wird.\n\nDer Swisscom Document Validator prüft ZertES-/eIDAS-signierte PDFs sowie Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet. \n\nIst euer Prüfauslöser eine klare Regel oder ein freundliches «bei Bedarf»?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "approved": true,
+      "outcome": "approved"
+    },
+    {
+      "at": "2026-09-21T08:24:21",
+      "item_id": "post-2026-09-18-0001",
+      "kind": "post",
+      "source_job_id": "job-0007",
+      "before": "Ein guter AI-Agent muss nicht nur wissen, welches Tool als Nächstes dran ist.\n\nEr sollte auch wissen, wann er die Hände von der Tastatur nehmen muss.\n\nBei eingehenden signierten PDFs liegt dieser Moment für mich vor Freigabe oder Archivierung – in Records/Posteingang, Vertragsadministration und Compliance/Legal Ops.\n\nWir bauen MCP-Zugriff rund um Business Identity Validator und Document Validator. Damit sollen Prüfinformationen als explizite Unterbrechung im agentischen Ablauf angefragt werden können, bevor der nächste Tool-Schritt folgt.\n\nDer Document Validator prüft bei ZertES-/eIDAS-signierten PDFs Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet. Der BIV kann Kontext zu Zeichner, Unternehmen und Berechtigung ergänzen.\n\nBeide treffen keine Compliance-, Rechts- oder Freigabeentscheidung und lassen den Agenten nicht automatisch weiterlaufen. Die Policy oder ein zuständiger Mensch entscheidet.\n\nWo stoppt euer Agent vor dem nächsten Tool-Schritt?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "after": "Ein guter AI-Agent muss nicht nur wissen, welches Tool als Nächstes dran ist.\n\nEr sollte auch wissen, wann er die Hände von der Tastatur nehmen muss.\n\nBei eingehenden signierten PDFs liegt dieser Moment für mich vor Freigabe oder Archivierung – in Records/Posteingang, Vertragsadministration und Compliance/Legal Ops.\n\nWir bauen MCP-Zugriff rund um Business Identity Validator und Document Validator. Damit sollen Prüfinformationen als explizite Unterbrechung im agentischen Ablauf angefragt werden können, bevor der nächste Tool-Schritt folgt.\n\nDer Document Validator prüft bei ZertES-/eIDAS-signierten PDFs Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet. Der BIV kann Kontext zu Zeichner, Unternehmen und Berechtigung ergänzen.\n\nWo stoppt euer Agent vor dem nächsten Tool-Schritt?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "approved": true,
+      "outcome": "approved"
+    },
+    {
+      "at": "2026-09-21T08:27:41",
+      "item_id": "post-2026-09-17-0003",
+      "kind": "post",
+      "source_job_id": "job-0003",
+      "before": "Bei «juristisch sicher» springt meine innere Nebelmaschine an.\n\nGrosser Auftritt. Schlechte Sicht.\n\nIn Beschaffungsgesprächen für Records-, Vertragsadmin- oder Compliance-Teams würde ich dann nicht applaudieren. Ich würde das Saallicht einschalten und zwei konkrete Fragen stellen:\n\nWelche Signatur- und Zertifikatsinformationen werden bei ZertES-/eIDAS-signierten PDFs tatsächlich geprüft?\n\nWelcher geschäftliche Kontext liegt zu Zeichner, Unternehmen und Berechtigung vor?\n\nDer Swisscom Document Validator liefert Prüfinformationen zur ersten Frage. Der Business Identity Validator kann Kontext zur zweiten ergänzen. Eine automatische rechtliche Würdigung liefern beide nicht.\n\nSo wird aus einem grossen Rechtswort eine brauchbare Einkaufsliste. Weniger Nebel, mehr Substantive.\n\nWelche konkrete Prüffrage stellt euer Team, wenn jemand «juristisch sicher» sagt?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "after": "Bei «juristisch sicher» springt meine innere Nebelmaschine an.\n\nGrosser Auftritt. Schlechte Sicht.\n\nIn Beschaffungsgesprächen für Records-, Vertragsadmin-, Debitoren- oder Compliance-Teams würde ich dann nicht applaudieren. Ich würde das Saallicht einschalten und zwei konkrete Fragen stellen:\n\nWelche Signatur- und Zertifikatsinformationen werden bei ZertES-/eIDAS-signierten PDFs tatsächlich geprüft?\n\nWelcher geschäftliche Kontext liegt zu Zeichner, Unternehmen und Berechtigung vor?\n\nDer Swisscom Document Validator liefert Prüfinformationen zur ersten Frage. Der Business Identity Validator kann Kontext zur zweiten ergänzen. \n\nSo wird aus einem grossen Rechtswort eine brauchbare Einkaufsliste. Weniger Nebel, mehr Substantive.\n\nWelche konkrete Prüffrage stellt euer Team, wenn jemand «juristisch sicher» sagt?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "approved": true,
+      "outcome": "approved"
+    },
+    {
+      "at": "2026-09-21T09:40:57",
+      "item_id": "post-2026-09-20-0001",
+      "kind": "post",
+      "source_job_id": "job-0007",
+      "before": "Ein Kringel unten rechts macht aus einer PDF noch keinen geprüften Vertrag.\n\nMein Einkaufszettel trägt manchmal auch einen Namenszug. Meistens bedeutet er: «Milch nicht vergessen». Für eine ZertES-/eIDAS-Prüfung ist das erstaunlich wenig Material.\n\nFür Records/Posteingang und Vertragsadministration ist deshalb eine frühe Unterscheidung wichtig: Sieht die PDF nur unterschrieben aus – oder enthält sie eine technisch prüfbare elektronische Signatur?\n\nAus dem sichtbaren Bild allein lässt sich das nicht ableiten. Der Swisscom Document Validator prüft bei entsprechend elektronisch signierten PDFs Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.\n\nDie Prüfinformationen helfen bei der Einordnung; fachliche Beurteilung und Freigabe bleiben beim zuständigen Team.\n\nWoran erkennt euer Posteingang heute, ob eine PDF nur unterschrieben aussieht oder technisch geprüft werden kann?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "after": "Ein Kringel unten rechts macht aus einer PDF noch keinen geprüften Vertrag.\n\nMein Einkaufszettel trägt manchmal auch einen Namenszug. Meistens bedeutet er: «Milch nicht vergessen». Für eine ZertES-/eIDAS-Prüfung ist das erstaunlich wenig Material.\n\nFür Records/Posteingang und Vertragsadministration ist deshalb eine frühe Unterscheidung wichtig: Sieht die PDF nur unterschrieben aus – oder enthält sie eine technisch prüfbare elektronische Signatur?\n\nAus dem sichtbaren Bild allein lässt sich das nicht ableiten. Der Swisscom Document Validator prüft bei entsprechend elektronisch signierten PDFs Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.\n\nWoran erkennt euer Posteingang heute, ob eine PDF nur unterschrieben aussieht oder technisch geprüft werden kann?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "approved": true,
+      "outcome": "approved"
+    },
+    {
+      "at": "2026-09-23T14:42:03",
+      "item_id": "post-2026-09-22-0001",
+      "kind": "post",
+      "source_job_id": "job-0007",
+      "before": "Ein Türsteher kann einen Ausweis prüfen.\n\nEr entscheidet deshalb noch lange nicht, in welches Regal die Akte gehört. Sonst hätte die Bibliothek am Eingang ein kleines Organisationsproblem.\n\nBei eingehenden signierten PDFs sehe ich diese Trennung genauso. Vor der Archivierung brauchen Records-/ECM-Teams belastbare Prüfinformationen. Danach folgt die Records-Entscheidung.\n\nDer Swisscom Document Validator prüft bei ZertES-/eIDAS-signierten PDFs Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.\n\nAblageklasse, Aufbewahrungsfrist und Archivierungsentscheid legt er nicht fest. Das bleibt Aufgabe des Prozesses und der zuständigen Menschen.\n\nFür mich ist das sauber: Der Türsteher prüft. Der Bibliothekar ordnet ein. Keiner muss heimlich den zweiten Beruf mitmachen.\n\nTrennt euer Records-/ECM-Prozess Prüfinformationen klar von Ablageklasse und Aufbewahrungsentscheidung?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n\nFür eine kurze Demo oder einen Austausch:\nDM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "after": "Ein Türsteher kann einen Ausweis prüfen.\n\nEr entscheidet deshalb noch lange nicht, in welches Regal die Akte gehört. Sonst hätte die Bibliothek am Eingang ein kleines Organisationsproblem.\n\nBei eingehenden signierten PDFs sehe ich diese Trennung genauso. Vor der Archivierung brauchen Records-/ECM-Teams belastbare Prüfinformationen. Danach folgt die Records-Entscheidung.\n\nDer Swisscom Document Validator prüft bei ZertES-/eIDAS-signierten PDFs Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.\n\nAblageklasse, Aufbewahrungsfrist und Archivierungsentscheid legt er nicht fest. Das bleibt Aufgabe des Prozesses und der zuständigen Menschen.\n\nTrennt euer Records-/ECM-Prozess Prüfinformationen klar von Ablageklasse und Aufbewahrungsentscheidung?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n\nFür eine kurze Demo oder einen Austausch:\nDM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "approved": true,
+      "outcome": "approved"
+    }
+  ],
+  "patterns": [
+    {
+      "from": "Archivierung aber etwas von seinem «wird schon passen».",
+      "to": "mühsame on-prem operations.",
+      "count": 1
+    },
+    {
+      "from": "nur um danach denselben Kontrollzettel von Hand auszufüllen.",
+      "to": "wenn ich nicht den nicht kenne. Manuelle Überprüfung ist mühsam.",
+      "count": 1
+    },
+    {
+      "from": "Also: überhaupt nicht.",
+      "to": "",
+      "count": 1
+    },
+    {
+      "from": "eingebunden. So wird jeder eingehende signierte PDF-Anhang",
+      "to": "integriert. Signierte PDF-Anhänge können damit",
+      "count": 1
+    },
+    {
+      "from": "Zertifikatsinformationen belastbarer. Die",
+      "to": "die Zertifikatsinformationen. Das",
+      "count": 1
+    },
+    {
+      "from": "Umgebung; ihr",
+      "to": "Umgebung, der",
+      "count": 1
+    },
+    {
+      "from": "weniger «Lade",
+      "to": "prüfen, bevor",
+      "count": 1
+    },
+    {
+      "from": "geprüft?». Technische Signaturprüfung und geschäftliche Berechtigung bleiben dabei",
+      "to": "für ein Unternehmen unterschreiben durfte. Das sind",
+      "count": 1
+    },
+    {
+      "from": "kann zusätzlich",
+      "to": "zusätzlichen",
+      "count": 1
+    },
+    {
+      "from": "Umwege macht",
+      "to": "Stationen durchläuft",
+      "count": 1
+    },
+    {
+      "from": "Anhang bei euch,",
+      "to": "Anhang,",
+      "count": 1
+    },
+    {
+      "from": "trail into a black box.",
+      "to": "document.",
+      "count": 1
+    },
+    {
+      "from": "unvermeidbar; manchmal hat vorher jemand Leitplanken abgebaut.",
+      "to": "unvermeidbar.",
+      "count": 1
+    },
+    {
+      "from": "hingehört: beim Flughafen.",
+      "to": "hingehört.",
+      "count": 1
+    },
+    {
+      "from": "Die Freigabe, der Archivierungsentscheid",
+      "to": "Also für Teams die Signaturfähigkeit",
+      "count": 1
+    },
+    {
+      "from": "rechtliche Beurteilung bleiben beim zuständigen Team.",
+      "to": "Validierung direkt im System sichtbar, ohne Compliancerisiken und Medienbrüche.",
+      "count": 1
+    },
+    {
+      "from": "Room mit Ferienplan.",
+      "to": "Room.",
+      "count": 1
+    },
+    {
+      "from": "railway map with thirty slightly different track gauges.",
+      "to": "long way to go.",
+      "count": 1
+    },
+    {
+      "from": "score; the runtime instance",
+      "to": "liability and validate signature",
+      "count": 1
+    },
+    {
+      "from": "Eine automatische rechtliche Würdigung liefern beide nicht.",
+      "to": "",
+      "count": 1
+    }
+  ],
+  "approvals": [
+    {
+      "at": "2026-09-13T22:01:31",
+      "item_id": "comment-2026-09-12-0003",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "text": "A sales agent can sound wonderfully human, but the interesting part begins when it is allowed to act. For me, the business case is incomplete until identity, permissions and a traceable handover are as clear as the conversion target—otherwise the shiny new colleague is wearing a name badge written in pencil. #Compliance #eIDAS #RecordsManagement",
+      "score_before_approval": 0.73,
+      "unchanged": true,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-13T22:02:01",
+      "item_id": "comment-2026-09-12-0004",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "text": "Keeping people in a familiar interface sounds like the quiet kind of progress I like: less wallet tourism, more useful workflow. The real test, for me, is whether issuer, verifier and permission context remain just as clear when the plumbing disappears behind the wall. #Compliance #eIDAS #RecordsManagement",
+      "score_before_approval": 0.86,
+      "unchanged": true,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-13T22:02:43",
+      "item_id": "comment-2026-09-12-0005",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "text": "Agent autonomy without an audit trail feels like lending out the office keys and skipping the sign-in sheet. For me, guardrails matter most when they leave a clear record of what the agent decided, on whose authority, and where a human can step in. #Compliance #eIDAS #RecordsManagement",
+      "score_before_approval": 0.76,
+      "unchanged": true,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-13T22:03:08",
+      "item_id": "comment-2026-09-12-0006",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "text": "I find the insurance layer clever, but it answers who pays after the agent slips—not who was allowed to act in the first place. A single-use card is a useful seat belt; clear identity, scoped authority and a traceable approval remain the steering wheel. #Compliance #eIDAS #RecordsManagement",
+      "score_before_approval": 0.87,
+      "unchanged": true,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-13T22:04:37",
+      "item_id": "comment-2026-09-13-0007",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "text": "For me, the uncomfortable bit is not that the next privileged user may be software; it is that nobody may feel personally responsible for its keys. An AI agent with standing access is like a keyring that never sleeps—give it an owner, the fewest keys possible, short expiry dates, and a trail humans can review. I would add a qualified signature, so liability is clear, even if someone gives acces to his agent. #Compliance #eIDAS #RecordsManagement",
+      "score_before_approval": 0.95,
+      "unchanged": false,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-13T22:04:41",
+      "item_id": "comment-2026-09-13-0006",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "text": "The interesting shift for me is not another login button, but accepting credentials you did not issue and still being able to explain why you trusted them. That turns identity architecture from plumbing into part of the audit trail—much less glamorous than a wallet demo, but far more important on Monday morning. #Compliance #eIDAS #RecordsManagement",
+      "score_before_approval": 0.77,
+      "unchanged": true,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-13T22:06:35",
+      "item_id": "post-2026-09-11-0001",
+      "kind": "post",
+      "source_job_id": "job-0001",
+      "text": "Eine sensible PDF zur Prüfung in eine unbekannte Cloud hochladen?\n\nFür mich ist das wie ein Mantel an einer Garderobe, bei der niemand weiss, wer hinter dem Vorhang steht. Nur steckt in der Innentasche nicht bloss ein Kaugummi, sondern vielleicht ein Vertrag.\n\nDarum schaue ich beim Prüfprozess auch auf den Datenweg.\n\nBeim Swisscom Document Validator bleibt die PDF in der eigenen Umgebung, ohne on-prem installationen. Ihr Hash wird lokal gebildet im Browser. So lassen sich ZertES-/eIDAS-Signatur und Zertifikatsinformationen belastbarer prüfen, ohne die vollständige Datei in eine Fremd-Cloud hochzuladen oder mühsame on-prem operations.\n\nMeine Frage an Records- und Compliance-Teams: Wo darf eine sensible PDF in eurem Prüfprozess überhaupt hin?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "score_before_approval": 0.94,
+      "unchanged": false,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-13T22:07:41",
+      "item_id": "post-2026-09-11-0002",
+      "kind": "post",
+      "source_job_id": "job-0001",
+      "text": "Ein Audit ist wie ein sehr höflicher Detektiv.\n\nEs sagt nicht: «Das sah damals schon vernünftig aus.»\nEs fragt: «Wie genau seid ihr zu dieser Entscheidung gekommen?»\n\nUnd plötzlich ist «Wir haben die PDF angeschaut» ungefähr so hilfreich wie ein Alibi auf einer Serviette.\n\nVor Freigabe oder Archivierung zählt deshalb nicht nur die Prüfung. Auch ihr Ergebnis sollte nachvollziehbar festgehalten werden: Signatur, Zertifikatsinformationen und die Grundlage der Entscheidung.\n\nDer Swisscom Document Validator liefert dafür eine belastbarere Auswertung. Der Business Identity Validator kann zusätzlich Kontext zu Zeichner, Unternehmen und Berechtigung geben.\n\nKönnte euer Team eine Freigabeentscheidung Monate später noch sauber erklären?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "score_before_approval": 0.95,
+      "unchanged": false,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-13T22:07:47",
+      "item_id": "comment-2026-09-11-0005",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "text": "Interoperability is where a wallet stops being a polished island and starts becoming useful infrastructure. I like that this agenda puts standards next to the messy reality of trust services across borders—that is usually where the interesting questions begin.\n\n#Compliance #eIDAS #RecordsManagement",
+      "score_before_approval": 0.87,
+      "unchanged": true,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-13T22:10:41",
+      "item_id": "comment-2026-09-11-0006",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "text": "That little “btw” is carrying a trillion dollars of confidence 😄. I’m with Alex on the question: scale tells us very little about who—or what—is acting behind the screen, and that context matters. #Compliance #eIDAS #RecordsManagement",
+      "score_before_approval": 0.87,
+      "unchanged": true,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-13T22:11:18",
+      "item_id": "comment-2026-09-12-0007",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "text": "I like the idea of humans and agents sharing the work, but collaboration gets real only when the handoffs are visible. If nobody can retrace who decided what, the blueprint is just a very tidy floor plan with no doors. #Compliance #eIDAS #RecordsManagement",
+      "score_before_approval": 0.88,
+      "unchanged": true,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-14T10:28:37",
+      "item_id": "post-2026-09-12-0001",
+      "kind": "post",
+      "source_job_id": "job-0001",
+      "text": "Einen LKW würde ich am Werkstor nicht jedes Mal komplett ausladen, wenn ich nicht den nicht kenne. Manuelle Überprüfung ist mühsam.\n\nBei regelmässig eingehenden signierten PDFs sehe ich das ähnlich. Wenn Records-, Posteingang- oder Vertragsadmin-Teams jede Prüfung als spontane Einzelaktion behandeln, wird aus einem Kontrollpunkt schnell eine kleine Tagesreise.\n\nMir ist lieber, die Prüfung steht fest im Records-/ECM-Workflow: vor Freigabe oder Archivierung, wiederholbar und nachvollziehbar. Per API kann der Swisscom Document Validator als solcher Prüfschritt eingebunden werden. Er prüft ZertES-/eIDAS-Signatur und Zertifikatsinformationen belastbarer. Die PDF bleibt in der eigenen Umgebung; ihr Hash wird lokal gebildet.\n\nDer Mensch bleibt am Steuer – der LKW muss nur nicht für jeden Kontrollblick zerlegt werden.\n\nWo steht euer fester Prüfschalter im Records-/ECM-Prozess?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "score_before_approval": 0.95,
+      "unchanged": false,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-14T22:28:09",
+      "item_id": "comment-2026-09-12-0008",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "text": "I care less about whether an agent can explain itself elegantly than whether I can reproduce the path from evidence to decision. A deterministic audit trail turns “trust me” into something compliance teams can actually inspect; that is where agent memory stops being clever plumbing and starts becoming accountable infrastructure. #Compliance #eIDAS #RecordsManagement",
+      "source_text": null,
+      "reshare_with_comment": null,
+      "score_before_approval": 0.89,
+      "unchanged": true,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-14T22:28:34",
+      "item_id": "comment-2026-09-12-0009",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "text": "I don't think sovereignty and interoperability are opposites, but they only coexist when governance is as open as the standards. With AI agents entering financial journeys, technical trust alone is a well-built bridge with no traffic rules; legal accountability has to travel with it. #Compliance #eIDAS #RecordsManagement",
+      "source_text": null,
+      "reshare_with_comment": null,
+      "score_before_approval": 0.88,
+      "unchanged": true,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-14T22:29:39",
+      "item_id": "comment-2026-09-12-0010",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "text": "The speed is impressive, but interoperability is the part that matters to me. Connecting existing bank networks beats asking everyone to move onto one shiny new island—provided compliance travels across the bridges instead of being measured with a different ruler at every shore. #Compliance #eIDAS #RecordsManagement",
+      "source_text": null,
+      "reshare_with_comment": null,
+      "score_before_approval": 0.77,
+      "unchanged": true,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-14T22:30:00",
+      "item_id": "comment-2026-09-13-0003",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "text": "I like the insistence on proving authority before an AI agent acts. Giving a bot a company badge without checking its mandate is a bit like handing over the office keys because it knows the Wi-Fi password. For me, identity, revocable authority and a usable audit trail belong together—not only at onboarding. #Compliance #eIDAS #RecordsManagement",
+      "source_text": null,
+      "reshare_with_comment": null,
+      "score_before_approval": 0.89,
+      "unchanged": true,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-14T22:30:30",
+      "item_id": "comment-2026-09-13-0004",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "text": "I like the practical definition of user control here: data stays on the device, disclosure is minimal and consent is explicit. An identity wallet should feel less like handing over the whole filing cabinet just to show one card. Publishing the technical work openly is how a common European standard becomes inspectable rather than ceremonial. #Compliance #eIDAS #RecordsManagement",
+      "source_text": null,
+      "reshare_with_comment": null,
+      "score_before_approval": 0.87,
+      "unchanged": true,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-14T22:32:10",
+      "item_id": "comment-2026-09-13-0005",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "text": "I like the distinction: an attribute sitting in the PID is not the same as the user disclosing it. For cross-border workflows, assuming every national wallet contains the same drawers is asking for trouble; build around the common minimum, then request more only when it is genuinely needed. I'm curious how fraud detection will change as you have selective disclosure in the PID #Compliance #eIDAS #RecordsManagement",
+      "source_text": null,
+      "reshare_with_comment": null,
+      "score_before_approval": 0.87,
+      "unchanged": false,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-14T22:35:46",
+      "item_id": "post-2026-09-13-0002",
+      "kind": "post",
+      "source_job_id": "job-0001",
+      "text": "Vor einer Demo würde ich keine Folienschlacht starten. Ich würde einer signiertes PDF mit sensitiven Daten oder mit vielen Bilddaten und dadurch grosses Dokument Minuten lang mit Stoppuhr und Klemmbrett durch den Prozess folgen, wo der Validator ein Upload bedeutet.\n\nMeine Generalprobe für IT/Security, Records und Legal Ops:\n\n1. Wo liegt die PDF?\n2. Was verlässt die eigene Umgebung?\n3. Welche Signatur- und Zertifikatsinformationen werden ausgewertet?\n4. Wer trifft danach die Entscheidung?\n\nBeim Swisscom Document Validator bleibt die PDF in der eigenen Umgebung, sogar im Prozess, ihr Hash wird lokal gebildet. Er prüft ZertES-/eIDAS-signierte PDFs beziehungsweise deren Signatur- und Zertifikatsinformationen belastbarer. Der Business Identity Validator kann Kontext zu Zeichner, Unternehmen und Berechtigung ergänzen.\n\nWürde euer heutiger Prüfprozess diesen 15-Minuten-Test bestehen?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "source_text": null,
+      "reshare_with_comment": null,
+      "score_before_approval": 0.92,
+      "unchanged": false,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-14T22:38:22",
+      "item_id": "post-2026-09-13-0001",
+      "kind": "post",
+      "source_job_id": "job-0001",
+      "text": "Eine signierte PDF macht im Unternehmen manchmal mehr Stationen als ein Regionalzug.\n\nPosteingang. Fachbereich. ECM. Archiv.\n\nUnd an jeder Übergabe droht stille Post: Aus «Signatur geprüft» wird erst «müsste geprüft sein» und am Ende «hat sicher jemand gemacht». Mein Lieblingssatz für spätere Rückfragen.\n\nFür mich gehört der Kontrollpunkt deshalb klar vor die Freigabe oder Archivierung. Der Swisscom Document Validator prüft bei ZertES-/eIDAS-signierten PDFs Signatur und Zertifikatsinformationen belastbarer. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.\n\nDas Prüfergebnis unterstützt Records- und Compliance-Teams ohne Stille Post, integrativ in deiner Umgebung, egal ob sensitive Daten oder grosse Dokumente\n\nAn welcher Übergabe wird «geprüft» bei euch zu einem nachvollziehbaren Prozessschritt?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "source_text": null,
+      "reshare_with_comment": null,
+      "score_before_approval": 0.92,
+      "unchanged": false,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-14T22:42:30",
+      "item_id": "post-2026-09-12-0004",
+      "kind": "post",
+      "source_job_id": "job-0003",
+      "text": "Ein grüner Haken im Nebel ist wie eine Ampel, von der ich nur die Farbe sehe. Beruhigend? Ja. Genug für eine belastbare Entscheidung? Eher nicht.\n\nFür Records-Teams, Vertragsadministration und Compliance Ops mit regelmässig eingehenden signierten PDFs steckt die Arbeit hinter dem Haken:\n\n- Welche ZertES-/eIDAS-Signatur wurde geprüft?\n- Welche Zertifikatsinformationen tragen das Ergebnis?\n- Was muss dokumentiert sein, damit die Entscheidung Monate später nachvollziehbar bleibt?\n\nDer Swisscom Document Validator prüft die Signatur und wertet Zertifikatsinformationen belastbarer aus. Die PDF bleibt in der eigenen Umgebung; lokal wird ihr Hash gebildet. Also Kein Aufwand, nur grünes Licht direkt im Prozess anwendbar für sensitive oder grosse Dokumente, weil das Dokument ihren Browser nicht verlässt.\n\nWelche Details müssen bei euch sichtbar bleiben, damit aus dem grünen Licht kein späteres Rätsel wird?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "source_text": null,
+      "reshare_with_comment": null,
+      "score_before_approval": 0.92,
+      "unchanged": false,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-14T22:50:02",
+      "item_id": "post-2026-09-12-0003",
+      "kind": "post",
+      "source_job_id": "job-0003",
+      "text": "Ein signiertes PDF kommt per Mail rein – und dann?\n\nOft wird der Anhang erstmal heruntergeladen, irgendwo hochgeladen, geprüft und danach wieder zurück in den eigentlichen Prozess gebracht.\n\nEigentlich unnötig kompliziert.\n\nWir haben deshalb den Swisscom Document Validator direkt in Outlook integriert. Signierte PDF-Anhänge können damit direkt dort geprüft werden, wo sie ankommen.\n\nDer Validator prüft unter anderem die ZertES-/eIDAS-Signatur und die Zertifikatsinformationen. Das PDF selbst bleibt dabei in der eigenen Umgebung, der Hash wird lokal gebildet.\n\nFür mich ist das ein bisschen wie eine Eingangskontrolle direkt an der Tür: prüfen, bevor das Dokument archiviert oder weiterverarbeitet wird – ohne zusätzliche Umwege.\n\nWichtig ist aber auch: Eine technisch gültige Signatur bedeutet noch nicht automatisch, dass jemand für ein Unternehmen unterschreiben durfte.\n\nDas sind zwei unterschiedliche Fragen:\n\nIst die Signatur gültig?\n\nUnd war die Person auch zeichnungsberechtigt?\n\nGenau für den zweiten Teil kann unser Business Identity Validator zusätzlichen Kontext zu Person, Unternehmen und Berechtigung liefern.\n\nMich würde interessieren: Wie läuft das bei euch heute? Wie viele Stationen durchläuft ein signierter Anhang, bevor er geprüft und archiviert wird?\n\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n\n#Compliance #eIDAS #DigitalSignature #DigitalTrust",
+      "source_text": null,
+      "reshare_with_comment": null,
+      "score_before_approval": 0.6,
+      "unchanged": false,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-15T19:43:38",
+      "item_id": "comment-2026-09-15-0003",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "text": "I like big debates about EUDI and eIDAS, but they become useful for me at the handover into daily operations. A wallet or trust service may establish trust; Records teams still need a traceable check, a documented decision and an archive record they can explain later. Otherwise, the reference model is polished conference wallpaper. #Compliance #eIDAS #RecordsManagement",
+      "source_text": null,
+      "reshare_with_comment": null,
+      "score_before_approval": 0.88,
+      "unchanged": true,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-15T19:44:03",
+      "item_id": "comment-2026-09-15-0004",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "text": "An Article 14 assessment milestone is meaningful, but it is not the finish line—and I like that this is stated clearly. For me, cross-border trust becomes operational only when the evidence behind each qualified trust-service check, approval and archived record can be retraced later. That is when the bridge reaches the filing cabinet. #Compliance #eIDAS #RecordsManagement",
+      "source_text": null,
+      "reshare_with_comment": null,
+      "score_before_approval": 0.88,
+      "unchanged": true,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-15T19:50:47",
+      "item_id": "comment-2026-09-15-0012",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "text": "Great to see the team putting Wallet Unit Attestations and ZKPs on the table—well done. In real records and compliance workflows, how do you combine minimal disclosure with enough verifiable evidence to retrace a decision later? We developed ZKP signature validation, a descrete, so we never see the document. #Compliance #eIDAS #RecordsManagement",
+      "source_text": null,
+      "reshare_with_comment": null,
+      "score_before_approval": 0.86,
+      "unchanged": false,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-15T20:05:19",
+      "item_id": "comment-2026-09-15-0006",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "text": "The year of the wallets sounds exciting; the Records part of my brain immediately asks what happens after the applause. A wallet becomes operational when every trust check, approval and archived record leaves a trail people can retrace later—not just a shiny credential on a phone. Furthermore, lets do not forget that PDF and contracts will still exists and need validation, too #Compliance #eIDAS #RecordsManagement",
+      "source_text": null,
+      "reshare_with_comment": null,
+      "score_before_approval": 0.85,
+      "unchanged": false,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-15T20:07:56",
+      "item_id": "comment-2026-09-15-0008",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "text": "Ich finde den Hinweis wichtig: Nicht jeder Kontrollverlust ist technisch unvermeidbar. Gerade deshalb sollten wir nüchtern trennen, was ein System tatsächlich getan hat und welche menschliche Entscheidung davorstand. Kontrolle ist nämlich bereits verloren, da ich als Nutzer die Kontrolle über die Human Interfaces (Browser) direkt abgeben kann zu einem Agenten. Damit ist die Kontrolle bereits weg, und Systeme online müssen nun mit Agenten und Menschen über gleiche HTML Webseite klar kommen müssen #Compliance #eIDAS #RecordsManagement",
+      "source_text": null,
+      "reshare_with_comment": null,
+      "score_before_approval": 0.53,
+      "unchanged": false,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-15T20:08:41",
+      "item_id": "comment-2026-09-15-0009",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "text": "For me, cross-border recognition becomes real when the evidence behind a qualified signature travels as clearly as the document itself. Citizens, businesses and public authorities should be able to verify what was checked, under which trust framework, and record that decision for later. Otherwise, mutual recognition is a bridge with no inspection log. We built a discrete validator for checking signature without sharing document. #Compliance #eIDAS #RecordsManagement",
+      "source_text": null,
+      "reshare_with_comment": null,
+      "score_before_approval": 0.85,
+      "unchanged": false,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-15T20:09:07",
+      "item_id": "comment-2026-09-15-0010",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "text": "“AI-Native” caught me off guard too. Apparently we have reached the point where even a CV can sound like it was born with a neural network instead of a hometown. I laughed—and I am still not entirely sure what the label is meant to tell me.",
+      "source_text": null,
+      "reshare_with_comment": null,
+      "score_before_approval": 0.84,
+      "unchanged": true,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-15T20:49:06",
+      "item_id": "post-2026-09-15-0001",
+      "kind": "post",
+      "source_job_id": "job-0001",
+      "text": "Gepäckkontrollen werden für mich spätestens dann unangenehm, wenn fremde Menschen meinen Koffer öffnen. Noch schöner: Der Koffer ist etwas grösser, und plötzlich passt er nicht mehr in den vorgesehenen Ablauf.\n\nBei sensiblen Dokumenten will ich genau diese zwei Situationen vermeiden:\nDass Dritte in den Inhalt schauen.\nUnd dass ein grosses PDF wegen eines Upload-Umwegs zum Sonderfall wird.\n\nFür mich heisst Compliance auch: Ein Prüfschritt gehört direkt in den eigenen Prozess. Ich will weder das Dokument noch interne Compliance-Arbeitsschritte nach draussen geben. Und nicht die Dokumentengrösse sollte bestimmen, ob der Prozess funktioniert.\n\nDer Swisscom Document Validator prüft ZertES-/eIDAS-signierte PDFs sowie Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.\n\nSo bleibt auch der unangenehme Blick in den Koffer dort, wo er hingehört.\n\nWo müssen sensible oder grosse Dokumente heute noch euren vorgesehenen Ablauf verlassen?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "source_text": null,
+      "reshare_with_comment": null,
+      "score_before_approval": 0.91,
+      "unchanged": false,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-15T20:58:56",
+      "item_id": "post-2026-09-15-0002",
+      "kind": "post",
+      "source_job_id": "job-0001",
+      "text": "Die meiste Compliance-Arbeit passiert heute im Browser.\n\nBis ein Vertrag geprüft werden muss.\n\nDann heisst es plötzlich: PDF herunterladen, Adobe Reader öffnen, Signaturen suchen, Zertifikate einzeln prüfen und das Ergebnis wieder in den eigentlichen Prozess übertragen.\n\nEin kleiner Kontextwechsel mit erstaunlich viel Handarbeit. Der Mensch spielt dabei Kurier zwischen Browser, Dokument und Compliance-Prozess.\n\nWir haben deshalb den Swisscom Document Validator als diskrete Prüfung direkt in den Browser integriert. Er prüft bei ZertES-/eIDAS-signierten PDFs die Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.\n\nDer Business Identity Validator zusätzlichen Kontext zu Zeichner, Unternehmen und Berechtigung liefern.\n\nSo wird aus der Vertragsprüfung ein Schritt im Prozess statt ein Ausflug durch mehrere Programme. \n\nWie viele Kontextwechsel braucht eure Vertragsprüfung heute?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "source_text": null,
+      "reshare_with_comment": null,
+      "score_before_approval": 0.92,
+      "unchanged": false,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-16T00:38:56",
+      "item_id": "comment-2026-09-15-0002",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "text": "“Standards-compliant on paper” is exactly where the easy part ends for me. Right now we are providing verifier for signatures on PDF with privacy first discrete method, wallet has a long way to go. #Compliance #eIDAS #RecordsManagement",
+      "source_text": null,
+      "reshare_with_comment": null,
+      "score_before_approval": 0.84,
+      "user_memory_note": "da fehlt der bezug zu kampagne",
+      "unchanged": false,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-16T06:58:58",
+      "item_id": "comment-2026-09-16-0001",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "text": "As Agents took over the browser, you will not recognize as a system who is using my website right now. High Risk transactions, need 2FA or even a signature on qualified level, so at least for liability you are on a safe site. Qualified digital signature solves the liability and validate signature is very easy, we created here a really privacy first validator, without sharing data. #Compliance #eIDAS #RecordsManagement",
+      "source_text": null,
+      "reshare_with_comment": null,
+      "score_before_approval": 0.86,
+      "user_memory_note": null,
+      "unchanged": false,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-16T07:26:12",
+      "item_id": "post-2026-09-16-0001",
+      "kind": "post",
+      "source_job_id": "job-0003",
+      "text": "Eine unbeschriftete Dose im Gefrierschrank wird nach drei Monaten nicht verständlicher. Sie wird nur kälter.\n\nBei signierten PDFs ist mein Archiv ähnlich talentiert: Es konserviert sehr zuverlässig – leider auch Unklarheit.\n\nDarum gehört die Prüfung für mich vor die Freigabe oder Archivierung. Gerade für Records/Posteingang, Vertragsadministration und Compliance Ops.\n\nDer Swisscom Document Validator prüft bei ZertES-/eIDAS-signierten PDFs Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.\n\nWas muss bei euch sichtbar geklärt sein, bevor eine signierte PDF ins Archiv wandert?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "source_text": null,
+      "reshare_with_comment": null,
+      "score_before_approval": 0.94,
+      "user_memory_note": "lass das weg dass es keine rechtsentscheidung macht, weil das kann man später im detail noch klären, fokussiere dich auf mehrwerte des products.",
+      "unchanged": false,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-16T07:29:19",
+      "item_id": "post-2026-09-16-0002",
+      "kind": "post",
+      "source_job_id": "job-0003",
+      "text": "Ein Knopf mit zwei Beschriftungen ist im Aufzug vielleicht charmant. Im Compliance-Prozess eher weniger.\n\n«Technisch geprüft» und «fachlich freigegeben» sind für mich zwei Zustände, nicht ein Statusfeld mit Doppelleben.\n\nFür Vertragsadministration, Records/ECM und Compliance/Legal Ops würde ich deshalb zwei klare Stempel setzen:\n\n1. Prüfinformationen vorhanden.\n2. Fachliche Entscheidung getroffen.\n\nDer Swisscom Document Validator liefert bei ZertES-/eIDAS-signierten PDFs Signatur- und Zertifikatsinformationen. Der Business Identity Validator liefert ergänzenden Kontext zu Zeichner, Unternehmen und Berechtigung. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.\n\nZeigt euer Workflow getrennt, was geprüft wurde und wer danach entschieden hat?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement #trust",
+      "source_text": null,
+      "reshare_with_comment": null,
+      "score_before_approval": 0.94,
+      "user_memory_note": "verwende neben den hashtags passende hashtags also zusatz, wo es passt",
+      "unchanged": false,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-17T22:26:53",
+      "item_id": "post-2026-09-17-0001",
+      "kind": "post",
+      "source_job_id": "job-0007",
+      "text": "Die deutsche Wallet heisst D-you.\nDie Schweizer Wallet heisst Swi-yu.\nUnd Frankreich?\n\nIch war bereit für den nächsten «-you»-Wortwitz.\n\nPlot Twist: France Identité. 😄\n\nDiese Woche war ein grossartiges Meeting. Ich bin stolz, Teil dieser Reise zu sein. Mir gefällt dass mit Wallet die Menschen anfangen signierte Credentials zu verifizieren und dem vertrauen.\n\nBei aller Wallet-Zukunft bleibt für mich eine praktische Frage: Wie prüft ihr signierte PDFs, bevor ihr sie freigebt oder archiviert?\n\nFragen? Sehr gern per Kommentar oder DM.\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "source_text": null,
+      "reshare_with_comment": null,
+      "score_before_approval": 0.91,
+      "user_memory_note": null,
+      "unchanged": false,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-17T22:28:27",
+      "item_id": "post-2026-09-17-0002",
+      "kind": "post",
+      "source_job_id": "job-0003",
+      "text": "Ein Cursor hat keinen Pass. Er klickt immer gleich höflich – egal, ob dahinter ein Mensch oder ein Agent sitzt.\n\nGenau das ist die Grenze der Oberfläche: Am Zeiger selbst erkenne ich den Bediener nicht.\n\nFür Records/Posteingang, Vertragsadministration und Compliance Ops wird deshalb wichtig, was neben dem Cursor prüfbar ist. Bei einer eingehenden signierten PDF sind das belastbare Informationen statt eine Vermutung über die Hand am Bildschirm.\n\nDer Swisscom Document Validator prüft bei ZertES-/eIDAS-signierten PDFs Signatur- und Zertifikatsinformationen. Der Business Identity Validator kann Kontext zu Zeichner, Unternehmen und Berechtigung ergänzen.\n\nWelches Vertrauenssignal soll bei euch neben dem Cursor zählen, wenn Mensch und Agent an der Oberfläche gleich aussehen?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "source_text": null,
+      "reshare_with_comment": null,
+      "score_before_approval": 0.93,
+      "user_memory_note": null,
+      "unchanged": false,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-21T08:20:25",
+      "item_id": "comment-2026-09-16-0002",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "text": "I agree: compliance is necessary, but trust disappears the moment security fails. For citizens, digital identity also has to work simply; for operations, it must provide verifiable data without creating a new exposure point. We have had good experience with the Swisscom Document Validator: it makes back-office checks more efficient while the PDF stays in the organisation’s own environment and only its hash is created locally. #Compliance #eIDAS #RecordsManagement #DigitalIdentity",
+      "source_text": null,
+      "reshare_with_comment": null,
+      "score_before_approval": 0.84,
+      "user_memory_note": "also mehr value für meine kunden bringen, sprache vom post haben",
+      "unchanged": false,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-21T08:24:43",
+      "item_id": "post-2026-09-18-0002",
+      "kind": "post",
+      "source_job_id": "job-0007",
+      "text": "«Bei Bedarf prüfen» ist für mich ungefähr so präzise wie ein Horoskop.\n\nKlingt erstaunlich passend. Hilft am Dienstag um 16:40 Uhr bei der nächsten PDF nur wenig.\n\nIch hätte für Records/Posteingang, Vertragsadministration und Compliance Ops lieber eine Regel, die schon vor der PDF da ist:\n\n- eingehende signierte PDF\n- Freigabe oder Archivierung vorgesehen\n- sensible oder auditrelevante Unterlagen\n\nDann ist vorab geklärt, welche Dokumente in den Prüfschritt gehen, wer das Ergebnis beurteilt und wo die Entscheidung festgehalten wird.\n\nDer Swisscom Document Validator prüft ZertES-/eIDAS-signierte PDFs sowie Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet. \n\nIst euer Prüfauslöser eine klare Regel oder ein freundliches «bei Bedarf»?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "source_text": null,
+      "reshare_with_comment": null,
+      "score_before_approval": 0.94,
+      "user_memory_note": "Er erfindet keine interne Policy, klassifiziert nicht automatisch und gibt nichts frei. Auch Revisionssicherheit entsteht nicht automatisch. --> das sollte noch nicht hier geschrieben werden, solche details dann im gespräch nicht im linkedin",
+      "unchanged": false,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-21T08:25:47",
+      "item_id": "post-2026-09-18-0001",
+      "kind": "post",
+      "source_job_id": "job-0007",
+      "text": "Ein guter AI-Agent muss nicht nur wissen, welches Tool als Nächstes dran ist.\n\nEr sollte auch wissen, wann er die Hände von der Tastatur nehmen muss.\n\nBei eingehenden signierten PDFs liegt dieser Moment für mich vor Freigabe oder Archivierung – in Records/Posteingang, Vertragsadministration und Compliance/Legal Ops.\n\nWir bauen MCP-Zugriff rund um Business Identity Validator und Document Validator. Damit sollen Prüfinformationen als explizite Unterbrechung im agentischen Ablauf angefragt werden können, bevor der nächste Tool-Schritt folgt.\n\nDer Document Validator prüft bei ZertES-/eIDAS-signierten PDFs Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet. Der BIV kann Kontext zu Zeichner, Unternehmen und Berechtigung ergänzen.\n\nWo stoppt euer Agent vor dem nächsten Tool-Schritt?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "source_text": null,
+      "reshare_with_comment": null,
+      "score_before_approval": 0.94,
+      "user_memory_note": "Beide treffen keine Compliance-, Rechts- oder Freigabeentscheidung und lassen den Agenten nicht automatisch weiterlaufen. Die Policy oder ein zuständiger Mensch entscheidet. --> das ist etwas für das verkaufsgespräch nicht linkedin",
+      "unchanged": false,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-21T08:26:24",
+      "item_id": "comment-2026-09-17-0002",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "text": "What I would test in Estonia’s initiative is the receiving process: before a public authority accepts an AI agent’s action, can it verify who delegated it, which rights cover this exact step and who remains responsible? Discovering any of that afterwards would be a rather ambitious definition of a checkpoint. #Compliance #eIDAS #RecordsManagement",
+      "source_text": null,
+      "reshare_with_comment": null,
+      "score_before_approval": 0.85,
+      "user_memory_note": null,
+      "unchanged": false,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-21T09:41:13",
+      "item_id": "post-2026-09-17-0003",
+      "kind": "post",
+      "source_job_id": "job-0003",
+      "text": "Bei «juristisch sicher» springt meine innere Nebelmaschine an.\n\nGrosser Auftritt. Schlechte Sicht.\n\nIn Beschaffungsgesprächen für Records-, Vertragsadmin-, Debitoren- oder Compliance-Teams würde ich dann nicht applaudieren. Ich würde das Saallicht einschalten und zwei konkrete Fragen stellen:\n\nWelche Signatur- und Zertifikatsinformationen werden bei ZertES-/eIDAS-signierten PDFs tatsächlich geprüft?\n\nWelcher geschäftliche Kontext liegt zu Zeichner, Unternehmen und Berechtigung vor?\n\nDer Swisscom Document Validator liefert Prüfinformationen zur ersten Frage. Der Business Identity Validator kann Kontext zur zweiten ergänzen. \n\nSo wird aus einem grossen Rechtswort eine brauchbare Einkaufsliste. Weniger Nebel, mehr Substantive.\n\nWelche konkrete Prüffrage stellt euer Team, wenn jemand «juristisch sicher» sagt?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "source_text": null,
+      "reshare_with_comment": null,
+      "score_before_approval": 0.92,
+      "user_memory_note": null,
+      "unchanged": false,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-21T09:41:44",
+      "item_id": "post-2026-09-20-0001",
+      "kind": "post",
+      "source_job_id": "job-0007",
+      "text": "Ein Kringel unten rechts macht aus einer PDF noch keinen geprüften Vertrag.\n\nMein Einkaufszettel trägt manchmal auch einen Namenszug. Meistens bedeutet er: «Milch nicht vergessen». Für eine ZertES-/eIDAS-Prüfung ist das erstaunlich wenig Material.\n\nFür Records/Posteingang und Vertragsadministration ist deshalb eine frühe Unterscheidung wichtig: Sieht die PDF nur unterschrieben aus – oder enthält sie eine technisch prüfbare elektronische Signatur?\n\nAus dem sichtbaren Bild allein lässt sich das nicht ableiten. Der Swisscom Document Validator prüft bei entsprechend elektronisch signierten PDFs Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.\n\nWoran erkennt euer Posteingang heute, ob eine PDF nur unterschrieben aussieht oder technisch geprüft werden kann?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "source_text": null,
+      "reshare_with_comment": null,
+      "score_before_approval": 0.93,
+      "user_memory_note": "Die Prüfinformationen helfen bei der Einordnung; fachliche Beurteilung und Freigabe bleiben beim zuständigen Team. --> dieser detail ist too much und bremst, das sit teil von späteren gesprächen",
+      "unchanged": false,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-21T09:42:09",
+      "item_id": "post-2026-09-20-0002",
+      "kind": "post",
+      "source_job_id": "job-0007",
+      "text": "Einen Rauchmelder nur mit frischer Zimmerluft zu testen, ist sehr harmonisch.\n\nNur leider kein besonders ehrlicher Test.\n\nVor dem produktiven Einsatz in Records/ECM würde ich deshalb nicht nur die freundliche Beispiel-PDF durchschicken. Das Team kann einen kleinen, datenschutzkonformen Testsatz mit bekannten Fällen und vorher erwarteten Prüfergebnissen zusammenstellen.\n\nDann prüft es den ganzen Ablauf:\n\n- Kommt das Prüfergebnis am richtigen Ort an?\n- Verhält sich der eigene Workflow wie vorgesehen, wenn eine definierte Bedingung nicht erfüllt ist?\n- Bleibt klar, wer beurteilt und freigibt?\n\nDer Swisscom Document Validator prüft ZertES-/eIDAS-signierte PDFs sowie Signatur- und Zertifikatsinformationen und kann in Records-/ECM-Abläufe eingebunden werden. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.\n\nWann habt ihr zuletzt nicht das PDF, sondern euren Prüfprozess getestet?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "source_text": null,
+      "reshare_with_comment": null,
+      "score_before_approval": 0.93,
+      "user_memory_note": null,
+      "unchanged": true,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-23T14:40:31",
+      "item_id": "post-2026-09-21-0001",
+      "kind": "post",
+      "source_job_id": "job-0007",
+      "text": "Die Mantelnummer ist die digitale Signatur der Garderobe.\n\nNiemand interessiert sich dafür, was sonst noch auf dem Zettel steht. Entscheidend ist, ob Nummer 47 am Mantel zu Nummer 47 in meiner Hand passt.\n\nBei elektronisch signierten PDFs ist es ähnlich: Entscheidend ist nicht der sichtbare Kringel im Dokument. Die relevanten Signaturinformationen stecken im Zertifikat.\n\nDas sichtbare Signaturbild hat für die technische Prüfung keine Bedeutung. Es kann aber Vertrauen vorspielen – und damit zum Angriffsvektor werden. Sieht offiziell aus. Ist nur leider kein Prüfergebnis.\n\nDarum setzen wir auf unseren diskreten Swisscom Document Validator. Er prüft bei ZertES-/eIDAS-signierten PDFs Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.\n\nPrüft ihr noch den Kringel – oder schon das Zertifikat?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement #DigitaleSignatur",
+      "source_text": null,
+      "reshare_with_comment": null,
+      "score_before_approval": 0.94,
+      "user_memory_note": null,
+      "unchanged": false,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-23T14:40:38",
+      "item_id": "post-2026-09-21-0002",
+      "kind": "post",
+      "source_job_id": "job-0007",
+      "text": "Der Absendername im Posteingang ist wie die Klingelbeschriftung.\n\nNett zu wissen, wer läutet. Noch kein Prüfbericht für das Paket.\n\nIn Records/Posteingang, Vertragsadministration und Compliance Ops kommen signierte PDFs über bekannte Domains, vertraute E-Mail-Adressen oder gewohnte Portale an. Das sagt etwas über den Eingangskanal. Nicht aber, welche Signatur- und Zertifikatsinformationen in der PDF vorliegen.\n\nDarum würde ich zwei Fragen nicht in denselben Briefkasten werfen:\n\nWie kam das Dokument an?\nWas lässt sich an der signierten PDF prüfen?\n\nDer Swisscom Document Validator prüft bei entsprechend ZertES-/eIDAS-signierten PDFs Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet. Er authentisiert weder den E-Mail-Absender noch das Portal.\n\nEin vertrauter Bote und ein geprüftes Paket sind zwei verschiedene Dinge.\n\nTrennt euer Eingang heute klar zwischen «kam über einen vertrauten Kanal» und «die signierte PDF wurde geprüft»?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "source_text": null,
+      "reshare_with_comment": null,
+      "score_before_approval": 0.94,
+      "user_memory_note": null,
+      "unchanged": true,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-23T14:41:24",
+      "item_id": "post-2026-09-22-0002",
+      "kind": "post",
+      "source_job_id": "job-0007",
+      "text": "Zwei Paar Augen auf demselben grünen Haken sind noch kein Vier-Augen-Prinzip.\n\nManchmal ist es einfach nur sehr konzentriertes gemeinsames Anstarren.\n\nVor der Freigabe oder Archivierung einer signierten PDF würde ich den zweiten Blick deshalb konkret machen. Gerade in Records/ECM, Vertragsadministration und Compliance/Legal Ops:\n\n- Welche Signatur- und Zertifikatsinformationen sieht die zweite Person?\n- Welcher Kontext zu Zeichner und Unternehmen liegt vor?\n- Welche fachliche Entscheidung trifft sie selbst?\n\nDer Swisscom Document Validator liefert bei ZertES-/eIDAS-signierten PDFs Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.\n\nDer Business Identity Validator kann Kontext zu Zeichner, Unternehmen und verfügbaren Informationen zur Berechtigung liefern. Was daraus fachlich folgt, entscheidet das zuständige Team.\n\nWas prüft das zweite Augenpaar bei euch wirklich: Informationen und Entscheidung – oder nur die Farbe des Hakens?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n\nFür eine kurze Demo oder einen Austausch:\nDM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "source_text": null,
+      "reshare_with_comment": null,
+      "score_before_approval": 0.94,
+      "user_memory_note": null,
+      "unchanged": true,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-23T14:42:03",
+      "item_id": "post-2026-09-22-0001",
+      "kind": "post",
+      "source_job_id": "job-0007",
+      "text": "Ein Türsteher kann einen Ausweis prüfen.\n\nEr entscheidet deshalb noch lange nicht, in welches Regal die Akte gehört. Sonst hätte die Bibliothek am Eingang ein kleines Organisationsproblem.\n\nBei eingehenden signierten PDFs sehe ich diese Trennung genauso. Vor der Archivierung brauchen Records-/ECM-Teams belastbare Prüfinformationen. Danach folgt die Records-Entscheidung.\n\nDer Swisscom Document Validator prüft bei ZertES-/eIDAS-signierten PDFs Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.\n\nAblageklasse, Aufbewahrungsfrist und Archivierungsentscheid legt er nicht fest. Das bleibt Aufgabe des Prozesses und der zuständigen Menschen.\n\nTrennt euer Records-/ECM-Prozess Prüfinformationen klar von Ablageklasse und Aufbewahrungsentscheidung?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n\nFür eine kurze Demo oder einen Austausch:\nDM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "source_text": null,
+      "reshare_with_comment": null,
+      "score_before_approval": 0.93,
+      "user_memory_note": null,
+      "unchanged": false,
+      "automatic": false
+    },
+    {
+      "at": "2026-09-28T13:22:51",
+      "item_id": "connection-2026-09-28-0002",
+      "kind": "connection",
+      "source_job_id": "job-0009",
+      "text": "Hallo Andreas, dein Fokus auf Digital Order Management bei PostFinance ist mir aufgefallen. Ich befasse mich mit digitalen Prüf- und Vertrauensprozessen und würde mich gern mit dir vernetzen. Beste Grüsse, Roman",
+      "source_text": null,
+      "reshare_with_comment": null,
+      "score_before_approval": 0.83,
+      "user_memory_note": null,
+      "unchanged": true,
+      "automatic": false
+    }
+  ],
+  "job_trust": {
+    "job-0003": {
+      "unchanged_streak": 0,
+      "unlocked": false
+    },
+    "job-0001": {
+      "unchanged_streak": 0,
+      "unlocked": false
+    },
+    "job-0007": {
+      "unchanged_streak": 0,
+      "unlocked": false
+    },
+    "job-0009": {
+      "unchanged_streak": 1,
+      "unlocked": false
+    }
+  },
+  "auto_approvals": [],
+  "rejections": [
+    {
+      "at": "2026-09-14T22:30:43",
+      "item_id": "comment-2026-09-14-0001",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "text": "",
+      "generated_text": null,
+      "score_at_rejection": null,
+      "edited": false,
+      "reason": "deleted"
+    },
+    {
+      "at": "2026-09-14T22:30:47",
+      "item_id": "comment-2026-09-14-0002",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "text": "",
+      "generated_text": null,
+      "score_at_rejection": null,
+      "edited": false,
+      "reason": "deleted"
+    },
+    {
+      "at": "2026-09-15T19:49:46",
+      "item_id": "comment-2026-09-15-0002",
+      "kind": "comment",
+      "source_job_id": "job-0002",
+      "text": "",
+      "generated_text": null,
+      "score_at_rejection": null,
+      "edited": false,
+      "reason": "deleted"
+    },
+    {
+      "at": "2026-09-15T19:49:50",
+      "item_id": "comment-2026-09-15-0001",
+      "kind": "comment",
+      "source_job_id": "job-0002",
+      "text": "",
+      "generated_text": null,
+      "score_at_rejection": null,
+      "edited": false,
+      "reason": "deleted"
+    },
+    {
+      "at": "2026-09-15T20:04:37",
+      "item_id": "comment-2026-09-15-0005",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "text": "Certification may run quietly in the background, but in operations it needs to leave footprints. For me, the real test is whether trust-service evidence can move into a traceable check, approval and archive record—otherwise the wallet has a passport, but the filing cabinet has amnesia. #Compliance #eIDAS #RecordsManagement",
+      "generated_text": "Certification may run quietly in the background, but in operations it needs to leave footprints. For me, the real test is whether trust-service evidence can move into a traceable check, approval and archive record—otherwise the wallet has a passport, but the filing cabinet has amnesia. #Compliance #eIDAS #RecordsManagement",
+      "score_at_rejection": 0.78,
+      "edited": false,
+      "reason": "deleted"
+    },
+    {
+      "at": "2026-09-15T20:05:27",
+      "item_id": "comment-2026-09-15-0007",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "text": "I like the pairing of identity with freedom and digitalisation with transparency. For me, the hard part begins after the keynote: making those principles concrete enough that people can see what is trusted, by whom, and why. Otherwise, a strong foundation risks remaining a very elegant blueprint. #Compliance #eIDAS #RecordsManagement",
+      "generated_text": "I like the pairing of identity with freedom and digitalisation with transparency. For me, the hard part begins after the keynote: making those principles concrete enough that people can see what is trusted, by whom, and why. Otherwise, a strong foundation risks remaining a very elegant blueprint. #Compliance #eIDAS #RecordsManagement",
+      "score_at_rejection": 0.88,
+      "edited": false,
+      "reason": "deleted"
+    },
+    {
+      "at": "2026-09-15T20:08:49",
+      "item_id": "comment-2026-09-15-0011",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "text": "Michał, this is a good reminder that regulation is only the map; standards still have to build the roads. For me, an EUDI Wallet becomes useful infrastructure when trust decisions work across borders and remain explainable in the records and approval processes that rely on them. I’m curious which interoperability gap the panel sees as the hardest one to close. #Compliance #eIDAS #RecordsManagement",
+      "generated_text": "Michał, this is a good reminder that regulation is only the map; standards still have to build the roads. For me, an EUDI Wallet becomes useful infrastructure when trust decisions work across borders and remain explainable in the records and approval processes that rely on them. I’m curious which interoperability gap the panel sees as the hardest one to close. #Compliance #eIDAS #RecordsManagement",
+      "score_at_rejection": 0.89,
+      "edited": false,
+      "reason": "deleted"
+    },
+    {
+      "at": "2026-09-16T14:18:39",
+      "item_id": "comment-2026-09-16-0001",
+      "kind": "comment",
+      "source_job_id": "job-0002",
+      "text": "",
+      "generated_text": null,
+      "score_at_rejection": null,
+      "edited": false,
+      "reason": "deleted",
+      "user_memory_note": null
+    },
+    {
+      "at": "2026-09-16T14:18:53",
+      "item_id": "comment-2026-09-16-0002",
+      "kind": "comment",
+      "source_job_id": "job-0002",
+      "text": "",
+      "generated_text": null,
+      "score_at_rejection": null,
+      "edited": false,
+      "reason": "deleted",
+      "user_memory_note": null
+    },
+    {
+      "at": "2026-09-28T13:23:51",
+      "item_id": "connection-2026-09-28-0001",
+      "kind": "connection",
+      "source_job_id": "job-0009",
+      "text": "",
+      "generated_text": null,
+      "score_at_rejection": null,
+      "edited": false,
+      "reason": "deleted",
+      "user_memory_note": null
+    }
+  ],
+  "directives": [
+    {
+      "at": "2026-09-14T22:44:38",
+      "item_id": "post-2026-09-12-0003",
+      "kind": "post",
+      "source_job_id": "job-0003",
+      "instruction": "schreib mal, wir haben den Swisscom document validator direkt im outlook eingebunden, sodass jeder Anhang direkt validiert wird, also integrativ und so",
+      "before": "Ein unversehrtes Paketsiegel beruhigt. Nur: Es sagt nicht, ob der Absender fürs Unternehmen überhaupt bestellen durfte.\n\nBei signierten PDFs ist es ähnlich: Der Klebestreifen kann tadellos sein, und trotzdem fehlt die geschäftliche Einordnung.\n\nIch würde im Records-/Posteingang, in der Vertragsadministration oder in Compliance Ops deshalb zwei Fragen sauber trennen:\n\n1. Ist die ZertES-/eIDAS-Signatur technisch belastbar geprüft?\n2. Wer hat für welches Unternehmen gezeichnet – und welche Berechtigungsinformationen liegen vor?\n\nDer Swisscom Document Validator prüft die Signatur und wertet Zertifikatsinformationen belastbarer aus. Der Business Identity Validator ergänzt Kontext zu Zeichner, Unternehmen und Berechtigung.\n\nDas sind zwei Produktrollen, nicht ein Zauberstempel. Sie liefern Prüfinformationen. Die rechtliche Würdigung und die Freigabe bleiben beim zuständigen Team.\n\nPrüft euer Prozess nur das Siegel – oder auch, wer dahintersteht?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "after": "Ein Anhang sollte nicht erst auf Wanderschaft gehen, bevor jemand prüft, ob seine Signatur belastbar ist.\n\nWir haben den Swisscom Document Validator direkt in Outlook eingebunden. So wird jeder eingehende signierte PDF-Anhang direkt dort validiert, wo er ankommt – integriert in den gewohnten Arbeitsablauf statt als zusätzlicher Ausflug in ein separates Tool.\n\nDer Validator prüft ZertES-/eIDAS-Signatur und Zertifikatsinformationen belastbarer. Die PDF bleibt in der eigenen Umgebung; ihr Hash wird lokal gebildet.\n\nFür mich ist das wie eine Eingangskontrolle direkt an der Tür: weniger «Lade das mal irgendwo hoch» und weniger «Hat das schon jemand geprüft?».\n\nTechnische Signaturprüfung und geschäftliche Berechtigung bleiben dabei zwei Fragen. Der Business Identity Validator kann zusätzlich Kontext zu Zeichner, Unternehmen und Berechtigung liefern. Die rechtliche Würdigung und Freigabe bleiben beim zuständigen Team.\n\nWie viele Umwege macht ein signierter Anhang bei euch, bevor er archiviert oder freigegeben wird?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "outcome": "approved"
+    },
+    {
+      "at": "2026-09-15T20:35:06",
+      "item_id": "post-2026-09-15-0001",
+      "kind": "post",
+      "source_job_id": "job-0001",
+      "instruction": "mach mal, komisches gefühl wenn leute dein gepäck reinschauen und auch problematisch wenn dein gepäck mal grösser ist. Also compliance ist ja auch so, man will nicht am dokumenten grösse begrenzt sein und man mächte nicht dass dein arbeitsschritt von dritten angeschaut wird.",
+      "before": "Am Flughafen ist der einfache Teil, wenn jede Schale lautlos durchfährt. Der Prozess zeigt sich, wenn es piept.\n\nDann stehen fünf sehr professionelle Menschen herum. Jeder wartet kurz darauf, wer zuerst zuständig ist.\n\nGenau dieser Moment interessiert mich bei signierten PDFs: Was tun Records/Posteingang, Vertragsadministration oder Compliance/Legal Ops, wenn die Auswertung unklar bleibt?\n\nDer Swisscom Document Validator prüft ZertES-/eIDAS-signierte PDFs sowie Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, der Hash wird lokal gebildet. \n\nWer besitzt bei euch den Ausnahmeweg, wenn es bei einer signierten PDF «piept»?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "after": "Gepäckkontrollen werden für mich spätestens dann unangenehm, wenn fremde Menschen meinen Koffer öffnen. Noch schöner: Der Koffer ist etwas grösser, und plötzlich passt er nicht mehr in den vorgesehenen Ablauf.\n\nBei sensiblen Dokumenten will ich genau diese zwei Situationen vermeiden:\nDass Dritte in den Inhalt schauen.\nUnd dass ein grosses PDF wegen eines Upload-Umwegs zum Sonderfall wird.\n\nFür mich heisst Compliance auch: Ein Prüfschritt gehört direkt in den eigenen Prozess. Ich will weder das Dokument noch interne Compliance-Arbeitsschritte nach draussen geben. Und nicht die Dokumentengrösse sollte bestimmen, ob der Prozess funktioniert.\n\nDer Swisscom Document Validator prüft ZertES-/eIDAS-signierte PDFs sowie Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.\n\nSo bleibt auch der unangenehme Blick in den Koffer dort, wo er hingehört: beim Flughafen.\n\nWo müssen sensible oder grosse Dokumente heute noch euren vorgesehenen Ablauf verlassen?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "outcome": "approved"
+    },
+    {
+      "at": "2026-09-15T20:52:03",
+      "item_id": "post-2026-09-15-0002",
+      "kind": "post",
+      "source_job_id": "job-0001",
+      "instruction": "sag meiste compliance arbeit geschieht im browser, aber dann kommt vertragsüberprüfung und man muss das dokument runter laden und mit adobe reader öffnen und mühsam zertifikate selbst prüfen. kontextwechsel, mensch muss arbeitverrichten....wir haben diskreten validator direkt im browser",
+      "before": "Ein Browser-Agent mit angeklebtem Schnurrbart ist noch kein Kollege mit Mandat.\n\nWenn er im Browser den Staffelstab übernimmt, möchte ich einen Übergabezettel sehen:\n\n- Welche signierte PDF wurde geprüft?\n- Was sagt die Signatur- und Zertifikatsauswertung?\n- Welcher geschäftliche Kontext liegt vor?\n- Welcher Mensch verantwortet den nächsten Schritt?\n\nDer Swisscom Document Validator prüft ZertES-/eIDAS-signierte PDFs sowie Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, der Hash wird lokal gebildet. Der Business Identity Validator kann Kontext zu Zeichner, Unternehmen und Berechtigung ergänzen.\n\nWichtig: Weder Document Validator noch BIV erkennen, ob Mensch oder Agent den Browser bedient. Sie erteilen keinem Agenten Mandat. Das Ergebnis ersetzt keine menschliche Beurteilung, Freigabe oder Rechtsprüfung.\n\nWelchen Übergabezettel verlangt euer Team, bevor der nächste Schritt angestossen wird?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "after": "Die meiste Compliance-Arbeit passiert heute im Browser.\n\nBis ein Vertrag geprüft werden muss.\n\nDann heisst es plötzlich: PDF herunterladen, Adobe Reader öffnen, Signaturen suchen, Zertifikate einzeln prüfen und das Ergebnis wieder in den eigentlichen Prozess übertragen.\n\nEin kleiner Kontextwechsel mit erstaunlich viel Handarbeit. Der Mensch spielt dabei Kurier zwischen Browser, Dokument und Compliance-Prozess.\n\nWir haben deshalb den Swisscom Document Validator als diskrete Prüfung direkt in den Browser integriert. Er prüft bei ZertES-/eIDAS-signierten PDFs die Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.\n\nDer Business Identity Validator zusätzlichen Kontext zu Zeichner, Unternehmen und Berechtigung liefern.\n\nSo wird aus der Vertragsprüfung ein Schritt im Prozess statt ein Ausflug durch mehrere Programme. Die menschliche Beurteilung, Freigabe oder Rechtsprüfung ersetzt das natürlich nicht. Aber der Mensch muss nicht mehr die Arbeit verrichten, die der Browserprozess bereits übernehmen kann.\n\nWie viele Kontextwechsel braucht eure Vertragsprüfung heute?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "outcome": "approved"
+    },
+    {
+      "at": "2026-09-17T22:18:58",
+      "item_id": "post-2026-09-16-0001",
+      "kind": "post",
+      "source_job_id": "job-0007",
+      "instruction": "metapher suckt hart, also mach etwaqs wo man sagt, eigentlich muss digitalisierung etwas effizienter machen. leider haben viele die digitale signatur eingeführt haben das backoffice komplett vergessen. Wir wollen nun, dass Mehrwerte dürch verifizierbare daten wie Signatur Effizenzsteigerung kommt.",
+      "before": "Gäste bringen ihre eigenen Schuhe mit. Ob sie damit direkt bis ins Archiv laufen, entscheidet aber das Haus.\n\nBei ausgehenden Dokumenten kann ich den Signaturprozess gestalten. Im Posteingang geht das nicht. Dort bestimmt die Gegenpartei, wie sie signiert.\n\nFür Records/Posteingang, Vertragsadministration und Compliance Ops bleibt trotzdem ein eigener Hebel: ein fester Kontrollpunkt für eingehende signierte PDFs – vor Annahme, Freigabe oder Archivierung.\n\nDer Swisscom Document Validator liefert dort bei ZertES-/eIDAS-signierten PDFs Signatur- und Zertifikatsinformationen. Er vereinheitlicht nicht den Prozess der Gegenpartei. Er gibt dem empfangenden Team Prüfinformationen für den eigenen Kontrollpunkt. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.\n\nWas ist bei euch standardisiert: wie andere signieren – oder wie ihr eingehende signierte PDFs prüft?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "after": "Digitalisierung sollte Prozesse effizienter machen. Eigentlich selbstverständlich.\n\nBei der digitalen Signatur endet die Effizienz aber oft genau dort, wo das Dokument im Backoffice ankommt.\n\nDie Signatur wurde eingeführt. Records/Posteingang, Vertragsadministration und Compliance Ops prüfen eingehende signierte PDFs trotzdem manuell. Denn wie die Gegenpartei signiert, lässt sich nicht standardisieren. Wie wir diese Dokumente vor Annahme, Freigabe oder Archivierung prüfen, dagegen schon.\n\nGenau dort wollen wir aus verifizierbaren Daten einen echten Effizienzgewinn machen.\n\nDer Swisscom Document Validator liefert bei ZertES-/eIDAS-signierten PDFs Signatur- und Zertifikatsinformationen für einen festen Kontrollpunkt im eigenen Prozess. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.\n\nSo wird die digitale Signatur nicht nur vorne digital, sondern schafft auch im Backoffice einen Mehrwert.\n\nWie effizient ist eure digitale Signatur, nachdem das Dokument eingegangen ist?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement #Digitalisierung",
+      "outcome": "approved"
+    },
+    {
+      "at": "2026-09-17T22:21:56",
+      "item_id": "comment-2026-09-16-0001",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "instruction": "say we build MCP around Business identity validator and document validator, because I would add rule 10, sometimes an agent need complianct decission to further do agentic stuff",
+      "before": "I keep coming back to lesson 9: the model may be clever, but the surrounding system has to be boringly explicit. Who is this agent, what may it touch, what happened, and when does a human take over? Those four questions are the difference between a demo and something I would trust in production. #Compliance #eIDAS #RecordsManagement",
+      "after": "I would add lesson 10: an agent sometimes needs a compliance decision before it can safely continue with the next agentic step. That is why we are building MCP access around our Business Identity Validator and Document Validator—so identity, authority and signed-document checks can become explicit parts of the workflow, not an afterthought once the agent has already acted. #Compliance #eIDAS #RecordsManagement #MCP",
+      "outcome": "approved"
+    },
+    {
+      "at": "2026-09-21T08:12:02",
+      "item_id": "comment-2026-09-16-0002",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "instruction": "ich glaube trust für bürger, wenn es einfach funktioniert. Trust für adoption ist wenn alle ein value daraus ziehen, einfache identifikation, automatisierung von verifiable data. wir haben hier gute erfahrungen mit document validator der effizenz steigert im backoffice ohne comlpiance risiken",
+      "before": "For me, eIDAS compliance is the building code, not the fire drill. Standards create a common floor; security assurance grows when systems are tested against attacks, misconfigurations and human error—and when the findings actually change the design. #Compliance #eIDAS #RecordsManagement",
+      "after": "Ich glaube, Vertrauen entsteht für Bürgerinnen und Bürger vor allem dann, wenn digitale Identität einfach funktioniert. Für die Adoption müssen alle Beteiligten einen konkreten Mehrwert haben: einfache Identifikation und automatisierbare, verifizierbare Daten. Mit dem Swisscom Document Validator haben wir gute Erfahrungen gemacht: Er macht Prüfungen im Backoffice effizienter, ohne zusätzliche Compliance-Risiken durch das Teilen des Dokuments. #Compliance #eIDAS #RecordsManagement #DigitalIdentity",
+      "outcome": "approved"
+    },
+    {
+      "at": "2026-09-21T08:19:42",
+      "item_id": "comment-2026-09-16-0002",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "instruction": "sprache vom post übernehmen, also englisch in diesem fall",
+      "before": "Ich glaube, Vertrauen entsteht für Bürgerinnen und Bürger vor allem dann, wenn digitale Identität einfach funktioniert. Für die Adoption müssen alle Beteiligten einen konkreten Mehrwert haben: einfache Identifikation und automatisierbare, verifizierbare Daten. Mit dem Swisscom Document Validator haben wir gute Erfahrungen gemacht: Er macht Prüfungen im Backoffice effizienter, ohne zusätzliche Compliance-Risiken durch das Teilen des Dokuments. #Compliance #eIDAS #RecordsManagement #DigitalIdentity",
+      "after": "I agree: compliance is necessary, but trust disappears the moment security fails. For citizens, digital identity also has to work simply; for operations, it must provide verifiable data without creating a new exposure point. We have had good experience with the Swisscom Document Validator: it makes back-office checks more efficient while the PDF stays in the organisation’s own environment and only its hash is created locally. #Compliance #eIDAS #RecordsManagement #DigitalIdentity",
+      "outcome": "approved"
+    },
+    {
+      "at": "2026-09-23T14:39:42",
+      "item_id": "post-2026-09-21-0001",
+      "kind": "post",
+      "source_job_id": "job-0007",
+      "instruction": "mantelnummer als digitale signatur, keinen interessiert was auf dem zetel steht, denn die sigantur ist im zertifikat. das visual der signatur hat keine bedeutung, aber kann als und wird als angriffsvektor verwendet. Nutze unseren discreet document validator blabla",
+      "before": "Ein Garderobenzettel ohne Mantelnummer ist hübsches Konfetti.\n\nBei signierten PDFs kann ein Prüfergebnis ähnlich dekorativ werden, wenn später niemand mehr sicher weiss, zu welcher Dokumentversion es gehört.\n\nFür Records/Posteingang, Vertragsadministration und Compliance Ops heisst das für mich: Prüfinformation und exakt geprüfte PDF-Version im eigenen Records-/ECM-Prozess eindeutig zusammenhalten. Sonst trägt plötzlich Version 8 den Zettel von Version 7. Sehr ordentlich. Nur leider falsch.\n\nDer Swisscom Document Validator prüft bei ZertES-/eIDAS-signierten PDFs Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.\n\nWelche Fassung danach freigegeben wird, bleibt Sache des zuständigen Teams.\n\nWie verhindert ihr, dass Prüfergebnis und PDF-Version im Prozess getrennte Wege nehmen?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement",
+      "after": "Die Mantelnummer ist die digitale Signatur der Garderobe.\n\nNiemand interessiert sich dafür, was sonst noch auf dem Zettel steht. Entscheidend ist, ob Nummer 47 am Mantel zu Nummer 47 in meiner Hand passt.\n\nBei elektronisch signierten PDFs ist es ähnlich: Entscheidend ist nicht der sichtbare Kringel im Dokument. Die relevanten Signaturinformationen stecken im Zertifikat.\n\nDas sichtbare Signaturbild hat für die technische Prüfung keine Bedeutung. Es kann aber Vertrauen vorspielen – und damit zum Angriffsvektor werden. Sieht offiziell aus. Ist nur leider kein Prüfergebnis.\n\nDarum setzen wir auf unseren diskreten Swisscom Document Validator. Er prüft bei ZertES-/eIDAS-signierten PDFs Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.\n\nPrüft ihr noch den Kringel – oder schon das Zertifikat?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement #DigitaleSignatur",
+      "outcome": "approved"
+    },
+    {
+      "at": "2026-09-23T14:43:40",
+      "item_id": "comment-2026-09-23-0001",
+      "kind": "comment",
+      "source_job_id": "job-0008",
+      "instruction": "mach brücke zu kampagne, auch wenn es nicht passt für sauberes CTA",
+      "before": "The happy path is the easy part. I would test the handover with an expired or unavailable credential, or one the next system does not understand: does the person get a useful way forward, or only a generic denial? That is where a “seamless” connected journey proves whether it actually works.",
+      "after": "The happy path is the easy part. I would test the handover with an expired, unavailable or unsupported credential: does the person get a useful way forward, or only a generic denial?\n\nThe same applies when a signed PDF enters an approval or archive workflow. “Accepted” should not depend on a green icon alone. The Swisscom Document Validator provides verifiable signature and certificate information while the PDF remains in the organisation’s own environment.\n\nHow are you testing the unhappy path?",
+      "outcome": "pending"
+    }
+  ],
+  "directive_preferences": [
+    {
+      "instruction": "schreib mal, wir haben den Swisscom document validator direkt im outlook eingebunden, sodass jeder Anhang direkt validiert wird, also integrativ und so",
+      "count": 1
+    },
+    {
+      "instruction": "mach mal, komisches gefühl wenn leute dein gepäck reinschauen und auch problematisch wenn dein gepäck mal grösser ist. Also compliance ist ja auch so, man will nicht am dokumenten grösse begrenzt sein und man mächte nicht dass dein arbeitsschritt von dritten angeschaut wird.",
+      "count": 1
+    },
+    {
+      "instruction": "sag meiste compliance arbeit geschieht im browser, aber dann kommt vertragsüberprüfung und man muss das dokument runter laden und mit adobe reader öffnen und mühsam zertifikate selbst prüfen. kontextwechsel, mensch muss arbeitverrichten....wir haben diskreten validator direkt im browser",
+      "count": 1
+    },
+    {
+      "instruction": "metapher suckt hart, also mach etwaqs wo man sagt, eigentlich muss digitalisierung etwas effizienter machen. leider haben viele die digitale signatur eingeführt haben das backoffice komplett vergessen. Wir wollen nun, dass Mehrwerte dürch verifizierbare daten wie Signatur Effizenzsteigerung kommt.",
+      "count": 1
+    },
+    {
+      "instruction": "say we build MCP around Business identity validator and document validator, because I would add rule 10, sometimes an agent need complianct decission to further do agentic stuff",
+      "count": 1
+    },
+    {
+      "instruction": "ich glaube trust für bürger, wenn es einfach funktioniert. Trust für adoption ist wenn alle ein value daraus ziehen, einfache identifikation, automatisierung von verifiable data. wir haben hier gute erfahrungen mit document validator der effizenz steigert im backoffice ohne comlpiance risiken",
+      "count": 1
+    },
+    {
+      "instruction": "sprache vom post übernehmen, also englisch in diesem fall",
+      "count": 1
+    },
+    {
+      "instruction": "mantelnummer als digitale signatur, keinen interessiert was auf dem zetel steht, denn die sigantur ist im zertifikat. das visual der signatur hat keine bedeutung, aber kann als und wird als angriffsvektor verwendet. Nutze unseren discreet document validator blabla",
+      "count": 1
+    }
+  ],
+  "auto_approval_totals": {
+    "all": 0,
+    "by_job": {},
+    "by_mode": {}
+  },
+  "user_notes": [
+    {
+      "at": "2026-09-16T00:38:56",
+      "item_id": "comment-2026-09-15-0002",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "note": "da fehlt der bezug zu kampagne",
+      "outcome": "approved",
+      "text": "“Standards-compliant on paper” is exactly where the easy part ends for me. Right now we are providing verifier for signatures on PDF with privacy first discrete method, wallet has a long way to go. #Compliance #eIDAS #RecordsManagement"
+    },
+    {
+      "at": "2026-09-16T07:26:12",
+      "item_id": "post-2026-09-16-0001",
+      "kind": "post",
+      "source_job_id": "job-0003",
+      "note": "lass das weg dass es keine rechtsentscheidung macht, weil das kann man später im detail noch klären, fokussiere dich auf mehrwerte des products.",
+      "outcome": "approved",
+      "text": "Eine unbeschriftete Dose im Gefrierschrank wird nach drei Monaten nicht verständlicher. Sie wird nur kälter.\n\nBei signierten PDFs ist mein Archiv ähnlich talentiert: Es konserviert sehr zuverlässig – leider auch Unklarheit.\n\nDarum gehört die Prüfung für mich vor die Freigabe oder Archivierung. Gerade für Records/Posteingang, Vertragsadministration und Compliance Ops.\n\nDer Swisscom Document Validator prüft bei ZertES-/eIDAS-signierten PDFs Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.\n\nWas muss bei euch sichtbar geklärt sein, bevor eine signierte PDF ins Archiv wandert?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement"
+    },
+    {
+      "at": "2026-09-16T07:29:19",
+      "item_id": "post-2026-09-16-0002",
+      "kind": "post",
+      "source_job_id": "job-0003",
+      "note": "verwende neben den hashtags passende hashtags also zusatz, wo es passt",
+      "outcome": "approved",
+      "text": "Ein Knopf mit zwei Beschriftungen ist im Aufzug vielleicht charmant. Im Compliance-Prozess eher weniger.\n\n«Technisch geprüft» und «fachlich freigegeben» sind für mich zwei Zustände, nicht ein Statusfeld mit Doppelleben.\n\nFür Vertragsadministration, Records/ECM und Compliance/Legal Ops würde ich deshalb zwei klare Stempel setzen:\n\n1. Prüfinformationen vorhanden.\n2. Fachliche Entscheidung getroffen.\n\nDer Swisscom Document Validator liefert bei ZertES-/eIDAS-signierten PDFs Signatur- und Zertifikatsinformationen. Der Business Identity Validator liefert ergänzenden Kontext zu Zeichner, Unternehmen und Berechtigung. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.\n\nZeigt euer Workflow getrennt, was geprüft wurde und wer danach entschieden hat?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement #trust"
+    },
+    {
+      "at": "2026-09-21T08:20:25",
+      "item_id": "comment-2026-09-16-0002",
+      "kind": "comment",
+      "source_job_id": "job-0003",
+      "note": "also mehr value für meine kunden bringen, sprache vom post haben",
+      "outcome": "approved",
+      "text": "I agree: compliance is necessary, but trust disappears the moment security fails. For citizens, digital identity also has to work simply; for operations, it must provide verifiable data without creating a new exposure point. We have had good experience with the Swisscom Document Validator: it makes back-office checks more efficient while the PDF stays in the organisation’s own environment and only its hash is created locally. #Compliance #eIDAS #RecordsManagement #DigitalIdentity"
+    },
+    {
+      "at": "2026-09-21T08:24:43",
+      "item_id": "post-2026-09-18-0002",
+      "kind": "post",
+      "source_job_id": "job-0007",
+      "note": "Er erfindet keine interne Policy, klassifiziert nicht automatisch und gibt nichts frei. Auch Revisionssicherheit entsteht nicht automatisch. --> das sollte noch nicht hier geschrieben werden, solche details dann im gespräch nicht im linkedin",
+      "outcome": "approved",
+      "text": "«Bei Bedarf prüfen» ist für mich ungefähr so präzise wie ein Horoskop.\n\nKlingt erstaunlich passend. Hilft am Dienstag um 16:40 Uhr bei der nächsten PDF nur wenig.\n\nIch hätte für Records/Posteingang, Vertragsadministration und Compliance Ops lieber eine Regel, die schon vor der PDF da ist:\n\n- eingehende signierte PDF\n- Freigabe oder Archivierung vorgesehen\n- sensible oder auditrelevante Unterlagen\n\nDann ist vorab geklärt, welche Dokumente in den Prüfschritt gehen, wer das Ergebnis beurteilt und wo die Entscheidung festgehalten wird.\n\nDer Swisscom Document Validator prüft ZertES-/eIDAS-signierte PDFs sowie Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet. \n\nIst euer Prüfauslöser eine klare Regel oder ein freundliches «bei Bedarf»?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement"
+    },
+    {
+      "at": "2026-09-21T08:25:47",
+      "item_id": "post-2026-09-18-0001",
+      "kind": "post",
+      "source_job_id": "job-0007",
+      "note": "Beide treffen keine Compliance-, Rechts- oder Freigabeentscheidung und lassen den Agenten nicht automatisch weiterlaufen. Die Policy oder ein zuständiger Mensch entscheidet. --> das ist etwas für das verkaufsgespräch nicht linkedin",
+      "outcome": "approved",
+      "text": "Ein guter AI-Agent muss nicht nur wissen, welches Tool als Nächstes dran ist.\n\nEr sollte auch wissen, wann er die Hände von der Tastatur nehmen muss.\n\nBei eingehenden signierten PDFs liegt dieser Moment für mich vor Freigabe oder Archivierung – in Records/Posteingang, Vertragsadministration und Compliance/Legal Ops.\n\nWir bauen MCP-Zugriff rund um Business Identity Validator und Document Validator. Damit sollen Prüfinformationen als explizite Unterbrechung im agentischen Ablauf angefragt werden können, bevor der nächste Tool-Schritt folgt.\n\nDer Document Validator prüft bei ZertES-/eIDAS-signierten PDFs Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet. Der BIV kann Kontext zu Zeichner, Unternehmen und Berechtigung ergänzen.\n\nWo stoppt euer Agent vor dem nächsten Tool-Schritt?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement"
+    },
+    {
+      "at": "2026-09-21T09:41:44",
+      "item_id": "post-2026-09-20-0001",
+      "kind": "post",
+      "source_job_id": "job-0007",
+      "note": "Die Prüfinformationen helfen bei der Einordnung; fachliche Beurteilung und Freigabe bleiben beim zuständigen Team. --> dieser detail ist too much und bremst, das sit teil von späteren gesprächen",
+      "outcome": "approved",
+      "text": "Ein Kringel unten rechts macht aus einer PDF noch keinen geprüften Vertrag.\n\nMein Einkaufszettel trägt manchmal auch einen Namenszug. Meistens bedeutet er: «Milch nicht vergessen». Für eine ZertES-/eIDAS-Prüfung ist das erstaunlich wenig Material.\n\nFür Records/Posteingang und Vertragsadministration ist deshalb eine frühe Unterscheidung wichtig: Sieht die PDF nur unterschrieben aus – oder enthält sie eine technisch prüfbare elektronische Signatur?\n\nAus dem sichtbaren Bild allein lässt sich das nicht ableiten. Der Swisscom Document Validator prüft bei entsprechend elektronisch signierten PDFs Signatur- und Zertifikatsinformationen. Die PDF bleibt in der eigenen Umgebung, ihr Hash wird lokal gebildet.\n\nWoran erkennt euer Posteingang heute, ob eine PDF nur unterschrieben aussieht oder technisch geprüft werden kann?\n\nVor dem Archivieren prüfen statt hoffen:\nhttps://trustservices.swisscom.com/de/products/validator/document-validator?utm_source=linkedin&utm_medium=social&utm_campaign=docval_biv_backoffice\n— für eine kurze Demo/Beratung: DM oder Kommentar.\n\n#Compliance #eIDAS #RecordsManagement"
+    }
+  ]
+}

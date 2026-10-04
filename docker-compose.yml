@@ -1,0 +1,36 @@
+x-linkedin-app: &linkedin-app
+  build: .
+  env_file:
+    - .env
+  environment:
+    APP_HOST: 0.0.0.0
+    APP_PORT: 8765
+    CDP_ENDPOINT: http://host.docker.internal:9222
+  extra_hosts:
+    - "host.docker.internal:host-gateway"
+  # Dauerhafte fachliche Daten bleiben als normale Dateien auf dem Host.
+  # Beide Container sehen über diese Bind-Mounts denselben Stand.
+  volumes:
+    - ./Kampagnen:/app/Kampagnen
+    - ./automation:/app/automation
+    - ./team:/app/team
+    - ./ideas:/app/ideas
+    - ./config:/app/config
+    - ./.runs:/app/.runs
+    - codex-home:/root/.codex
+  restart: unless-stopped
+
+services:
+  app:
+    <<: *linkedin-app
+    ports:
+      - "127.0.0.1:8765:8765"
+
+  scheduler:
+    <<: *linkedin-app
+    command: ["sh", "-c", "while true; do python -m linkedin_agents.scheduler; sleep 60; done"]
+    healthcheck:
+      disable: true
+
+volumes:
+  codex-home:
