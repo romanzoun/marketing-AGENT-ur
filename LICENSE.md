@@ -27,4 +27,4 @@ nicht ausdrücklich zum Behalten freigegebene Kopie gelöscht werden.
 Die Software wird ohne Gewährleistung bereitgestellt. Roman Zoun haftet im
 gesetzlich zulässigen Rahmen nicht für Schäden aus ihrer Verwendung.
 
-Anfragen zur Nutzung sind an Roman Zoun zu richten.
+Anfragen zur Nutzung sind an Roman Zoun, roman.zoun@gmail.com, zu richten.

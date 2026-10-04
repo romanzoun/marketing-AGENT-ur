@@ -9,7 +9,8 @@ veröffentlicht.
 Copyright (c) 2026 Roman Zoun (romanzoun). Alle Rechte vorbehalten.
 
 Jegliche Nutzung ist nur mit einer persönlich von Roman Zoun unterschriebenen
-Erlaubnis zulässig. Der vollständige Text steht in [LICENSE.md](LICENSE.md).
+Erlaubnis zulässig. Lizenzanfragen: roman.zoun@gmail.com. Der vollständige Text
+steht in [LICENSE.md](LICENSE.md).
 
 ## Für Teammitglieder
 
