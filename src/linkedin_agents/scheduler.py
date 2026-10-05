@@ -117,8 +117,8 @@ def _maybe_repair_linkedin_ui(job: auto.JobDef, result: dict[str, object]) -> di
         "src/linkedin_agents/browser/linkedin.py und die zugehörigen Tests.\n\n"
         f"Prozessausgabe:\n{details}"
     )
-    log.warning("Starte Codex-Reparatur für UI-Fehler %s (%s).", job.id, fingerprint)
-    repair = brain.run_code_repair(prompt)
+    log.warning("Starte CLI-Reparatur für UI-Fehler %s (%s).", job.id, fingerprint)
+    repair = brain.repair_code(prompt)
     repair["fingerprint"] = fingerprint
     return repair
 

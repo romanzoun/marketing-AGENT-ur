@@ -14,7 +14,7 @@ steht in [LICENSE.md](LICENSE.md).
 
 ## Für Teammitglieder
 
-1. Roman Zoun erteilt GitHub-Zugriff auf das private Repository.
+1. Das öffentliche Repository kann ohne GitHub-Token ausgecheckt werden.
 2. Das Repository wird einmalig ausgecheckt:
 
 ```bash
@@ -32,6 +32,9 @@ cp .env.example .env
    eigene LinkedIn-Sitzung einmal angemeldet.
 5. Danach genügt ein Doppelklick auf `LinkedIn Automation.command`.
 
+Die vollständige Einrichtung für macOS und Windows steht in
+[start-tutorial.md](start-tutorial.md).
+
 Das Fenster bietet **Starten**, **Aktualisieren** und **Beenden**. Beim Öffnen
 prüft es automatisch, ob auf GitHub eine neuere Version vorliegt. Ein Update
 wird nur übernommen, wenn keine lokalen Änderungen überschrieben würden, und die
@@ -45,8 +48,10 @@ Ein Team spezialisierter CLI-Agenten, das LinkedIn-Kampagnen managt:
 Content ausdenken, schreiben, prüfen und über eine **laufende Chrome/LinkedIn-Session**
 (Playwright) **posten, kommentieren, antworten und teilen**.
 
-`li-brain` verwendet ausschließlich Codex CLI. Python liefert die
-deterministischen Werkzeuge; die Rollen sind projektbezogene Codex-Agenten.
+`li-brain` verwendet GitHub Copilot CLI oder Codex CLI. Standard ist Copilot;
+mit `BRAIN_ENGINE=codex` in `.env` wird Codex CLI verwendet. Python liefert
+die deterministischen Werkzeuge. Die Rollen liegen für Copilot unter
+`.github/agents/` und für Codex unter `.codex/agents/`.
 
 ## Das Team (`.codex/agents/*.toml`)
 

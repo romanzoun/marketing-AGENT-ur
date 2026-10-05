@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import os
 import subprocess
 import tempfile
 import unittest
@@ -29,8 +30,43 @@ class BrainCodexTests(unittest.TestCase):
         self.assertIn("Suche nicht pauschal", prompt)
         self.assertIn("linkedin_ui_selector_mismatch", prompt)
 
-    def test_codex_is_the_only_engine(self) -> None:
+    def test_auto_prefers_copilot_when_both_are_available(self) -> None:
+        status = {
+            "codex": {"available": True},
+            "copilot": {"available": True},
+        }
+        with patch.dict(os.environ, {"BRAIN_ENGINE": "auto"}):
+            self.assertEqual(brain.selected_engine(status), "copilot")
+
+    def test_auto_uses_codex_when_copilot_is_missing(self) -> None:
+        status = {
+            "codex": {"available": True},
+            "copilot": {"available": False},
+        }
+        with patch.dict(os.environ, {"BRAIN_ENGINE": "auto"}):
+            self.assertEqual(brain.selected_engine(status), "codex")
+
+    def test_explicit_copilot_runs_project_agent(self) -> None:
+        completed = subprocess.CompletedProcess(args=[], returncode=0, stdout="ok", stderr="")
         with (
+            patch.dict(os.environ, {"BRAIN_ENGINE": "copilot"}),
+            patch.object(brain, "cli_status", return_value={"copilot": {"available": True}}),
+            patch.object(brain, "_find_cli", return_value="/usr/local/bin/copilot"),
+            patch.object(brain.subprocess, "run", return_value=completed) as run,
+        ):
+            result = brain.run_agent("copywriter", "Aufgabe")
+
+        command = run.call_args.args[0]
+        self.assertTrue(result["ok"])
+        self.assertEqual(result["engine"], "copilot")
+        self.assertIn("--agent", command)
+        self.assertIn("copywriter", command)
+        self.assertIn("--allow-all-tools", command)
+        self.assertIn("--no-ask-user", command)
+
+    def test_codex_is_used_when_explicitly_selected(self) -> None:
+        with (
+            patch.dict(os.environ, {"BRAIN_ENGINE": "codex"}),
             patch.object(brain, "cli_status", return_value=READY),
             patch.object(
                 brain,

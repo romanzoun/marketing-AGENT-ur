@@ -1,8 +1,9 @@
-"""Content-Erzeugung über Codex CLI und projektbezogene Codex-Agenten.
+"""Content-Erzeugung über Codex CLI oder GitHub Copilot CLI.
 
 Codex liest die Teamregeln aus ``AGENTS.md`` und die spezialisierten Rollen aus
-``.codex/agents/*.toml``. Alle Content-Jobs laufen nicht-interaktiv mit
-``codex exec`` und legen nur Vorschläge in der Freigabe-Liste ab.
+``.codex/agents/*.toml``. Copilot CLI verwendet zusätzlich die Rollen aus
+``.github/agents/*.agent.md``. Alle Content-Jobs laufen nicht-interaktiv und
+legen nur Vorschläge in der Freigabe-Liste ab.
 
     ./bin/li-brain --campaign C draft-posts --count 2
     ./bin/li-brain --campaign C find-and-write --count 5
@@ -37,6 +38,7 @@ PROBE_PROMPT = (
     "Dies ist ein reiner Health Check. Verwende keine Werkzeuge und ändere keine Dateien. "
     f"Antworte exakt mit {PROBE_ANSWER}."
 )
+ENGINES = ("copilot", "codex")
 CODEX_AGENTS = {
     "orchestrator": "orchestrator",
     "campaign-manager": "campaign_manager",
@@ -112,20 +114,61 @@ def codex_available() -> tuple[bool, str]:
         return False, str(exc)
 
 
+def copilot_available() -> tuple[bool, str]:
+    exe = _find_cli("copilot")
+    if not exe:
+        return False, "Copilot CLI nicht gefunden (npm install -g @github/copilot)"
+    try:
+        version = subprocess.run(
+            [exe, "--version"], capture_output=True, text=True, timeout=30,
+            env=_cli_environment(),
+        )
+        if version.returncode != 0:
+            return False, (version.stderr or version.stdout).strip()
+        auth = subprocess.run(
+            [exe, "login", "--status"], capture_output=True, text=True, timeout=30,
+            env=_cli_environment(),
+        )
+        if auth.returncode != 0:
+            return False, "Copilot CLI ist nicht eingeloggt (`copilot login`)"
+        version_lines = (version.stdout or version.stderr).strip().splitlines()
+        auth_lines = (auth.stdout or auth.stderr).strip().splitlines()
+        version_text = version_lines[0] if version_lines else "Copilot CLI"
+        auth_text = auth_lines[-1] if auth_lines else "eingeloggt"
+        return True, f"{version_text}; {auth_text}"
+    except Exception as exc:
+        return False, str(exc)
+
+
 def cli_status() -> dict[str, dict[str, object]]:
-    available, info = codex_available()
-    return {"codex": {"available": available, "info": info}}
+    status: dict[str, dict[str, object]] = {}
+    for engine, checker in (("codex", codex_available), ("copilot", copilot_available)):
+        available, info = checker()
+        status[engine] = {"available": available, "info": info}
+    return status
+
+
+def preferred_engine() -> str:
+    """Liest die gewünschte CLI, ohne ihre Verfügbarkeit zu prüfen."""
+    configured = os.getenv("BRAIN_ENGINE", "auto").strip().lower()
+    return configured if configured in ENGINES else "auto"
 
 
 def selected_engine(status: dict[str, dict[str, object]] | None = None) -> str | None:
     current = status or cli_status()
-    return "codex" if current.get("codex", {}).get("available") else None
+    configured = preferred_engine()
+    if configured in ENGINES:
+        return configured if current.get(configured, {}).get("available") else None
+    for engine in ENGINES:
+        if current.get(engine, {}).get("available"):
+            return engine
+    return None
 
 
-def _result(proc: subprocess.CompletedProcess[str], agent: str) -> dict:
+def _result(proc: subprocess.CompletedProcess[str], agent: str, engine: str = "codex") -> dict:
     return {
         "ok": proc.returncode == 0,
-        "engine": "codex",
+        "engine": engine,
         "agent": CODEX_AGENTS.get(agent, agent),
         "stdout": proc.stdout[-12000:],
         "stderr": proc.stderr[-4000:],
@@ -174,6 +217,73 @@ def _run_codex(agent: str, prompt: str, timeout: int) -> dict:
     return _result(proc, agent)
 
 
+def _copilot_agent_file(agent: str) -> Path:
+    return ROOT / ".github" / "agents" / f"{agent}.agent.md"
+
+
+def _run_copilot(
+    agent: str,
+    prompt: str,
+    timeout: int,
+    *,
+    allow_tools: bool,
+    model_permission: str = "yes",
+) -> dict:
+    exe = _find_cli("copilot")
+    if not exe:
+        return {"ok": False, "engine": "copilot", "error": "copilot_not_found"}
+    role_file = _copilot_agent_file(agent) if agent != "code-repair" else None
+    if role_file is not None and not role_file.is_file():
+        return {"ok": False, "engine": "copilot", "error": f"copilot_agent_not_found:{agent}"}
+    role_instruction = (
+        f"Nutze den projektbezogenen Copilot-Agenten `{agent}` aus "
+        f"`{role_file.relative_to(ROOT)}`. "
+        if role_file is not None else
+        "Arbeite ohne Marketing-Agentenrolle. "
+    )
+    copilot_prompt = (
+        f"{role_instruction}"
+        "AGENTS.md und die dort beschriebene Freigabepflicht sind verbindlich. "
+        "Delegiere Fachaufgaben an die passenden Agenten unter `.github/agents/` "
+        "und gib ihnen den nötigen Kontext mit. Veröffentliche niemals direkt.\n\n"
+        f"Aufgabe:\n{prompt}"
+    )
+    command = [
+        exe, "-p", copilot_prompt, "-C", str(ROOT), "--agent", agent,
+        "--no-ask-user", "--silent", "--no-color", "--model", "auto",
+    ]
+    if agent == "code-repair":
+        command = [item for item in command if item != agent and item != "--agent"]
+    if allow_tools:
+        command.append("--allow-all-tools")
+    else:
+        command.extend(["--available-tools", "read", "--deny-tool", "shell,edit"])
+    if model_permission != "yes":
+        command.extend(["--allow-tool", f"model_permission:{model_permission}"])
+    proc = subprocess.run(
+        command,
+        capture_output=True, text=True, cwd=ROOT, timeout=timeout,
+        env=_cli_environment(),
+    )
+    return _result(proc, agent, "copilot")
+
+
+def _run_engine(engine: str, agent: str, prompt: str, timeout: int) -> dict:
+    if engine == "copilot":
+        return _run_copilot(agent, prompt, timeout, allow_tools=True)
+    return _run_codex(agent, prompt, timeout)
+
+
+def repair_code(prompt: str, timeout: int = 1200) -> dict:
+    """Repariert Code mit der gewählten CLI und fällt nur im Automatikmodus um."""
+    engine = selected_engine()
+    if engine == "copilot":
+        return run_code_repair_with_copilot(prompt, timeout)
+    if engine == "codex":
+        return run_code_repair(prompt, timeout)
+    return {"ok": False, "error": "brain_cli_unavailable", "engines": cli_status()}
+
+
 def run_code_repair(prompt: str, timeout: int = 1200) -> dict:
     """Startet Codex für eng begrenzte Code-Reparaturen ohne Marketing-Agentenrolle."""
     exe = _find_cli("codex")
@@ -202,6 +312,28 @@ def run_code_repair(prompt: str, timeout: int = 1200) -> dict:
     return result
 
 
+def run_code_repair_with_copilot(prompt: str, timeout: int = 1200) -> dict:
+    """Startet Copilot CLI für dieselbe eng begrenzte Code-Reparatur."""
+    repair_prompt = (
+        "Arbeite als Code-Reparatur-Agent in diesem Repository. Repariere ausschließlich "
+        "den beschriebenen LinkedIn-UI-/Playwright-Fehler. Ändere keine Kampagnen-, Queue-, "
+        "Freigabe-, Planungs- oder Logdateien und führe keine Live-Aktion auf LinkedIn aus. "
+        "Read-only DOM-Diagnose ist erlaubt. Halte die Änderung minimal, ergänze einen "
+        "fokussierten Regressionstest und führe passende Tests aus. Wenn die Ursache nicht "
+        "belegbar ist, ändere nichts und berichte den Blocker.\n\n"
+        f"Fehlerkontext:\n{prompt}"
+    )
+    try:
+        result = _run_copilot("code-repair", repair_prompt, timeout, allow_tools=True)
+    except subprocess.TimeoutExpired:
+        return {"ok": False, "engine": "copilot", "error": "timeout"}
+    except Exception as exc:
+        return {"ok": False, "engine": "copilot", "error": str(exc)}
+    if not result["ok"]:
+        result["error"] = (result.get("stderr") or result.get("stdout") or "copilot_repair_failed")[-1000:]
+    return result
+
+
 def _probe_codex(timeout: int) -> dict:
     exe = _find_cli("codex")
     if not exe:
@@ -226,34 +358,51 @@ def _probe_codex(timeout: int) -> dict:
     }
 
 
+def _probe_copilot(timeout: int) -> dict:
+    started = time.monotonic()
+    result = _run_copilot(
+        "orchestrator", PROBE_PROMPT, timeout, allow_tools=False, model_permission="no"
+    )
+    answer = str(result.get("stdout", "")).strip()
+    return {
+        "ok": bool(result.get("ok")) and PROBE_ANSWER in answer.upper(),
+        "engine": "copilot",
+        "answer": answer[-500:],
+        "error": "" if result.get("ok") else str(result.get("stderr", ""))[-2000:],
+        "duration_ms": round((time.monotonic() - started) * 1000),
+    }
+
+
 def probe_cli(
     timeout: int = 120,
     status: dict[str, dict[str, object]] | None = None,
 ) -> dict:
-    """Sendet eine minimale echte, schreibgeschützte Anfrage an Codex."""
+    """Sendet eine minimale echte, schreibgeschützte Anfrage an die gewählte CLI."""
     current_status = status or cli_status()
-    if not selected_engine(current_status):
-        return {"ok": False, "error": "codex_cli_unavailable", "attempts": []}
+    engine = selected_engine(current_status)
+    if not engine:
+        return {"ok": False, "error": "brain_cli_unavailable", "attempts": []}
     try:
-        result = _probe_codex(timeout)
+        result = _probe_copilot(timeout) if engine == "copilot" else _probe_codex(timeout)
     except subprocess.TimeoutExpired:
-        result = {"ok": False, "engine": "codex", "error": "timeout"}
+        result = {"ok": False, "engine": engine, "error": "timeout"}
     except Exception as exc:
-        result = {"ok": False, "engine": "codex", "error": str(exc)}
+        result = {"ok": False, "engine": engine, "error": str(exc)}
     result["attempts"] = [dict(result)]
     return result
 
 
 def run_agent(agent: str, prompt: str, timeout: int = 900) -> dict:
     status = cli_status()
-    if not selected_engine(status):
-        return {"ok": False, "error": "codex_cli_unavailable", "engines": status}
+    engine = selected_engine(status)
+    if not engine:
+        return {"ok": False, "error": "brain_cli_unavailable", "engines": status}
     try:
-        return _run_codex(agent, prompt, timeout)
+        return _run_engine(engine, agent, prompt, timeout)
     except subprocess.TimeoutExpired:
-        return {"ok": False, "engine": "codex", "agent": agent, "error": "timeout"}
+        return {"ok": False, "engine": engine, "agent": agent, "error": "timeout"}
     except Exception as exc:
-        return {"ok": False, "engine": "codex", "agent": agent, "error": str(exc)}
+        return {"ok": False, "engine": engine, "agent": agent, "error": str(exc)}
 
 
 def _plain_linkedin_text(value: object) -> str:
@@ -296,21 +445,7 @@ def _plain_linkedin_text(value: object) -> str:
     return unescape(text).strip()
 
 
-def rewrite_draft(
-    campaign_path: str,
-    item: q.QueueItem,
-    instruction: str,
-    timeout: int | None = None,
-) -> dict:
-    """Einen einzelnen Entwurf per Codex und Regieanweisung strukturiert umschreiben."""
-    timeout = timeout or timeouts.load(ROOT).rewrite * 60
-    status = cli_status()
-    if not selected_engine(status):
-        return {"ok": False, "error": "codex_cli_unavailable", "engines": status}
-    exe = _find_cli("codex")
-    if not exe:
-        return {"ok": False, "error": "codex_not_found"}
-
+def _rewrite_context(campaign_path: str, item: q.QueueItem, instruction: str) -> tuple[object, str]:
     target = Path(campaign_path)
     if not target.is_absolute():
         target = ROOT / target
@@ -358,6 +493,56 @@ def rewrite_draft(
         "BESTÄTIGTE LERNSIGNALE:\n"
         f"{json.dumps(learning_context, ensure_ascii=False)}"
     )
+    return campaign, prompt
+
+
+def _rewrite_with_copilot(prompt: str, timeout: int) -> dict:
+    output_prompt = (
+        f"{prompt}\n\n"
+        "Gib nur ein JSON-Objekt mit dem Feld text zurück. Kein erklärender Text."
+    )
+    try:
+        result = _run_copilot(
+            "copywriter", output_prompt, timeout, allow_tools=False, model_permission="no"
+        )
+    except subprocess.TimeoutExpired:
+        return {"ok": False, "engine": "copilot", "error": "timeout"}
+    except Exception as exc:
+        return {"ok": False, "engine": "copilot", "error": str(exc)}
+    if not result.get("ok"):
+        return {
+            "ok": False,
+            "engine": "copilot",
+            "error": (result.get("stderr") or result.get("stdout") or "copilot_rewrite_failed")[-3000:],
+        }
+    try:
+        payload = json.loads(str(result.get("stdout", "")).strip())
+    except json.JSONDecodeError as exc:
+        return {"ok": False, "engine": "copilot", "error": str(exc)}
+    rewritten = _plain_linkedin_text(payload.get("text", ""))
+    if not rewritten:
+        return {"ok": False, "engine": "copilot", "error": "empty_rewrite"}
+    return {"ok": True, "engine": "copilot", "text": rewritten}
+
+
+def rewrite_draft(
+    campaign_path: str,
+    item: q.QueueItem,
+    instruction: str,
+    timeout: int | None = None,
+) -> dict:
+    """Einen einzelnen Entwurf per gewählter CLI und Regieanweisung umschreiben."""
+    timeout = timeout or timeouts.load(ROOT).rewrite * 60
+    status = cli_status()
+    engine = selected_engine(status)
+    if not engine:
+        return {"ok": False, "error": "brain_cli_unavailable", "engines": status}
+    _campaign, prompt = _rewrite_context(campaign_path, item, instruction)
+    if engine == "copilot":
+        return _rewrite_with_copilot(prompt, timeout)
+    exe = _find_cli("codex")
+    if not exe:
+        return {"ok": False, "error": "codex_not_found"}
     schema = {
         "type": "object",
         "properties": {"text": {"type": "string", "minLength": 1}},
@@ -789,7 +974,7 @@ def main() -> None:
         _emit(result)
         raise SystemExit(0 if result["ok"] else 1)
     if not engine:
-        _emit({"ok": False, "error": "Codex CLI ist nicht einsatzbereit.", "engines": status})
+        _emit({"ok": False, "error": "Weder Codex noch Copilot CLI ist einsatzbereit.", "engines": status})
         raise SystemExit(1)
     if args.count < 1:
         _emit({"ok": False, "error": "count_must_be_positive"})
